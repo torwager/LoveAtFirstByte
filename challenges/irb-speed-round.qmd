@@ -4,57 +4,68 @@ subtitle: "Draft a risks & benefits section fast — and catch the AI when it bl
 description: "From a brief study description, draft a risks/benefits section — then hunt down the fabricated regs and invented numbers the AI slipped in."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-irb-speed-round" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22d3ee"/>
-      <stop offset="0.5" stop-color="#ff4d8d"/>
-      <stop offset="1" stop-color="#8b5cf6"/>
+      <stop offset="0" stop-color="#0891b2"/>
+      <stop offset="0.5" stop-color="#e11d6b"/>
+      <stop offset="1" stop-color="#7c3aed"/>
     </linearGradient>
-    <filter id="glow-irb" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <!-- clipboard / consent form silhouette -->
-  <rect x="60" y="34" width="180" height="150" rx="10" fill="#0b1020" stroke="url(#g-irb-speed-round)" stroke-width="2" opacity="0.95"/>
-  <rect x="120" y="26" width="60" height="18" rx="6" fill="url(#g-irb-speed-round)" opacity="0.85"/>
-  <line x1="80" y1="70" x2="220" y2="70" stroke="#22d3ee" stroke-width="3" opacity="0.7"/>
-  <line x1="80" y1="92" x2="200" y2="92" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
-  <line x1="80" y1="114" x2="210" y2="114" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
-  <line x1="80" y1="136" x2="180" y2="136" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
-  <!-- checkbox of approval -->
-  <rect x="80" y="152" width="16" height="16" rx="3" fill="none" stroke="#36e0d0" stroke-width="2"/>
-  <path d="M83 160 l4 5 l8 -11" fill="none" stroke="#36e0d0" stroke-width="2.5" filter="url(#glow-irb)"/>
+  <!-- clipboard / checklist -->
+  <rect x="56" y="32" width="180" height="156" rx="12" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="116" y="24" width="60" height="18" rx="6" fill="none" stroke="#64748b" stroke-width="2"/>
+  <rect x="128" y="20" width="36" height="12" rx="4" fill="url(#g-irb-speed-round)" opacity="0.9"/>
 
-  <!-- synapse network bridging to a magnifier (verification) -->
-  <g opacity="0.92">
-    <line x1="240" y1="110" x2="360" y2="70" stroke="#22d3ee" stroke-width="1.5" opacity="0.6"/>
-    <line x1="240" y1="110" x2="380" y2="150" stroke="#ff4d8d" stroke-width="1.5" opacity="0.6"/>
-    <line x1="360" y1="70" x2="470" y2="110" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
-    <line x1="380" y1="150" x2="470" y2="110" stroke="#36e0d0" stroke-width="1.5" opacity="0.6"/>
-    <circle cx="360" cy="70" r="7" fill="#22d3ee" filter="url(#glow-irb)"/>
-    <circle cx="380" cy="150" r="6" fill="#ff4d8d" filter="url(#glow-irb)"/>
-    <circle cx="470" cy="110" r="8" fill="#8b5cf6" filter="url(#glow-irb)"/>
-  </g>
+  <!-- checklist item 1 (checked) -->
+  <rect x="76" y="62" width="14" height="14" rx="3" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <path d="M79 69 l3 4 l6 -8" fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="100" y1="69" x2="214" y2="69" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <!-- checklist item 2 (checked) -->
+  <rect x="76" y="92" width="14" height="14" rx="3" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <path d="M79 99 l3 4 l6 -8" fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="100" y1="99" x2="206" y2="99" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <!-- checklist item 3 (FLAGGED — caught AI hallucination) -->
+  <rect x="74" y="120" width="18" height="18" rx="3" fill="none" stroke="#e11d6b" stroke-width="2"/>
+  <line x1="100" y1="129" x2="190" y2="129" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <!-- warning mark (triangle + bang) for the flagged item -->
+  <path d="M204 120 l13 22 h-26 z" fill="none" stroke="#e11d6b" stroke-width="2.2" stroke-linejoin="round"/>
+  <line x1="204" y1="126" x2="204" y2="134" stroke="#e11d6b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="204" cy="138" r="1.4" fill="#e11d6b"/>
+  <!-- checklist item 4 -->
+  <line x1="100" y1="159" x2="178" y2="159" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- magnifying glass over a suspicious "§" citation -->
-  <g filter="url(#glow-irb)">
-    <circle cx="600" cy="100" r="46" fill="none" stroke="url(#g-irb-speed-round)" stroke-width="4"/>
-    <line x1="634" y1="134" x2="672" y2="172" stroke="url(#g-irb-speed-round)" stroke-width="7" stroke-linecap="round"/>
-  </g>
-  <text x="600" y="114" font-family="Georgia, serif" font-size="42" fill="#fbbf24" text-anchor="middle" opacity="0.95">§</text>
-  <!-- red flag dot signalling a hallucinated reg -->
-  <circle cx="636" cy="64" r="6" fill="#ff4d8d" filter="url(#glow-irb)"/>
+  <!-- balance scale: weighing risks vs benefits -->
+  <line x1="500" y1="46" x2="500" y2="178" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <!-- base -->
+  <line x1="468" y1="178" x2="532" y2="178" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="500" cy="44" r="4" fill="#7c3aed"/>
+  <!-- beam -->
+  <line x1="416" y1="62" x2="584" y2="62" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- accent dots -->
-  <circle cx="300" cy="180" r="3" fill="#fbbf24" opacity="0.8"/>
-  <circle cx="520" cy="50" r="3" fill="#36e0d0" opacity="0.8"/>
-  <circle cx="730" cy="120" r="3" fill="#22d3ee" opacity="0.8"/>
+  <!-- left pan: RISKS (rose) -->
+  <line x1="416" y1="62" x2="416" y2="98" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M384 98 a32 18 0 0 0 64 0 z" fill="none" stroke="#e11d6b" stroke-width="2.4"/>
+  <line x1="384" y1="98" x2="448" y2="98" stroke="#e11d6b" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="416" y="132" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">risks</text>
+
+  <!-- right pan: BENEFITS (cyan) -->
+  <line x1="584" y1="62" x2="584" y2="86" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M552 86 a32 18 0 0 0 64 0 z" fill="none" stroke="#0891b2" stroke-width="2.4"/>
+  <line x1="552" y1="86" x2="616" y2="86" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="584" y="120" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">benefits</text>
+
+  <!-- bridging dots between clipboard and scale -->
+  <circle cx="280" cy="110" r="3" fill="#94a3b8"/>
+  <circle cx="320" cy="110" r="3" fill="#7c3aed" opacity="0.7"/>
+  <circle cx="360" cy="110" r="3" fill="#94a3b8"/>
+
+  <!-- small crimson signature dot -->
+  <circle cx="690" cy="56" r="4" fill="#b91c1c"/>
 </svg>
 
-You have a study, a deadline, and an AI that will happily cite a federal regulation that does not exist — your job is to draft fast and then catch it lying.
+You have a study, a deadline, and an AI that will readily cite a federal regulation that does not exist — your job is to draft fast and then catch what it gets wrong.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -73,18 +84,17 @@ Produce a tight, IRB-ready <strong>Risks &amp; Benefits</strong> section for the
 
 Human-subjects protocols are where good science meets institutional reality. Every pain study you ever run — a thermal QST battery, a cuff-pressure paradigm, an opioid challenge, an fMRI scan in people who cannot lie flat without flaring — needs a risks-and-benefits section that is honest, specific, and correctly grounded in regulation. AI can get you from blank page to credible draft in minutes, which is genuinely useful when an IRB submission is due Friday.
 
-But this is also the single best place to watch an LLM hallucinate with total confidence. It will invent regulatory citations (a plausible-looking "45 CFR" subpart that does not say what it claims), assign false numeric risk rates ("first-degree burns occur in approximately 2.3% of QST sessions"), and confidently mis-describe SAR limits or contrast-agent risks for a scan that does not even use contrast. If you cannot catch that in a low-stakes workshop, you will not catch it in your grant, your methods section, or your consent form. This challenge trains the reflex that matters most: draft fast, then trust nothing until you have verified it.
+It is also one of the clearest places to watch an LLM hallucinate with full confidence. It will invent regulatory citations (a plausible-looking "45 CFR" subpart that does not say what it claims), assign false numeric risk rates ("first-degree burns occur in approximately 2.3% of QST sessions"), and confidently mis-describe SAR limits or contrast-agent risks for a scan that does not even use contrast. If you cannot catch that in a low-stakes workshop, you are less likely to catch it in your grant, your methods section, or your consent form. This challenge builds the habit that matters most: draft fast, then verify before you trust.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 

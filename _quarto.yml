@@ -29,8 +29,6 @@ website:
         href: intro/tools.qmd
       - text: "Challenges"
         href: challenges/index.qmd
-      - text: "Facilitator Guide"
-        href: facilitation/facilitator-guide.qmd
     right:
       - icon: github
         href: https://github.com/torwager/LoveAtFirstByte
@@ -46,7 +44,6 @@ website:
           contents:
             - intro/overview.qmd
             - intro/tools.qmd
-            - facilitation/facilitator-guide.qmd
         - section: "Challenges"
           contents:
             - challenges/index.qmd

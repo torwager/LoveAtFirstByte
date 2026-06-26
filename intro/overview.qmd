@@ -1,111 +1,101 @@
 ---
 title: "The Workshop"
-subtitle: "How the 90 minutes works — and how to win at it."
-description: "The run of show, the anatomy of a Challenge Match, and the four prompting moves that do most of the work."
+subtitle: "How the 90 minutes works."
+description: "The run of show, the shape of each challenge, and the four prompting moves that do most of the work."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
-    <linearGradient id="g-overview" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="55%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
-    </linearGradient>
-    <linearGradient id="g-overview-fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.0"/>
-      <stop offset="50%" stop-color="#36e0d0" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+    <linearGradient id="g-overview" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
 
-  <!-- soft glow underlay -->
-  <path d="M60,170 Q400,20 740,170" fill="none" stroke="url(#g-overview)" stroke-width="14" opacity="0.18" stroke-linecap="round"/>
-  <!-- main arc / timeline -->
-  <path d="M60,170 Q400,20 740,170" fill="none" stroke="url(#g-overview)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- section title -->
+  <text x="70" y="48" fill="#475569" font-size="15" font-weight="600" font-family="system-ui,sans-serif" letter-spacing="0.04em">90-MINUTE RUN OF SHOW</text>
+  <text x="730" y="48" fill="#94a3b8" font-size="13" font-family="system-ui,sans-serif" text-anchor="end">0:00 — 1:30</text>
 
-  <!-- baseline ticks -->
-  <line x1="60" y1="190" x2="740" y2="190" stroke="#273258" stroke-width="1.5" opacity="0.6"/>
+  <!-- timeline ribbon -->
+  <line x1="70" y1="115" x2="730" y2="115" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+  <line x1="70" y1="115" x2="730" y2="115" stroke="url(#g-overview)" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- milestone nodes along the arc: warm-up, talk, match 1, match 2 -->
-  <g>
-    <circle cx="60" cy="170" r="9" fill="#0b1020" stroke="#22d3ee" stroke-width="2.5"/>
-    <circle cx="60" cy="170" r="3.5" fill="#22d3ee"/>
-    <text x="60" y="210" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">0:00</text>
-  </g>
-  <g>
-    <circle cx="225" cy="100" r="9" fill="#0b1020" stroke="#36e0d0" stroke-width="2.5"/>
-    <circle cx="225" cy="100" r="3.5" fill="#36e0d0"/>
-    <text x="225" y="84" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">warm-up</text>
-  </g>
-  <g>
-    <circle cx="400" cy="62" r="10" fill="#0b1020" stroke="#ff4d8d" stroke-width="2.5"/>
-    <circle cx="400" cy="62" r="4" fill="#ff4d8d"/>
-    <text x="400" y="46" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">ideas</text>
-  </g>
-  <g>
-    <circle cx="575" cy="100" r="9" fill="#0b1020" stroke="#f472b6" stroke-width="2.5"/>
-    <circle cx="575" cy="100" r="3.5" fill="#f472b6"/>
-    <text x="575" y="84" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">match 1</text>
-  </g>
-  <g>
-    <circle cx="740" cy="170" r="9" fill="#0b1020" stroke="#8b5cf6" stroke-width="2.5"/>
-    <circle cx="740" cy="170" r="3.5" fill="#8b5cf6"/>
-    <text x="740" y="210" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">1:30</text>
+  <!-- minute ticks -->
+  <g stroke="#cbd5e1" stroke-width="1.5">
+    <line x1="180" y1="108" x2="180" y2="122"/>
+    <line x1="290" y1="108" x2="290" y2="122"/>
+    <line x1="510" y1="108" x2="510" y2="122"/>
+    <line x1="620" y1="108" x2="620" y2="122"/>
   </g>
 
-  <!-- synapse spray from the peak node -->
-  <g stroke="url(#g-overview-fade)" stroke-width="1.4" opacity="0.7">
-    <line x1="400" y1="62" x2="330" y2="34"/>
-    <line x1="400" y1="62" x2="470" y2="34"/>
-    <line x1="400" y1="62" x2="400" y2="22"/>
+  <!-- milestone: Intro -->
+  <g>
+    <circle cx="70" cy="115" r="9" fill="#ffffff" stroke="#0891b2" stroke-width="3"/>
+    <circle cx="70" cy="115" r="3.5" fill="#0891b2"/>
+    <text x="70" y="152" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Intro</text>
+    <text x="70" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:00</text>
   </g>
-  <circle cx="330" cy="34" r="2.6" fill="#fbbf24"/>
-  <circle cx="470" cy="34" r="2.6" fill="#22d3ee"/>
-  <circle cx="400" cy="22" r="2.6" fill="#ff4d8d"/>
 
-  <!-- accent dots scattered as ambient signal -->
-  <circle cx="140" cy="150" r="2" fill="#22d3ee" opacity="0.7"/>
-  <circle cx="660" cy="150" r="2" fill="#8b5cf6" opacity="0.7"/>
-  <circle cx="300" cy="120" r="1.8" fill="#36e0d0" opacity="0.6"/>
-  <circle cx="500" cy="120" r="1.8" fill="#f472b6" opacity="0.6"/>
+  <!-- milestone: Challenge Match 1 -->
+  <g>
+    <circle cx="290" cy="115" r="10" fill="#ffffff" stroke="#e11d6b" stroke-width="3"/>
+    <circle cx="290" cy="115" r="4" fill="#e11d6b"/>
+    <text x="290" y="90" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Challenge 1</text>
+    <text x="290" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:20</text>
+  </g>
+
+  <!-- milestone: Challenge Match 2 -->
+  <g>
+    <circle cx="620" cy="115" r="10" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+    <circle cx="620" cy="115" r="4" fill="#7c3aed"/>
+    <text x="620" y="90" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Challenge 2</text>
+    <text x="620" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:55</text>
+  </g>
+
+  <!-- end node -->
+  <g>
+    <circle cx="730" cy="115" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2.5"/>
+    <circle cx="730" cy="115" r="2.5" fill="#64748b"/>
+    <text x="730" y="152" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Wrap</text>
+    <text x="730" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">1:30</text>
+  </g>
+
+  <!-- subtle crimson signature dot -->
+  <circle cx="781" cy="34" r="3" fill="#b91c1c"/>
 </svg>
 
 <div class="meta-row">
   <span class="pill cyan">90 minutes</span>
-  <span class="pill rose">2 challenge matches</span>
+  <span class="pill rose">2 collaborative challenges</span>
   <span class="pill violet">table teams</span>
   <span class="pill amber">all experience levels</span>
 </div>
 
-Welcome. The premise of the next 90 minutes is simple and a little provocative: **answers are cheap, judgment is expensive.** Any chatbot will hand you a paragraph, a figure, or five hypotheses on demand. What it cannot hand you is the taste to know which answer is good, the skepticism to catch the one that is quietly wrong, and the framing that turns a vague wish into a useful result. That judgment is the whole game — and it is exactly the thing a working pain scientist already has. You will leave with a small, reusable toolkit of prompting moves, hands-on reps applying them to real academic tasks, and a clearer sense of where these tools earn their keep and where they will burn you. Newcomers: you are in the right room. Experts: you will still find an edge.
+<div class="box goal"><span class="box-label">Why we're here</span>
+The premise of the next 90 minutes is simple: <strong>answers are cheap, judgment is expensive.</strong> Any chatbot will hand you a paragraph, a figure, or five hypotheses on demand. What it cannot hand you is the taste to know which answer is good, the skepticism to catch the one that is quietly wrong, and the framing that turns a vague wish into a useful result. That judgment is what matters most — and it is exactly the thing a working pain scientist already has. You will leave with a small, reusable toolkit of prompting moves, hands-on practice applying them to real academic tasks, and a clearer sense of where these tools earn their keep and where they fall short. Newcomers are in the right room; experienced users will still find an edge.</div>
 
 ## The 90-minute arc
-
-A tight arc: a fast, inclusive opening, then two challenge matches with built-in buffers so the timing math actually closes. **Total = 90 min.**
 
 | Time | Block | What happens |
 |---|---|---|
 | **0:00–0:10** | **Warm-up discussion (10 min)** | "What do you *actually* use AI for at work?" Round-robin at tables (not whole-room), each table posts 1 use + 1 frustration to a shared slide. Doubles as the silent **group-formation + tool-assignment** step. |
 | **0:10–0:20** | **Tor: ideas & possibilities (10 min)** | The judgment-vs-answers framing; the 4 prompting moves (decompose, role, adversarial, ask-it-to-improve-your-prompt); a 60-sec live teaser of an advanced agent (Claude Code) doing something a chat app can't — *watch, don't replicate*. End by assigning each table its tool. |
-| **0:20–0:55** | **Challenge Match 1 (35 min)** | Recommended core pick: **picture-this**. Run on the canonical per-challenge timeline below. |
-| **0:55–1:30** | **Challenge Match 2 (35 min)** | Recommended core pick: **plain-language-gauntlet**. Same timeline; debrief pivots to "which AI handled this best and why." Close last 2 min on the **ethics moment** + one CLI "what's possible next" pointer. |
+| **0:20–0:55** | **Challenge 1 (35 min)** | Recommended core pick: **picture-this**. Run on the per-challenge timeline below. |
+| **0:55–1:30** | **Challenge 2 (35 min)** | Recommended core pick: **plain-language-gauntlet**. Same timeline; the debrief turns to what each tool did well and where it struggled. Close the last 2 min on the **ethics moment** plus one CLI "what's possible next" pointer. |
 
-<div class="box tip"><span class="box-label">Why it closes</span>
-The ethics beat and the advanced-model showcase are folded into existing blocks — no extra time. Group formation happens <em>during</em> the warm-up, so Challenge 1 starts at full speed instead of bleeding its first five minutes on logistics.</div>
+## How each challenge works
 
-## How a Challenge Match works
-
-Each 35-minute match is the same three-act structure: we frame a problem, you build against it in teams, and then we compare results out loud. The instructor never hands you the method — only the goal and a deliberately bad baseline to beat.
+<div class="box tip"><span class="box-label">The shape of each challenge</span>
+Every 35-minute challenge follows the same three-act structure: we frame a problem, you build against it in teams, and then we compare results out loud. The instructor never hands you the method — only the goal and a deliberately weak baseline to improve on. Nobody is competing; the point is to learn from how different tables and tools approached the same task.</div>
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> &rarr; exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Prompting & strategy principles
 
@@ -115,7 +105,7 @@ Four moves do most of the work. Hand each group a card with one to "specialize" 
 AI executes; <em>you</em> set direction. Before prompting, name the high-level goal, then the sub-tasks and angles that get you there. "Make a figure" is a wish; "show the group × time interaction, with CI error bars, a colorblind-safe palette, and a one-line takeaway caption" is a plan. <span class="pill cyan">ask: what would 'good' require?</span></div>
 
 <div class="box good"><span class="box-label">2 · Identity / role prompting</span>
-Give the agent a soul. "You are a data-viz editor for <em>Nature</em> who hates chartjunk" or the now-famous "You are an open-source coding GOD." A role front-loads taste, standards, and vocabulary you'd otherwise have to specify line by line. <span class="pill violet">role first, task second</span></div>
+Give the agent a persona. "You are a data-viz editor for <em>Nature</em> who hates chartjunk" or "You are an expert open-source developer." A role front-loads taste, standards, and vocabulary you'd otherwise have to specify line by line. <span class="pill violet">role first, task second</span></div>
 
 <div class="box bad"><span class="box-label">3 · Adversarial self-evaluation</span>
 Make the model its own harshest reviewer. "Score your confidence 0–100 and list the three weakest claims." "Find the jargon a 10th grader would miss." "Where might this hallucinate — flag anything you can't cite." This turns a single answer into a checkable draft. <span class="pill rose">trust, then verify</span></div>
@@ -126,23 +116,4 @@ The cheapest upgrade: "Rewrite my prompt to get a better result, and tell me wha
 <div class="box ethics"><span class="box-label">The throughline</span>
 Answers are cheap; judgment is expensive. Every move above moves effort from <em>producing</em> an answer to <em>auditing</em> one. That's the skill we're actually building.</div>
 
-## What we suggest you try first
-
-If you only run two matches, run the first two. The third is a strong backup if a table finishes early or a tool misbehaves.
-
-<div class="card-grid">
-  <a class="lafb-card" href="../challenges/picture-this.qmd">
-    <h3>Picture This</h3>
-    <p>Rescue an ugly data table — turn a messy export into a figure that actually communicates. <span class="pill cyan">core</span></p>
-  </a>
-  <a class="lafb-card" href="../challenges/plain-language-gauntlet.qmd">
-    <h3>Plain-Language Gauntlet</h3>
-    <p>One dense paragraph, three audiences — translate without lying. <span class="pill rose">core</span></p>
-  </a>
-  <a class="lafb-card" href="../challenges/hypothesis-roulette.qmd">
-    <h3>Hypothesis Roulette</h3>
-    <p>Five mechanistic hypotheses from a single surprising null result. <span class="pill amber">backup</span></p>
-  </a>
-</div>
-
-When you are ready, meet your tools in the [AI Toolkit](../intro/tools.qmd), or browse the full [Challenge menu](../challenges/index.qmd) to see what else is on the table.
+When you are ready, meet your tools in the [AI Toolkit](../intro/tools.qmd), or browse the full [Challenge menu](../challenges/index.qmd).

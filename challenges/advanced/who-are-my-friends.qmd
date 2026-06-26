@@ -4,71 +4,76 @@ subtitle: "Design a system that finds the reviewers who will love your paper."
 description: "An agentic challenge: decompose reviewer discovery into verifiable subtasks, mine citation context and sentiment, and stay on the right side of journal etiquette."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-who-are-my-friends" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="55%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="55%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <radialGradient id="g-who-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff4d8d" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#ff4d8d" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- central "your paper" node glow -->
-  <circle cx="400" cy="110" r="80" fill="url(#g-who-glow)"/>
-
-  <!-- synapse lines radiating to peer nodes -->
-  <g stroke="url(#g-who-are-my-friends)" stroke-width="2" fill="none" opacity="0.7">
-    <path d="M400 110 C 300 60, 220 70, 140 55"/>
-    <path d="M400 110 C 300 80, 230 130, 130 140"/>
+  <!-- dim edges to non-matching nodes -->
+  <g stroke="#94a3b8" stroke-width="1.5" fill="none" opacity="0.5">
     <path d="M400 110 C 320 150, 250 185, 175 195"/>
+    <path d="M400 110 C 480 150, 560 180, 640 190"/>
+    <path d="M400 110 C 300 80, 230 130, 130 140"/>
+  </g>
+
+  <!-- highlighted edges to aligned reviewer nodes -->
+  <g stroke="url(#g-who-are-my-friends)" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M400 110 C 300 60, 220 70, 140 55"/>
     <path d="M400 110 C 500 60, 580 70, 660 55"/>
     <path d="M400 110 C 500 90, 580 120, 670 135"/>
-    <path d="M400 110 C 480 150, 560 180, 640 190"/>
   </g>
 
-  <!-- central paper glyph -->
+  <!-- central paper node -->
   <g transform="translate(372,78)">
-    <rect x="0" y="0" width="56" height="68" rx="6" fill="#0b1020" stroke="url(#g-who-are-my-friends)" stroke-width="2"/>
-    <line x1="10" y1="16" x2="46" y2="16" stroke="#22d3ee" stroke-width="2" opacity="0.8"/>
-    <line x1="10" y1="28" x2="46" y2="28" stroke="#36e0d0" stroke-width="2" opacity="0.7"/>
-    <line x1="10" y1="40" x2="38" y2="40" stroke="#f472b6" stroke-width="2" opacity="0.7"/>
-    <line x1="10" y1="52" x2="42" y2="52" stroke="#8b5cf6" stroke-width="2" opacity="0.7"/>
+    <rect x="0" y="0" width="56" height="68" rx="6" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+    <line x1="10" y1="16" x2="46" y2="16" stroke="#64748b" stroke-width="2"/>
+    <line x1="10" y1="28" x2="46" y2="28" stroke="#64748b" stroke-width="2"/>
+    <line x1="10" y1="40" x2="38" y2="40" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="10" y1="52" x2="42" y2="52" stroke="#94a3b8" stroke-width="2"/>
   </g>
 
-  <!-- peer reviewer nodes with sentiment-tinted halos -->
+  <!-- dim, non-matching reviewer nodes -->
+  <g fill="#ffffff" stroke="#94a3b8" stroke-width="2">
+    <circle cx="130" cy="140" r="12"/>
+    <circle cx="175" cy="195" r="10"/>
+    <circle cx="640" cy="190" r="10"/>
+  </g>
+
+  <!-- aligned reviewer nodes that "light up" in accent colors -->
   <g>
-    <circle cx="140" cy="55" r="14" fill="#0b1020" stroke="#36e0d0" stroke-width="2"/>
-    <circle cx="140" cy="55" r="22" fill="none" stroke="#36e0d0" stroke-width="1" opacity="0.35"/>
-    <circle cx="130" cy="140" r="12" fill="#0b1020" stroke="#22d3ee" stroke-width="2"/>
-    <circle cx="175" cy="195" r="10" fill="#0b1020" stroke="#fbbf24" stroke-width="2"/>
-    <circle cx="660" cy="55" r="14" fill="#0b1020" stroke="#ff4d8d" stroke-width="2"/>
-    <circle cx="660" cy="55" r="22" fill="none" stroke="#ff4d8d" stroke-width="1" opacity="0.4"/>
-    <circle cx="670" cy="135" r="12" fill="#0b1020" stroke="#8b5cf6" stroke-width="2"/>
-    <circle cx="640" cy="190" r="10" fill="#0b1020" stroke="#f472b6" stroke-width="2"/>
+    <circle cx="140" cy="55" r="14" fill="#ffffff" stroke="#0891b2" stroke-width="2.5"/>
+    <circle cx="140" cy="55" r="22" fill="none" stroke="#0891b2" stroke-width="1" opacity="0.4"/>
+    <circle cx="660" cy="55" r="14" fill="#ffffff" stroke="#e11d6b" stroke-width="2.5"/>
+    <circle cx="660" cy="55" r="22" fill="none" stroke="#e11d6b" stroke-width="1" opacity="0.4"/>
+    <circle cx="670" cy="135" r="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+    <circle cx="670" cy="135" r="19" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
   </g>
 
-  <!-- floating sentiment marks -->
+  <!-- sentiment marks on matched nodes -->
   <g font-family="monospace" font-size="15" font-weight="700">
-    <text x="120" y="30" fill="#36e0d0">+</text>
-    <text x="700" y="40" fill="#ff4d8d">+</text>
-    <text x="705" y="120" fill="#8b5cf6">~</text>
-    <text x="200" y="180" fill="#fbbf24">?</text>
+    <text x="118" y="30" fill="#0891b2">+</text>
+    <text x="700" y="40" fill="#e11d6b">+</text>
+    <text x="704" y="120" fill="#7c3aed">~</text>
+    <text x="198" y="182" fill="#94a3b8">?</text>
   </g>
 
   <!-- accent dots -->
-  <g fill="#e6ebff">
-    <circle cx="250" cy="40" r="2" opacity="0.7"/>
-    <circle cx="540" cy="40" r="2" opacity="0.7"/>
-    <circle cx="330" cy="200" r="2" opacity="0.6"/>
-    <circle cx="500" cy="205" r="2" opacity="0.6"/>
+  <g fill="#64748b">
+    <circle cx="250" cy="40" r="2" opacity="0.6"/>
+    <circle cx="540" cy="40" r="2" opacity="0.6"/>
+    <circle cx="330" cy="200" r="2" opacity="0.5"/>
+    <circle cx="500" cy="205" r="2" opacity="0.5"/>
   </g>
+
+  <!-- crimson signature dot -->
+  <circle cx="400" cy="200" r="3" fill="#b91c1c"/>
 </svg>
 
-Somewhere out there is the one reviewer who will read your discussion section and whisper "finally" — your job is to build the machine that finds them.
+Somewhere out there is the reviewer who will read your discussion section and think "finally, someone who gets it." Your job is to build the system that finds them.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -88,18 +93,17 @@ You have a paper (real or invented) that you want in front of reviewers who will
 
 Reviewer assignment quietly decides the fate of your science. The same manuscript can draw a "reject — out of scope" from someone who thinks pain is a peripheral nociception problem, and a "minor revisions, lovely work" from someone steeped in central sensitization and predictive coding. Editors routinely ask you to *suggest* reviewers, and most of us do it from memory — which means we suggest the three people we met at a conference, miss the early-career researcher who has been quietly citing us with admiration, and overlook the lab on another continent doing exactly our thing.
 
-This is also a perfect agentic problem. "Find good reviewers" is not one prompt; it is a pipeline of search, retrieval, reading-in-context, scoring, and verification. Learning to *decompose* a fuzzy academic goal into checkable subtasks — and to make the AI show its sources — is the transferable skill. The same scaffold finds collaborators, grant panel allies, journal clubs that would host your work, and people to cite.
+This is also a well-suited agentic problem. "Find good reviewers" is not one prompt; it is a pipeline of search, retrieval, reading-in-context, scoring, and verification. Learning to *decompose* a fuzzy academic goal into checkable subtasks — and to make the AI show its sources — is the transferable skill. The same scaffold finds collaborators, grant panel allies, journal clubs that would host your work, and people to cite.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
@@ -123,14 +127,14 @@ Work as an agent in explicit steps, and pause to show me each step's output befo
 5. Flag any candidate who is a likely competitor, frequent co-author of mine, or where you are NOT confident the person/paper is real.
 
 Cite a source for every factual claim. If you cannot verify someone, say so rather than guessing.</div>
-It works because it assigns a role, decomposes the fuzzy goal into checkable subtasks, forces the model to externalize evidence (quoted citing context + URLs), separates "knows the topic" from "will like the paper," and builds in adversarial self-checks (competitor flag, hallucination flag, confidence). You get an auditable shortlist, not a vibe.
+It works because it assigns a role, decomposes the fuzzy goal into checkable subtasks, forces the model to externalize evidence (quoted citing context + URLs), separates "knows the topic" from "will like the paper," and builds in adversarial self-checks (competitor flag, hallucination flag, confidence). You get an auditable shortlist rather than an unsourced guess.
 </div>
 
 ## Prompting moves to try
 
 - **Decompose into agentic subtasks.** Turn "find reviewers" into: concept extraction → author search → citation-context mining → sentiment scoring → dedupe/merge → verification. Ask the agent to checkpoint after each so you can catch a wrong turn early instead of at the end.
 - **Role + audience prompting.** "You are an editor who must defend this assignment to the EIC" produces more cautious, source-backed output than "list some reviewers." Try also: "You are a skeptical reviewer of *your own* shortlist."
-- **Mine the citing context, not just the citation count.** Ask the AI to quote the actual sentence where someone cites your work and classify its sentiment. "Building on Wager et al." is a friend; "contrary to claims by Wager et al." is a duel.
+- **Mine the citing context, not just the citation count.** Ask the AI to quote the actual sentence where someone cites your work and classify its sentiment. "Building on Wager et al." signals an ally; "contrary to claims by Wager et al." signals a critic.
 - **Adversarial self-evaluation.** After it produces the list: "For each candidate, give your confidence (0-1) that this is a real person, that the cited paper exists, and that they'd be sympathetic. Sort by lowest confidence first and tell me what would change your mind." This surfaces hallucinations fast.
 - **Ask the AI to improve your prompt.** "Before running, rewrite my instructions to make the verification step more rigorous and the sentiment scoring more reproducible. Then run the better version."
 - **Separate two axes.** Expertise-match and likely-sympathy are different things; a world expert who hates your theory is a bad suggestion. Make the model score them in separate columns.

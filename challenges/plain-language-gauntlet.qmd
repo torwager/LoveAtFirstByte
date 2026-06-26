@@ -4,72 +4,102 @@ subtitle: "One dense methods paragraph, three very different audiences."
 description: "Take a jargon-dense pain-neuroimaging methods paragraph and make an AI translate it for a 10th grader, a patient advocate, and an NIH program officer — then ship the best one."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-plain-language-gauntlet" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <radialGradient id="g-plg-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- soft glow behind the source node -->
-  <circle cx="150" cy="110" r="80" fill="url(#g-plg-glow)"/>
-
-  <!-- dense source: a tight cluster of small nodes = jargon -->
-  <g opacity="0.95">
-    <circle cx="120" cy="80" r="5" fill="#9aa6c7"/>
-    <circle cx="148" cy="70" r="5" fill="#9aa6c7"/>
-    <circle cx="175" cy="92" r="5" fill="#9aa6c7"/>
-    <circle cx="132" cy="108" r="5" fill="#9aa6c7"/>
-    <circle cx="162" cy="120" r="5" fill="#9aa6c7"/>
-    <circle cx="110" cy="132" r="5" fill="#9aa6c7"/>
-    <circle cx="186" cy="128" r="5" fill="#9aa6c7"/>
-    <circle cx="150" cy="146" r="5" fill="#9aa6c7"/>
-    <g stroke="#3a4775" stroke-width="1.4" opacity="0.7">
-      <line x1="120" y1="80" x2="148" y2="70"/>
-      <line x1="148" y1="70" x2="175" y2="92"/>
-      <line x1="175" y1="92" x2="162" y2="120"/>
-      <line x1="132" y1="108" x2="162" y2="120"/>
-      <line x1="120" y1="80" x2="132" y2="108"/>
-      <line x1="110" y1="132" x2="132" y2="108"/>
-      <line x1="162" y1="120" x2="186" y2="128"/>
-      <line x1="150" y1="146" x2="162" y2="120"/>
-    </g>
-  </g>
-
-  <!-- central prism / translator node -->
-  <polygon points="360,70 420,110 360,150 300,110" fill="url(#g-plain-language-gauntlet)" opacity="0.9"/>
-  <polygon points="360,70 420,110 360,150 300,110" fill="none" stroke="#e6ebff" stroke-width="1" opacity="0.4"/>
-
-  <!-- three fanning synapse beams to three audiences -->
-  <g stroke-width="2.5" fill="none" opacity="0.85">
-    <path d="M420,110 C520,60 600,55 690,55" stroke="#22d3ee"/>
-    <path d="M420,110 C520,110 600,110 690,110" stroke="#ff4d8d"/>
-    <path d="M420,110 C520,160 600,165 690,165" stroke="#8b5cf6"/>
-  </g>
-
-  <!-- three audience nodes, clean and bright = clarity -->
+  <!-- LEFT: one dense text document = jargon-heavy source -->
   <g>
-    <circle cx="700" cy="55" r="14" fill="#22d3ee" opacity="0.95"/>
-    <circle cx="700" cy="110" r="14" fill="#ff4d8d" opacity="0.95"/>
-    <circle cx="700" cy="165" r="14" fill="#8b5cf6" opacity="0.95"/>
-    <circle cx="700" cy="55" r="22" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.4"/>
-    <circle cx="700" cy="110" r="22" fill="none" stroke="#ff4d8d" stroke-width="1" opacity="0.4"/>
-    <circle cx="700" cy="165" r="22" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <rect x="70" y="40" width="120" height="148" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+    <!-- folded corner accent -->
+    <path d="M170,40 L190,40 L190,60 Z" fill="#94a3b8"/>
+    <!-- dense lines of text -->
+    <g stroke="#94a3b8" stroke-width="3" stroke-linecap="round">
+      <line x1="86" y1="62" x2="174" y2="62"/>
+      <line x1="86" y1="74" x2="174" y2="74"/>
+      <line x1="86" y1="86" x2="166" y2="86"/>
+      <line x1="86" y1="98" x2="174" y2="98"/>
+      <line x1="86" y1="110" x2="158" y2="110"/>
+      <line x1="86" y1="122" x2="174" y2="122"/>
+      <line x1="86" y1="134" x2="170" y2="134"/>
+      <line x1="86" y1="146" x2="150" y2="146"/>
+      <line x1="86" y1="158" x2="174" y2="158"/>
+      <line x1="86" y1="170" x2="162" y2="170"/>
+    </g>
+    <!-- gradient accent bar = the spark of meaning inside -->
+    <rect x="86" y="50" width="60" height="5" rx="2.5" fill="url(#g-plain-language-gauntlet)"/>
+  </g>
+
+  <!-- connector lines fanning from source to three audiences -->
+  <g stroke-width="2" fill="none">
+    <path d="M190,90 C300,80 360,55 470,55" stroke="#0891b2"/>
+    <path d="M190,114 C300,114 360,110 470,110" stroke="#e11d6b"/>
+    <path d="M190,138 C300,150 360,165 470,165" stroke="#7c3aed"/>
+  </g>
+  <!-- connector endpoints -->
+  <circle cx="190" cy="114" r="4" fill="#64748b"/>
+
+  <!-- RIGHT, audience 1: STUDENT (speech bubble + grad cap) -->
+  <g>
+    <rect x="500" y="30" width="150" height="52" rx="12" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
+    <path d="M512,82 L512,98 L528,82 Z" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
+    <!-- grad cap icon -->
+    <g transform="translate(522,56)">
+      <polygon points="0,0 18,-7 36,0 18,7" fill="#475569"/>
+      <path d="M30,2.5 L30,12" stroke="#475569" stroke-width="2" fill="none"/>
+      <circle cx="30" cy="13" r="2" fill="#e11d6b"/>
+      <path d="M8,3.5 L8,11 Q18,16 28,11 L28,3.5" fill="none" stroke="#64748b" stroke-width="2"/>
+    </g>
+    <line x1="572" y1="50" x2="636" y2="50" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="572" y1="62" x2="624" y2="62" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- audience 2: PATIENT ADVOCATE (speech bubble + person/heart) -->
+  <g>
+    <rect x="500" y="98" width="150" height="52" rx="12" fill="#ffffff" stroke="#e11d6b" stroke-width="2"/>
+    <path d="M512,150 L512,166 L528,150 Z" fill="#ffffff" stroke="#e11d6b" stroke-width="2"/>
+    <!-- person + heart icon -->
+    <g transform="translate(524,114)">
+      <circle cx="8" cy="6" r="6" fill="none" stroke="#475569" stroke-width="2"/>
+      <path d="M-1,24 Q8,14 17,24" fill="none" stroke="#64748b" stroke-width="2"/>
+      <path d="M30,8 a3,3 0 0,1 6,0 a3,3 0 0,1 6,0 q0,4 -6,8 q-6,-4 -6,-8 Z" fill="#e11d6b"/>
+    </g>
+    <line x1="572" y1="118" x2="636" y2="118" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="572" y1="130" x2="620" y2="130" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- audience 3: OFFICIAL (speech bubble + building/columns) -->
+  <g>
+    <rect x="500" y="166" width="150" height="44" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <path d="M512,166 L512,154 L528,166 Z" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <!-- institution / columns icon -->
+    <g transform="translate(522,176)" stroke="#475569" stroke-width="2" fill="none">
+      <polygon points="0,6 18,-2 36,6" fill="#94a3b8" stroke="none"/>
+      <line x1="2" y1="6" x2="34" y2="6"/>
+      <line x1="6" y1="9" x2="6" y2="24"/>
+      <line x1="18" y1="9" x2="18" y2="24"/>
+      <line x1="30" y1="9" x2="30" y2="24"/>
+      <line x1="-2" y1="26" x2="38" y2="26" stroke="#64748b"/>
+    </g>
+    <line x1="572" y1="183" x2="636" y2="183" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="572" y1="195" x2="618" y2="195" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
   </g>
 
   <!-- accent dots -->
-  <circle cx="250" cy="40" r="3" fill="#fbbf24"/>
-  <circle cx="480" cy="180" r="3" fill="#36e0d0"/>
-  <circle cx="560" cy="30" r="3" fill="#f472b6"/>
+  <circle cx="460" cy="55" r="3.5" fill="#0891b2"/>
+  <circle cx="460" cy="110" r="3.5" fill="#e11d6b"/>
+  <circle cx="460" cy="165" r="3.5" fill="#7c3aed"/>
+
+  <!-- small crimson signature dot -->
+  <circle cx="200" cy="200" r="3" fill="#b91c1c"/>
 </svg>
 
-One paragraph of impenetrable methods-speak walks in; three crystal-clear explanations walk out — and you decide which one is good enough to actually send.
+One paragraph of dense methods-speak goes in; three clear explanations come out — and you decide which one is good enough to actually send.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -87,19 +117,18 @@ Take the dense methods paragraph below and produce a version your <strong>assign
 
 ## Why it matters
 
-Every translational pain scientist lives a triple life. You write Specific Aims that a program officer outside your subfield has to find compelling in 90 seconds. You sit on community advisory boards where a patient with fibromyalgia asks what your scanner actually measures. You do outreach, mentor undergrads, and explain your work at Thanksgiving. The skill of compressing "resting-state functional connectivity of the periaqueductal gray" into something a smart non-expert grasps — without lying to them — is one of the highest-leverage academic skills there is, and it is exactly the kind of task a chat AI is shockingly good at scaffolding. Learn to drive it well here and you'll reuse the move on every abstract, lay summary, and Plain Language Statement you write for the rest of your career.
+Every translational pain scientist lives a triple life. You write Specific Aims that a program officer outside your subfield has to find compelling in 90 seconds. You sit on community advisory boards where a patient with fibromyalgia asks what your scanner actually measures. You do outreach, mentor undergrads, and explain your work at Thanksgiving. The skill of compressing "resting-state functional connectivity of the periaqueductal gray" into something a smart non-expert grasps — without misleading them — is one of the highest-leverage academic skills there is, and it is exactly the kind of task a chat AI is well suited to scaffold. Learn to drive it well here and you'll reuse the move on every abstract, lay summary, and Plain Language Statement you write.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
 
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
@@ -107,7 +136,7 @@ Every translational pain scientist lives a triple life. You write Specific Aims 
 
 <div class="prompt">Explain this paragraph in simple terms: [paste methods paragraph]</div>
 
-The AI will dutifully swap a few big words for slightly smaller words and call it a day. "Simple terms" has no audience, no length, no purpose, and no quality bar — so you get a flat, generic gloss that's still too technical for a patient and too vague for a program officer. It also keeps the paper's hedging ("we examined the association between...") instead of telling the reader why any of it matters.
+The AI will swap a few big words for slightly smaller ones and stop there. "Simple terms" has no audience, no length, no purpose, and no quality bar — so you get a flat, generic gloss that's still too technical for a patient and too vague for a program officer. It also keeps the paper's hedging ("we examined the association between...") instead of telling the reader why any of it matters.
 </div>
 
 <div class="box good"><span class="box-label">Strong prompt</span>
@@ -120,7 +149,7 @@ Then, in a separate section, list any sentence where you simplified something in
 
 Methods paragraph: [paste]</div>
 
-It works because it nails the four levers the weak prompt missed: a concrete <strong>audience</strong> (with a backstory that sets vocabulary and stakes), a <strong>format</strong> (length + reading level), explicit <strong>constraints</strong> (gloss acronyms, one analogy, no overclaiming), and a built-in <strong>self-check</strong> that surfaces exactly the spots a domain expert needs to verify. You get a usable draft <em>and</em> a map of where to fact-check it.
+It works because it covers the four levers the weak prompt missed: a concrete <strong>audience</strong> (with a backstory that sets vocabulary and stakes), a <strong>format</strong> (length + reading level), explicit <strong>constraints</strong> (gloss acronyms, one analogy, no overclaiming), and a built-in <strong>self-check</strong> that surfaces exactly the spots a domain expert needs to verify. You get a usable draft <em>and</em> a map of where to fact-check it.
 </div>
 
 ## Prompting moves to try

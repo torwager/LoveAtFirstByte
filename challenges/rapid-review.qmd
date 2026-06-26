@@ -4,62 +4,79 @@ subtitle: "A 2-page evidence brief with real references, built in minutes."
 description: "Use search-grounded AI to answer a hard pain-neuroscience question, then verify every citation before you trust it."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-rapid-review" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <filter id="glow-rr" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <!-- magnifying glass scanning a document -->
-  <g opacity="0.9">
-    <!-- document pages -->
-    <rect x="80" y="40" width="150" height="140" rx="10" fill="#141a30" stroke="#273258" stroke-width="1.5"/>
-    <rect x="100" y="28" width="150" height="140" rx="10" fill="#0e1530" stroke="url(#g-rapid-review)" stroke-width="1.5"/>
-    <line x1="118" y1="56" x2="232" y2="56" stroke="#9aa6c7" stroke-width="3" opacity="0.6"/>
-    <line x1="118" y1="74" x2="232" y2="74" stroke="#9aa6c7" stroke-width="3" opacity="0.45"/>
-    <line x1="118" y1="92" x2="210" y2="92" stroke="#9aa6c7" stroke-width="3" opacity="0.45"/>
-    <line x1="118" y1="120" x2="232" y2="120" stroke="#22d3ee" stroke-width="3" opacity="0.7"/>
-    <line x1="118" y1="138" x2="200" y2="138" stroke="#ff4d8d" stroke-width="3" opacity="0.7"/>
+  <!-- LEFT: stack of research papers -->
+  <g fill="none" stroke="#94a3b8" stroke-width="2">
+    <rect x="70" y="58" width="120" height="150" rx="8"/>
+    <rect x="58" y="44" width="120" height="150" rx="8" stroke="#64748b"/>
+    <rect x="46" y="30" width="120" height="150" rx="8" fill="#ffffff" stroke="#475569"/>
+  </g>
+  <!-- text lines on the top paper -->
+  <g stroke-linecap="round">
+    <line x1="64" y1="54" x2="148" y2="54" stroke="#475569" stroke-width="3"/>
+    <line x1="64" y1="72" x2="148" y2="72" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="64" y1="88" x2="132" y2="88" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="64" y1="104" x2="148" y2="104" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="64" y1="120" x2="124" y2="120" stroke="#0891b2" stroke-width="2.5"/>
+    <line x1="64" y1="136" x2="148" y2="136" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="64" y1="152" x2="116" y2="152" stroke="#e11d6b" stroke-width="2.5"/>
   </g>
 
-  <!-- magnifying glass -->
-  <g filter="url(#glow-rr)">
-    <circle cx="250" cy="120" r="46" fill="none" stroke="url(#g-rapid-review)" stroke-width="5"/>
-    <circle cx="250" cy="120" r="46" fill="#22d3ee" opacity="0.06"/>
-    <line x1="284" y1="154" x2="324" y2="194" stroke="url(#g-rapid-review)" stroke-width="9" stroke-linecap="round"/>
-    <path d="M236 122 l10 10 l20 -24" fill="none" stroke="#36e0d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- CENTER: condensing arrow -->
+  <g>
+    <line x1="220" y1="110" x2="360" y2="110" stroke="url(#g-rapid-review)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M352 96 L378 110 L352 124" fill="none" stroke="url(#g-rapid-review)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="290" y="96" font-family="system-ui,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">DISTILL</text>
   </g>
 
-  <!-- synapse / citation network on the right -->
-  <g opacity="0.85" filter="url(#glow-rr)">
-    <line x1="430" y1="60" x2="540" y2="110" stroke="#22d3ee" stroke-width="1.5" opacity="0.5"/>
-    <line x1="540" y1="110" x2="640" y2="70" stroke="#ff4d8d" stroke-width="1.5" opacity="0.5"/>
-    <line x1="540" y1="110" x2="660" y2="160" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
-    <line x1="430" y1="60" x2="470" y2="170" stroke="#36e0d0" stroke-width="1.5" opacity="0.45"/>
-    <line x1="470" y1="170" x2="660" y2="160" stroke="#fbbf24" stroke-width="1.5" opacity="0.4"/>
-    <line x1="640" y1="70" x2="720" y2="120" stroke="#22d3ee" stroke-width="1.5" opacity="0.45"/>
-    <circle cx="430" cy="60" r="7" fill="#22d3ee"/>
-    <circle cx="540" cy="110" r="9" fill="#ff4d8d"/>
-    <circle cx="640" cy="70" r="7" fill="#fbbf24"/>
-    <circle cx="660" cy="160" r="8" fill="#8b5cf6"/>
-    <circle cx="470" cy="170" r="6" fill="#36e0d0"/>
-    <circle cx="720" cy="120" r="6" fill="#f472b6"/>
+  <!-- RIGHT: clean two-page brief -->
+  <g fill="#ffffff" stroke="#475569" stroke-width="2">
+    <rect x="430" y="34" width="150" height="152" rx="9"/>
+    <rect x="600" y="34" width="150" height="152" rx="9" stroke="#64748b"/>
+  </g>
+  <!-- page 1 content -->
+  <g stroke-linecap="round">
+    <line x1="448" y1="58" x2="540" y2="58" stroke="#475569" stroke-width="3.5"/>
+    <line x1="448" y1="78" x2="562" y2="78" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="448" y1="94" x2="562" y2="94" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="448" y1="110" x2="544" y2="110" stroke="#94a3b8" stroke-width="2.5"/>
+  </g>
+  <!-- page 1 verified citations -->
+  <g>
+    <path d="M450 134 l6 7 l11 -14" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="476" y1="134" x2="560" y2="134" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M450 158 l6 7 l11 -14" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="476" y1="158" x2="548" y2="158" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <!-- page 2 content -->
+  <g stroke-linecap="round">
+    <line x1="618" y1="58" x2="710" y2="58" stroke="#475569" stroke-width="3.5"/>
+    <line x1="618" y1="78" x2="732" y2="78" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="618" y1="94" x2="732" y2="94" stroke="#94a3b8" stroke-width="2.5"/>
+  </g>
+  <!-- page 2 verified citations -->
+  <g>
+    <path d="M620 118 l6 7 l11 -14" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="646" y1="118" x2="730" y2="118" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M620 142 l6 7 l11 -14" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="646" y1="142" x2="718" y2="142" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M620 166 l6 7 l11 -14" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="646" y1="166" x2="726" y2="166" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 
-  <!-- a few drifting accent dots -->
-  <circle cx="360" cy="50" r="3" fill="#22d3ee" opacity="0.8"/>
-  <circle cx="600" cy="40" r="3" fill="#ff4d8d" opacity="0.8"/>
-  <circle cx="700" cy="200" r="3" fill="#8b5cf6" opacity="0.8"/>
+  <!-- subtle crimson signature dot -->
+  <circle cx="757" cy="41" r="4" fill="#b91c1c"/>
 </svg>
 
-A real question, a real answer, real references — and zero hallucinated citations to embarrass you in front of your PI.
+A real question, a real answer, real references — and no hallucinated citations to walk back in front of your PI.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -76,20 +93,19 @@ That's the whole goal. How you get there — which tool, which prompt, which ord
 
 ## Why it matters
 
-This is the most common AI task in academic life that people do *badly*. You need to get oriented in an unfamiliar literature in an afternoon: a reviewer asks about a mechanism you half-know, a collaborator floats a hypothesis, a grant needs a "significance" paragraph with citations by Friday. A generic chatbot will happily write you a fluent, confident, beautifully formatted review — studded with references that do not exist.
+This is the most common AI task in academic life that people do *badly*. You need to get oriented in an unfamiliar literature in an afternoon: a reviewer asks about a mechanism you half-know, a collaborator floats a hypothesis, a grant needs a "significance" paragraph with citations by Friday. A generic chatbot will readily write you a fluent, confident, well-formatted review — studded with references that do not exist.
 
-The trap isn't using AI to read the literature. The trap is *trusting the bibliography*. The skill that separates a researcher from a chatbot is the verification loop: search-grounded retrieval, then human checking of every citation. Get that loop right and you have a genuine superpower. Get it wrong and you've put a phantom paper into a manuscript that goes to peer review.
+The trap isn't using AI to read the literature. The trap is *trusting the bibliography*. The skill that separates a researcher from a chatbot is the verification loop: search-grounded retrieval, then human checking of every citation. Get that loop right and it becomes a reliable part of your workflow. Get it wrong and you've put a phantom paper into a manuscript that goes to peer review.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
@@ -182,7 +198,7 @@ VERIFICATION LOG: __ proposed / __ verified / __ rejected</div>
 
 - **Two-tool cross-check.** Run the same question through a second search-grounded tool and keep only references both tools independently surface and that you can verify. Compare the bottom lines.
 - **Build a reusable verifier prompt.** Write a prompt that takes any AI-generated reference list and returns a per-citation verdict (exists / IDs resolve / claim supported), then test it on your own brief.
-- **Find the conflict.** Push the tool to locate a paper whose findings *contradict* your bottom line, verify it, and revise the "Uncertainties" box. A brief that admits its weak spots is a publishable one.
+- **Find the conflict.** Push the tool to locate a paper whose findings *contradict* your bottom line, verify it, and revise the "Uncertainties" box. A brief that acknowledges its weak spots is the more credible one.
 
 ---
 

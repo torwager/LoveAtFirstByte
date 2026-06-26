@@ -1,7 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Bold;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;}
+{\colortbl;\red255\green255\blue255;\red3\green45\blue153;\red18\green24\blue47;\red255\green255\blue255;
+\red18\green24\blue47;}
+{\*\expandedcolortbl;;\cssrgb\c0\c25950\c66514;\cssrgb\c8627\c12941\c24314;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c8627\c12941\c24314;}
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
@@ -25,5 +28,84 @@ Use a workflow to fan out agents to build the site. Make a plan to:\
 \
 Then execute the plan.\
 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
 \
+Yes, save a project note to memory for later work if needed.  Can you make the\
+  background of the landing page white, with the interactive "neural" pattern a blue-gray\
+  color? When you do, give me instructions on which files and lines to change myself to\
+  adjust. Also, change the tone to be just a bit more professional and just slightly less\
+  campy/punchy. Just a bit. Don't provide the facilitator guide on the site, the site is\
+  for students only. Instead, provide the guide as a separate, standalone editable\
+  document (Word docx). Include a draft email pointing students to the site and\
+  especially the AI Toolkit page, recommending that they get an account for at least one\
+  service if they don't have one and one command-line tool if they are so inclined to\
+  unlock more power (optional)  -- suggest Claude as the most powerful for advanced\
+  coding/complex projects and Gemini as the best free option (if you agree with these)\
+  but say there are options.\
+\
+Also, the images are not filled in yet, they look like black rectangles. Find appealing and attractive images for all the challenges and for the landing page and other pages. For the landing page consider something with an AI + vampire theme, perhaps schematic/minimalistic but still funny rather than campy.  Do you recommend going to another model to generate AI images, or can you handle this?\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\cf2 Option A \'97 Live preview (recommended)\
+\
+Auto-reloads as you edit files.\
+\
+cd /Users/f003vz1/Documents/GitHub/LoveAtFirstByte\
+~/.local/bin/quarto preview\
+\
+It prints a local URL \'97 open http://localhost:4848 in your browser. Press Ctrl+C in the terminal to stop.\
+\
+\uc0\u9614  Tip: you can launch it straight from this chat by typing ! ~/.local/bin/quarto preview at the prompt \'97 the output (including the URL) lands right here.\
+\
+Option B \'97 Build once, then open the file\
+\
+No server; good for a quick look.\
+\
+cd /Users/f003vz1/Documents/GitHub/LoveAtFirstByte\
+~/.local/bin/quarto render\
+open _site/index.html\
+\
+Navigation and the constellation work fine from the local file. (Re-run quarto render after any edits.)\
+\
+Make quarto available without the full path (optional, one-time)\
+\
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc\
+source ~/.zshrc\
+\
+After this, you can just type quarto preview or quarto render from the project folder in any new terminal.\
+\
+---\
+A couple of notes:\
+- The current _site/ is already built, so Option B works right now without re-rendering.\
+- After you edit theme.scss (the SCSS), you must re-render (or keep quarto preview running \'97 it recompiles automatically) to see color changes.\
+- Want me to start the preview server for you in the background and report the URL? Just say the word.\
+\
+\cf0 \
+\'97\'97\'97\'97\'97\'97\'97\
+\
+Eliminate the text "Move your cursor \'97 the network responds." on the landing page. Throughout,\
+  this is more of a collaborative activity than a competition or "challenge match", and no one\
+  "wins". Adjust language as appropriate. On the Workshop page, eliminate commentary that is\
+  unnecessary, like this: "A tight arc: a fast, inclusive opening, then two challenge matches\
+  with built-in buffers so the timing math actually closes. Total = 90 min." We don't need meta\
+  commentary. Eliminate the meta-commentary box "Why it closes." But use the formatting from\
+  that box to frame the front matter for "how a challenge match works", the paragraph starting\
+  with "Each 35-minute match...", and the intro paragraph starting with "Welcome. The premise of\
+  the next 90 minutes...".  Eliminate the meta-commentary "What we suggest you try first" and\
+  put that in the facilitator doc instead.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+In the challenges, eliminate the instructions for the facilitator, and instead put them in the facilitator document.   e.g., the following is all meta-commentary for facilitator that can be replaced with just 
+\f1\b\fs34 \cf3 \cb4 \expnd0\expndtw0\kerning0
+0:00\'96\'930:05: Challenge Introduction\'94:  \'93\cf5 \cb4 \outl0\strokewidth0 \strokec5 0:00\'960:05 \'b7 Phase 1 \'97 Frame it (5 min)
+\f2\b0 \cb1 \uc0\u8232 \cb4 Instructor demos a deliberately\'a0
+\f3\b bad prompt
+\f2\b0 \'a0live and shows the mediocre output (\uc0\u8776 2 min), reveals the GOAL (not the method), then groups do a 2-min \'93how would we attack this?\'94 brainstorm. Beat that baseline.\'94\
+\
+\cb1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
 }

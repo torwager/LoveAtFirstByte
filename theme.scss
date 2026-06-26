@@ -1,43 +1,47 @@
 /*-- scss:defaults --*/
 // ============================================================
-//  Love at First Byte — design system
-//  AI x pain-neuroscience: deep-space navy, synapse cyan,
-//  rose ("love"), violet. Crisp, modern, scholarly-but-alive.
+//  Love at First Byte — design system (LIGHT theme)
+//  Clean white canvas, blue-gray "synapse" network, with
+//  cyan / rose / violet accents and a subtle crimson nod
+//  to the AI-x-vampire motif. Restrained, professional.
 // ============================================================
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-// Palette
-$lafb-bg:        #0b1020;   // deep space navy
-$lafb-bg-2:      #0e1530;   // gradient partner
-$lafb-surface:   #141a30;   // cards
-$lafb-surface-2: #1b2342;   // raised
-$lafb-border:    #273258;
-$lafb-cyan:      #22d3ee;   // synapse
-$lafb-teal:      #36e0d0;
-$lafb-rose:      #ff4d8d;   // "love"
-$lafb-pink:      #f472b6;
-$lafb-violet:    #8b5cf6;
-$lafb-amber:     #fbbf24;
-$lafb-text:      #e6ebff;
-$lafb-muted:     #9aa6c7;
+// Palette (light)
+$lafb-bg:        #ffffff;   // page
+$lafb-bg-2:      #f6f8fc;   // soft section tint
+$lafb-surface:   #ffffff;   // cards
+$lafb-surface-2: #f4f7fc;   // raised / prompt blocks
+$lafb-border:    #e2e8f4;
+$lafb-slate:     #64748b;   // blue-gray (the network)
+$lafb-slate-2:   #94a3b8;
+$lafb-cyan:      #0891b2;   // accent / links (darkened for white bg)
+$lafb-cyan-br:   #06b6d4;
+$lafb-teal:      #0d9488;
+$lafb-rose:      #e11d6b;   // "love"
+$lafb-pink:      #db2777;
+$lafb-violet:    #7c3aed;
+$lafb-amber:     #b45309;
+$lafb-crimson:   #b91c1c;   // vampire accent (used sparingly)
+$lafb-text:      #16213e;   // ink
+$lafb-muted:     #5b6b8c;
 
-// Bootstrap/Quarto variable overrides
+// Bootstrap/Quarto overrides
 $body-bg:            $lafb-bg;
 $body-color:         $lafb-text;
 $link-color:         $lafb-cyan;
-$link-hover-color:   $lafb-teal;
+$link-hover-color:   $lafb-violet;
 $font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 $headings-font-family:   "Space Grotesk", "Inter", sans-serif;
 $headings-font-weight:   600;
 
-$navbar-bg:          rgba(11, 16, 32, 0.72);
-$code-bg:            #0c1226;
-$code-color:         #8be9fd;
+$navbar-bg:          rgba(255, 255, 255, 0.78);
+$code-bg:            #f1f5f9;
+$code-color:         #b91c1c;
 $border-color:       $lafb-border;
 
-// Quarto sidebar/navbar specifics
-$sidebar-bg:         $lafb-bg-2;
+$sidebar-bg:         #ffffff;
 $body-secondary:     $lafb-muted;
 
 /*-- scss:rules --*/
@@ -48,21 +52,25 @@ $body-secondary:     $lafb-muted;
   --lafb-surface: #{$lafb-surface};
   --lafb-surface-2: #{$lafb-surface-2};
   --lafb-border: #{$lafb-border};
+  --lafb-slate: #{$lafb-slate};
+  --lafb-slate-2: #{$lafb-slate-2};
   --lafb-cyan: #{$lafb-cyan};
+  --lafb-cyan-br: #{$lafb-cyan-br};
   --lafb-teal: #{$lafb-teal};
   --lafb-rose: #{$lafb-rose};
   --lafb-pink: #{$lafb-pink};
   --lafb-violet: #{$lafb-violet};
   --lafb-amber: #{$lafb-amber};
+  --lafb-crimson: #{$lafb-crimson};
   --lafb-text: #{$lafb-text};
   --lafb-muted: #{$lafb-muted};
 }
 
 body {
   background:
-    radial-gradient(1200px 700px at 80% -10%, rgba(139,92,246,0.18), transparent 60%),
-    radial-gradient(1000px 600px at -5% 10%, rgba(34,211,238,0.14), transparent 55%),
-    linear-gradient(180deg, $lafb-bg 0%, $lafb-bg-2 100%);
+    radial-gradient(1100px 640px at 88% -8%, rgba(124,58,237,0.06), transparent 60%),
+    radial-gradient(900px 560px at -6% 6%, rgba(8,145,178,0.06), transparent 55%),
+    $lafb-bg;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
@@ -76,39 +84,34 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 // Glassy navbar
 .navbar {
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(39,50,88,0.6);
+  border-bottom: 1px solid $lafb-border;
 }
-.navbar-title { font-family: "Space Grotesk", sans-serif; font-weight: 700; }
+.navbar-title { font-family: "Space Grotesk", sans-serif; font-weight: 700; color: $lafb-text; }
 
-// Content width
 main.content { padding-top: 1.2rem; }
 
 // ---- Reusable components -------------------------------------------------
 
-// Gradient text
 .grad-text {
-  background: linear-gradient(90deg, $lafb-cyan, $lafb-pink 60%, $lafb-violet);
+  background: linear-gradient(90deg, $lafb-cyan, $lafb-rose 55%, $lafb-violet);
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
 
-// Pill / tag
 .pill {
   display: inline-block; padding: 0.18rem 0.7rem; border-radius: 999px;
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
   border: 1px solid var(--lafb-border); color: var(--lafb-muted);
-  background: rgba(27,35,66,0.6);
+  background: #fff;
 }
-.pill.cyan  { color: #aef6ff; border-color: rgba(34,211,238,0.45);  background: rgba(34,211,238,0.10); }
-.pill.rose  { color: #ffd0e2; border-color: rgba(255,77,141,0.45);  background: rgba(255,77,141,0.10); }
-.pill.violet{ color: #ddd0ff; border-color: rgba(139,92,246,0.45);  background: rgba(139,92,246,0.12); }
-.pill.amber { color: #ffe9b3; border-color: rgba(251,191,36,0.45);  background: rgba(251,191,36,0.10); }
-.pill.teal  { color: #b6fff3; border-color: rgba(54,224,208,0.45);  background: rgba(54,224,208,0.10); }
+.pill.cyan  { color: #0e7490; border-color: rgba(8,145,178,0.35);  background: rgba(8,145,178,0.08); }
+.pill.rose  { color: #be185d; border-color: rgba(225,29,107,0.35); background: rgba(225,29,107,0.07); }
+.pill.violet{ color: #6d28d9; border-color: rgba(124,58,237,0.35); background: rgba(124,58,237,0.07); }
+.pill.amber { color: #92400e; border-color: rgba(180,83,9,0.35);   background: rgba(180,83,9,0.07); }
+.pill.teal  { color: #0f766e; border-color: rgba(13,148,136,0.35); background: rgba(13,148,136,0.07); }
 
-// Meta row used on challenge pages
 .meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.2rem; }
 
-// Cards & grid
 .card-grid {
   display: grid; gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -117,59 +120,53 @@ main.content { padding-top: 1.2rem; }
 .lafb-card {
   position: relative; display: block; padding: 1.1rem 1.2rem;
   border: 1px solid var(--lafb-border); border-radius: 16px;
-  background: linear-gradient(180deg, rgba(27,35,66,0.55), rgba(20,26,48,0.55));
-  color: var(--lafb-text); overflow: hidden;
+  background: #fff; color: var(--lafb-text); overflow: hidden;
+  box-shadow: 0 1px 2px rgba(22,33,62,0.04);
   transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
 .lafb-card:hover {
   transform: translateY(-3px); text-decoration: none;
-  border-color: rgba(34,211,238,0.5);
-  box-shadow: 0 12px 40px -16px rgba(34,211,238,0.45);
+  border-color: rgba(8,145,178,0.5);
+  box-shadow: 0 16px 40px -20px rgba(8,145,178,0.45);
 }
 .lafb-card h3 { margin: 0.2rem 0 0.35rem; font-size: 1.08rem; }
 .lafb-card p  { margin: 0; color: var(--lafb-muted); font-size: 0.92rem; }
 .lafb-card .card-svg { width: 100%; height: 96px; margin-bottom: 0.4rem; }
 .lafb-card .card-num { position: absolute; top: 0.6rem; right: 0.9rem;
   font-family: "Space Grotesk"; font-weight: 700; font-size: 1.5rem;
-  color: rgba(255,255,255,0.10); }
+  color: rgba(22,33,62,0.06); }
 
-// Callouts (timing / tip / ethics) — extends Quarto callouts subtly
 .callout { border-radius: 14px !important; }
 
-// Custom labelled boxes
 .box {
   border: 1px solid var(--lafb-border); border-left-width: 4px;
   border-radius: 12px; padding: 0.9rem 1.1rem; margin: 1rem 0;
-  background: rgba(20,26,48,0.5);
+  background: var(--lafb-surface-2);
 }
 .box .box-label { font-family: "Space Grotesk"; font-weight: 700;
   font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
   display: block; margin-bottom: 0.35rem; }
-.box.goal   { border-left-color: var(--lafb-cyan); }   .box.goal .box-label   { color: var(--lafb-cyan); }
-.box.tip    { border-left-color: var(--lafb-teal); }   .box.tip .box-label    { color: var(--lafb-teal); }
-.box.bad    { border-left-color: var(--lafb-rose); }   .box.bad .box-label    { color: var(--lafb-pink); }
-.box.good   { border-left-color: var(--lafb-violet); } .box.good .box-label   { color: var(--lafb-violet); }
-.box.ethics { border-left-color: var(--lafb-amber); }  .box.ethics .box-label { color: var(--lafb-amber); }
+.box.goal   { border-left-color: var(--lafb-cyan); }    .box.goal .box-label   { color: var(--lafb-cyan); }
+.box.tip    { border-left-color: var(--lafb-teal); }    .box.tip .box-label    { color: var(--lafb-teal); }
+.box.bad    { border-left-color: var(--lafb-rose); }    .box.bad .box-label    { color: var(--lafb-pink); }
+.box.good   { border-left-color: var(--lafb-violet); }  .box.good .box-label   { color: var(--lafb-violet); }
+.box.ethics { border-left-color: var(--lafb-amber); }   .box.ethics .box-label { color: var(--lafb-amber); }
 
-// Prompt blocks
 .prompt {
   font-family: "Inter", sans-serif; font-size: 0.92rem; line-height: 1.5;
-  background: #0c1226; border: 1px solid var(--lafb-border);
-  border-radius: 10px; padding: 0.8rem 1rem; margin: 0.5rem 0; color: #cfe3ff;
+  background: #fff; border: 1px solid var(--lafb-border);
+  border-radius: 10px; padding: 0.8rem 1rem; margin: 0.5rem 0; color: #233;
 }
 
-// Timeline (phase timing)
 .timeline { list-style: none; padding-left: 0; margin: 1rem 0; }
 .timeline li { position: relative; padding: 0.4rem 0 0.9rem 1.6rem;
   border-left: 2px solid var(--lafb-border); }
 .timeline li::before { content: ""; position: absolute; left: -7px; top: 0.7rem;
   width: 12px; height: 12px; border-radius: 50%;
-  background: var(--lafb-cyan); box-shadow: 0 0 12px var(--lafb-cyan); }
+  background: var(--lafb-cyan); box-shadow: 0 0 0 4px rgba(8,145,178,0.12); }
 .timeline li .t { font-family: "Space Grotesk"; font-weight: 700; color: var(--lafb-text); }
 
-// Tables a touch nicer
 table { border-color: var(--lafb-border) !important; }
 thead th { color: var(--lafb-text); border-bottom: 2px solid var(--lafb-border) !important; }
 
-// Footer
 .nav-footer { border-top: 1px solid var(--lafb-border); color: var(--lafb-muted); }

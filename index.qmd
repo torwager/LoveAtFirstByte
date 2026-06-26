@@ -15,11 +15,40 @@ anchor-sections: false
 <canvas id="constellation" aria-hidden="true"></canvas>
 
 ::: {.lafb-hero-inner}
+<svg class="lafb-vamp" viewBox="0 0 120 128" role="img" aria-label="A friendly schematic vampire AI">
+  <defs>
+    <linearGradient id="vamp-collar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+  <!-- circuit antenna (the "AI") -->
+  <line x1="60" y1="20" x2="60" y2="34" stroke="#64748b" stroke-width="2.4"/>
+  <circle cx="60" cy="16" r="5" fill="#06b6d4"/>
+  <line x1="24" y1="58" x2="10" y2="52" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="8" cy="51" r="3.2" fill="#64748b"/>
+  <line x1="96" y1="58" x2="110" y2="52" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="112" cy="51" r="3.2" fill="#64748b"/>
+  <!-- head -->
+  <rect x="24" y="34" width="72" height="58" rx="22" fill="#ffffff" stroke="#475569" stroke-width="3"/>
+  <!-- widow's-peak hairline, a subtle vampire nod -->
+  <path d="M30 46 Q60 30 90 46" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <!-- eyes: one is an AI node -->
+  <circle cx="46" cy="60" r="5.2" fill="#0891b2"/>
+  <circle cx="74" cy="60" r="4" fill="#475569"/>
+  <!-- gentle smile + two little fangs -->
+  <path d="M46 74 Q60 84 74 74" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 78 l3 7 l3 -7 z" fill="#e11d6b"/>
+  <path d="M62 78 l3 7 l3 -7 z" fill="#e11d6b"/>
+  <!-- cape collar -->
+  <path d="M30 92 L60 110 L42 112 Z" fill="url(#vamp-collar)" opacity="0.9"/>
+  <path d="M90 92 L60 110 L78 112 Z" fill="url(#vamp-collar)" opacity="0.9"/>
+</svg>
+
 <div class="lafb-eyebrow">NAPS · AI for Academia · 2026</div>
 
 <h1 class="lafb-title">Love at First <span class="grad-text">Byte</span></h1>
 
-<p class="lafb-sub">A hands-on workshop on using AI in pain science &amp; academia. In the era of AI, answers are cheap — it’s <em>judgment</em> that’s expensive. Come build yours.</p>
+<p class="lafb-sub">A hands-on workshop on using AI in pain science and academia — because in the era of AI, answers have become cheap, and it’s <em>judgment</em> that is expensive.</p>
 
 <div class="lafb-cta">
   <a class="btn-lafb btn-primary-lafb" href="intro/overview.qmd">Start the Workshop →</a>
@@ -27,7 +56,6 @@ anchor-sections: false
 </div>
 :::
 
-<div class="lafb-hint">move your cursor — the network responds ✨</div>
 :::
 
 ::: {.lafb-section}
@@ -39,24 +67,20 @@ anchor-sections: false
 
 ::: {.lafb-section}
 ## What you’ll do {.text-center}
-<p class="lead">Two fast-paced AI Challenge Matches. You bring the research questions; AI brings the horsepower; the room brings the judgment.</p>
+<p class="lead">Two timed, collaborative AI challenges. You bring the research questions, AI brings the speed, and the room supplies the judgment.</p>
 
 ::: {.card-grid}
 <a class="lafb-card" href="intro/overview.qmd">
 <h3>🗺️ The Format</h3>
-<p>A 90-minute arc: a quick intro, then two timed challenges run as friendly matches. See the schedule and the rules of play.</p>
+<p>A 90-minute arc: a brief intro, then two timed challenges you tackle with your table. See the schedule and how each one works.</p>
 </a>
 <a class="lafb-card" href="intro/tools.qmd">
 <h3>🧰 The AI Toolkit</h3>
-<p>Best free tools for beginners (chat apps) and power users (Claude Code, Codex, Gemini CLI) — with setup links.</p>
+<p>The best free tools for beginners (chat apps) and for power users (Claude Code, Codex, Gemini CLI) — with setup links.</p>
 </a>
 <a class="lafb-card" href="challenges/index.qmd">
 <h3>⚡ The Challenges</h3>
-<p>From rescuing an ugly figure to drafting a rebuttal to auditing your own grant. Pick your match.</p>
-</a>
-<a class="lafb-card" href="facilitation/facilitator-guide.qmd">
-<h3>🎤 For Facilitators</h3>
-<p>Run-of-show, timing scripts, the “bad-prompt” demo, debrief prompts, and the ethics moment.</p>
+<p>From rescuing an unreadable figure to drafting a rebuttal to auditing your own grant — choose where to start.</p>
 </a>
 :::
 :::
@@ -64,7 +88,7 @@ anchor-sections: false
 ::: {.lafb-section}
 <div class="stat-strip">
   <div class="stat"><div class="num">90</div><div class="lbl">minutes</div></div>
-  <div class="stat"><div class="num">2</div><div class="lbl">challenge matches</div></div>
+  <div class="stat"><div class="num">2</div><div class="lbl">collaborative challenges</div></div>
   <div class="stat"><div class="num">14</div><div class="lbl">challenges to choose from</div></div>
   <div class="stat"><div class="num">$0</div><div class="lbl">free tools, no subscription</div></div>
 </div>

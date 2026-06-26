@@ -4,58 +4,56 @@ subtitle: "Reviewer 2 was brutal. Draft the response that wins the day."
 description: "Turn a scorched-earth peer review into a calm, surgical, point-by-point response — with AI as your adversarial pre-reviewer."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-the-rebuttal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <filter id="glow-the-rebuttal" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <marker id="arrow-the-rebuttal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="url(#g-the-rebuttal)"/>
+    </marker>
   </defs>
 
-  <!-- left: the harsh review, jagged strike-throughs -->
-  <g opacity="0.9" filter="url(#glow-the-rebuttal)">
-    <rect x="60" y="44" width="190" height="132" rx="10" fill="#0b1020" stroke="#ff4d8d" stroke-opacity="0.55"/>
-    <line x1="80" y1="70" x2="230" y2="70" stroke="#ff4d8d" stroke-width="3" opacity="0.85"/>
-    <line x1="80" y1="92" x2="210" y2="92" stroke="#ff4d8d" stroke-width="3" opacity="0.7"/>
-    <line x1="80" y1="114" x2="225" y2="114" stroke="#ff4d8d" stroke-width="3" opacity="0.85"/>
-    <line x1="80" y1="136" x2="200" y2="136" stroke="#ff4d8d" stroke-width="3" opacity="0.6"/>
-    <line x1="74" y1="60" x2="236" y2="148" stroke="#f472b6" stroke-width="2.5" opacity="0.7"/>
+  <!-- left: the marked-up manuscript with red critique strikes -->
+  <g>
+    <rect x="58" y="36" width="200" height="148" rx="10" fill="#ffffff" stroke="#94a3b8"/>
+    <line x1="80" y1="64" x2="236" y2="64" stroke="#64748b" stroke-width="3"/>
+    <line x1="80" y1="86" x2="220" y2="86" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="80" y1="108" x2="236" y2="108" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="80" y1="130" x2="210" y2="130" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="80" y1="152" x2="228" y2="152" stroke="#94a3b8" stroke-width="3"/>
+    <!-- critique strikes / comments -->
+    <line x1="76" y1="86" x2="224" y2="86" stroke="#e11d6b" stroke-width="2.5"/>
+    <line x1="76" y1="130" x2="214" y2="130" stroke="#e11d6b" stroke-width="2.5"/>
+    <path d="M232 96 l16 -8 l-2 9 l8 4 l-18 9 z" fill="none" stroke="#e11d6b" stroke-width="2"/>
+    <text x="244" y="62" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#e11d6b">?</text>
   </g>
 
-  <!-- middle: synapse / transformation arc -->
-  <g filter="url(#glow-the-rebuttal)">
-    <path d="M260 110 C 360 40, 440 180, 540 110" fill="none" stroke="url(#g-the-rebuttal)" stroke-width="4" opacity="0.95"/>
-    <circle cx="300" cy="78" r="5" fill="#22d3ee"/>
-    <circle cx="400" cy="110" r="6" fill="#fbbf24"/>
-    <circle cx="500" cy="142" r="5" fill="#36e0d0"/>
-    <circle cx="400" cy="110" r="14" fill="none" stroke="#fbbf24" stroke-opacity="0.4"/>
+  <!-- center: arrow from critique to response -->
+  <line x1="270" y1="110" x2="528" y2="110" stroke="url(#g-the-rebuttal)" stroke-width="4" marker-end="url(#arrow-the-rebuttal)"/>
+
+  <!-- right: the calm, structured point-by-point response -->
+  <g>
+    <rect x="540" y="36" width="202" height="148" rx="10" fill="#ffffff" stroke="#475569"/>
+    <circle cx="564" cy="64" r="4" fill="#0891b2"/>
+    <line x1="580" y1="64" x2="722" y2="64" stroke="#475569" stroke-width="2.5"/>
+    <line x1="580" y1="76" x2="700" y2="76" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="564" cy="100" r="4" fill="#7c3aed"/>
+    <line x1="580" y1="100" x2="722" y2="100" stroke="#475569" stroke-width="2.5"/>
+    <line x1="580" y1="112" x2="694" y2="112" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="564" cy="136" r="4" fill="#e11d6b"/>
+    <line x1="580" y1="136" x2="722" y2="136" stroke="#475569" stroke-width="2.5"/>
+    <line x1="580" y1="148" x2="708" y2="148" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="580" y1="166" x2="688" y2="166" stroke="#94a3b8" stroke-width="2"/>
   </g>
 
-  <!-- right: the composed, ordered response -->
-  <g opacity="0.95" filter="url(#glow-the-rebuttal)">
-    <rect x="550" y="44" width="190" height="132" rx="10" fill="#0b1020" stroke="#22d3ee" stroke-opacity="0.6"/>
-    <circle cx="572" cy="68" r="4" fill="#36e0d0"/>
-    <line x1="586" y1="68" x2="720" y2="68" stroke="#22d3ee" stroke-width="2.5" opacity="0.85"/>
-    <circle cx="572" cy="96" r="4" fill="#36e0d0"/>
-    <line x1="586" y1="96" x2="710" y2="96" stroke="#22d3ee" stroke-width="2.5" opacity="0.7"/>
-    <circle cx="572" cy="124" r="4" fill="#36e0d0"/>
-    <line x1="586" y1="124" x2="722" y2="124" stroke="#22d3ee" stroke-width="2.5" opacity="0.85"/>
-    <circle cx="572" cy="152" r="4" fill="#36e0d0"/>
-    <line x1="586" y1="152" x2="700" y2="152" stroke="#22d3ee" stroke-width="2.5" opacity="0.7"/>
-  </g>
-
-  <!-- accent dots -->
-  <circle cx="120" cy="30" r="3" fill="#8b5cf6" opacity="0.8"/>
-  <circle cx="680" cy="194" r="3" fill="#ff4d8d" opacity="0.8"/>
-  <circle cx="400" cy="40" r="2.5" fill="#22d3ee" opacity="0.8"/>
+  <!-- subtle crimson signature dot -->
+  <circle cx="248" cy="46" r="3" fill="#b91c1c"/>
 </svg>
 
-You opened the decision email, scrolled to Reviewer 2, and felt your stomach drop — now let's turn that gut-punch into the most persuasive paragraph you'll write all year.
+You opened the decision email, scrolled to Reviewer 2, and felt your heart sink. This challenge is about turning that moment into one of the most persuasive documents you'll write as a researcher.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -67,24 +65,23 @@ You opened the decision email, scrolled to Reviewer 2, and felt your stomach dro
 ## The goal
 
 <div class="box goal"><span class="box-label">The Goal</span>
-You're holding a harsh-but-fair peer review of a (fictional) pain-imaging manuscript. Your team's job: produce a <strong>point-by-point response letter</strong> that an editor would read and think, "These authors are reasonable, rigorous, and worth publishing." It must concede what's genuinely wrong, defend what's genuinely defensible, and stay unfailingly professional even where the reviewer was not. Win the reviewer over without groveling, and without picking a fight. How you get there is up to you.
+You're holding a harsh-but-fair peer review of a (fictional) pain-imaging manuscript. Your team's job: produce a <strong>point-by-point response letter</strong> that an editor would read and think, "These authors are reasonable, rigorous, and worth publishing." It must concede what's genuinely wrong, defend what's genuinely defensible, and stay unfailingly professional even where the reviewer was not. Bring the reviewer around without groveling, and without picking a fight. How you get there is up to you.
 </div>
 
 ## Why it matters
 
-Peer review is the daily weather of academic life, and the response-to-reviewers letter is one of the highest-leverage documents you will ever write — a strong one can flip a "reject" to "accept," and a defensive one can sink a salvageable paper. Yet almost no graduate program teaches it. In pain science especially, reviewers come from clashing camps (the fMRI skeptics, the QST purists, the clinical-translation hawks), so a single manuscript can draw critiques that pull in opposite directions. Learning to triage criticism, separate the fixable from the fatal, and write back with calm authority is a career skill. AI is unusually good here: it never takes the review personally, it can role-play a hostile reviewer to stress-test your rebuttal before the editor does, and it can help you find the gracious phrasing when you're still too annoyed to find it yourself.
+Peer review is a constant of academic life, and the response-to-reviewers letter is one of the highest-leverage documents you will write — a strong one can move a paper from "reject" to "accept," and a defensive one can sink a salvageable manuscript. Yet almost no graduate program teaches it. In pain science especially, reviewers come from different traditions (fMRI skeptics, QST purists, clinical-translation advocates), so a single manuscript can draw critiques that pull in opposite directions. Learning to triage criticism, separate the fixable from the fatal, and write back with calm authority is a lasting career skill. AI is well suited to help here: it never takes the review personally, it can role-play a skeptical reviewer to stress-test your rebuttal before the editor does, and it can help you find gracious phrasing when you're still too annoyed to find it yourself.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
 
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 

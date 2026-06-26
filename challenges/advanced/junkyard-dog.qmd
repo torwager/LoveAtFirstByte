@@ -4,75 +4,77 @@ subtitle: "Sniff out open pain datasets, fetch them, and wire them together with
 description: "An agentic challenge: search for open pain-science datasets, inspect their schemas, download them, and harmonize them into one analyzable table."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-junkyard-dog" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <radialGradient id="g-junkyard-dog-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- soft glow blooms -->
-  <circle cx="150" cy="110" r="90" fill="url(#g-junkyard-dog-glow)"/>
-  <circle cx="650" cy="110" r="90" fill="url(#g-junkyard-dog-glow)"/>
-
-  <!-- scattered "junkyard" of source tables, askew -->
-  <g opacity="0.85" stroke="#36e0d0" stroke-width="1.6" fill="none">
-    <g transform="rotate(-12 130 70)">
-      <rect x="90" y="42" width="80" height="56" rx="6" fill="#0e1530"/>
-      <line x1="90" y1="58" x2="170" y2="58"/>
-      <line x1="116" y1="42" x2="116" y2="98"/>
+  <!-- scattered, mismatched source dataset chips, askew -->
+  <g fill="#ffffff" stroke="#94a3b8" stroke-width="1.4">
+    <g transform="rotate(-11 130 70)">
+      <rect x="90" y="42" width="82" height="56" rx="6"/>
+      <line x1="90" y1="59" x2="172" y2="59" stroke="#0891b2"/>
+      <line x1="117" y1="42" x2="117" y2="98"/>
+      <line x1="90" y1="78" x2="172" y2="78" stroke="#cbd5e1"/>
     </g>
-    <g transform="rotate(9 150 160)" stroke="#fbbf24">
-      <rect x="110" y="132" width="84" height="58" rx="6" fill="#0e1530"/>
-      <line x1="110" y1="150" x2="194" y2="150"/>
-      <line x1="138" y1="132" x2="138" y2="190"/>
+    <g transform="rotate(8 150 162)">
+      <rect x="108" y="134" width="86" height="58" rx="6"/>
+      <line x1="108" y1="152" x2="194" y2="152" stroke="#e11d6b"/>
+      <line x1="137" y1="134" x2="137" y2="192"/>
+      <line x1="108" y1="172" x2="194" y2="172" stroke="#cbd5e1"/>
     </g>
-    <g transform="rotate(-6 250 110)" stroke="#f472b6">
-      <rect x="208" y="80" width="84" height="60" rx="6" fill="#0e1530"/>
-      <line x1="208" y1="98" x2="292" y2="98"/>
-      <line x1="236" y1="80" x2="236" y2="140"/>
+    <g transform="rotate(-5 250 110)">
+      <rect x="206" y="80" width="86" height="60" rx="6"/>
+      <line x1="206" y1="99" x2="292" y2="99" stroke="#7c3aed"/>
+      <line x1="235" y1="80" x2="235" y2="140"/>
+      <line x1="206" y1="120" x2="292" y2="120" stroke="#cbd5e1"/>
     </g>
   </g>
 
-  <!-- synapse lines flowing toward the unified table -->
-  <g stroke="url(#g-junkyard-dog)" stroke-width="2.2" fill="none" opacity="0.9">
-    <path d="M180 90 C 320 70, 420 100, 540 110"/>
-    <path d="M210 150 C 340 150, 430 130, 540 120"/>
-    <path d="M280 100 C 380 100, 460 110, 540 115"/>
+  <!-- harmonizing code/brace glyphs in the middle -->
+  <g fill="none" stroke="#475569" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M372 84 q -12 0 -12 14 0 12 -12 12 12 0 12 12 0 14 12 14"/>
+    <path d="M452 84 q 12 0 12 14 0 12 12 12 -12 0 -12 12 0 14 -12 14"/>
+  </g>
+  <g fill="#64748b">
+    <circle cx="412" cy="100" r="2.4"/>
+    <circle cx="412" cy="112" r="2.4"/>
+    <circle cx="412" cy="124" r="2.4"/>
   </g>
 
-  <!-- the harmonized output table, glowing -->
+  <!-- flow lines from scattered chips toward the unified table -->
+  <g stroke="url(#g-junkyard-dog)" stroke-width="2.2" fill="none" opacity="0.85">
+    <path d="M180 90 C 300 72, 330 100, 360 104"/>
+    <path d="M210 152 C 320 152, 335 124, 360 118"/>
+    <path d="M464 108 C 510 108, 520 112, 540 114"/>
+  </g>
+
+  <!-- the harmonized, tidy unified output table -->
   <g>
-    <rect x="540" y="64" width="150" height="96" rx="10" fill="#0e1530" stroke="url(#g-junkyard-dog)" stroke-width="2.6"/>
-    <line x1="540" y1="88" x2="690" y2="88" stroke="#22d3ee" stroke-width="1.6"/>
-    <line x1="540" y1="112" x2="690" y2="112" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-    <line x1="540" y1="136" x2="690" y2="136" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-    <line x1="590" y1="64" x2="590" y2="160" stroke="#36e0d0" stroke-width="1.2" opacity="0.7"/>
-    <line x1="640" y1="64" x2="640" y2="160" stroke="#36e0d0" stroke-width="1.2" opacity="0.7"/>
+    <rect x="540" y="62" width="156" height="100" rx="10" fill="#ffffff" stroke="#475569" stroke-width="2.2"/>
+    <rect x="540" y="62" width="156" height="22" rx="10" fill="#eef3fb"/>
+    <line x1="540" y1="84" x2="696" y2="84" stroke="#0891b2" stroke-width="2"/>
+    <line x1="540" y1="110" x2="696" y2="110" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="540" y1="136" x2="696" y2="136" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="592" y1="62" x2="592" y2="162" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="644" y1="62" x2="644" y2="162" stroke="#cbd5e1" stroke-width="1.2"/>
   </g>
 
-  <!-- accent dots / nodes -->
-  <circle cx="180" cy="90" r="4" fill="#22d3ee"/>
-  <circle cx="210" cy="150" r="4" fill="#ff4d8d"/>
-  <circle cx="280" cy="100" r="4" fill="#fbbf24"/>
-  <circle cx="540" cy="115" r="5" fill="#36e0d0"/>
-  <circle cx="724" cy="56" r="3" fill="#f472b6"/>
-  <circle cx="86" cy="176" r="3" fill="#8b5cf6"/>
+  <!-- accent nodes -->
+  <circle cx="180" cy="90" r="4" fill="#0891b2"/>
+  <circle cx="210" cy="152" r="4" fill="#e11d6b"/>
+  <circle cx="280" cy="100" r="4" fill="#7c3aed"/>
+  <circle cx="540" cy="114" r="4.5" fill="#0891b2"/>
 
-  <!-- a sniffing nose / paw glyph hint, abstract -->
-  <g opacity="0.55" fill="none" stroke="#ff4d8d" stroke-width="2">
-    <path d="M735 150 q 10 -14 22 0"/>
-    <circle cx="746" cy="150" r="3" fill="#ff4d8d" stroke="none"/>
-  </g>
+  <!-- subtle crimson signature dot -->
+  <circle cx="688" cy="156" r="3" fill="#b91c1c"/>
 </svg>
 
-Turn the AI loose on the open web, make it fetch real data, and watch it stitch three messy tables into one you can actually analyze.
+Point the agent at the open web, have it fetch real data, and guide it as it stitches several messy tables into one you can actually analyze.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -90,25 +92,24 @@ Produce <strong>one tidy table</strong> that combines self-reported pain ratings
 
 ## Why it matters
 
-Pain has no biomarker, so the field runs on self-report, and that self-report is scattered across a hundred incompatible spreadsheets: one study codes sex as `1/2`, another as `M/F`; one measures pain on a 0-100 VAS, the next on a 0-10 NRS, the next on the McGill. Half the labor of any meta-analysis, secondary analysis, or "let me just check whether this replicates" is the unglamorous reconciliation work, and it is exactly the kind of multi-step, schema-wrangling drudgery that agentic tools are weirdly good at. If the AI can find the data, read the data dictionary, and write the harmonization code while you supervise, you just compressed a two-week side quest into an afternoon. Get this skill and you stop being blocked on "I wish someone had already merged these."
+Pain has no biomarker, so the field runs on self-report, and that self-report is scattered across a hundred incompatible spreadsheets: one study codes sex as `1/2`, another as `M/F`; one measures pain on a 0-100 VAS, the next on a 0-10 NRS, the next on the McGill. Half the labor of any meta-analysis, secondary analysis, or "let me just check whether this replicates" is the unglamorous reconciliation work, and it is exactly the kind of multi-step, schema-wrangling task that agentic tools handle well. If the AI can find the data, read the data dictionary, and write the harmonization code while you supervise, a job that used to take days can fit into an afternoon. Build this skill and you stop being blocked on "I wish someone had already merged these."
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
 <div class="box bad">
 <span class="box-label">Weak prompt</span>
 <div class="prompt">Find some open pain datasets and merge them into one table.</div>
-The agent grabs the first two CSVs it can find, concatenates columns with mismatched names, silently drops rows where a join key is missing, leaves three different pain scales side by side as if they were comparable, and reports "Done! Merged successfully." You have no idea where any number came from, the scales are incommensurable, and the "merge" is a pile.
+The agent grabs the first two CSVs it can find, concatenates columns with mismatched names, silently drops rows where a join key is missing, leaves three different pain scales side by side as if they were comparable, and reports "Merged successfully." You have no idea where any number came from, the scales are incommensurable, and the "merge" is unusable.
 </div>
 
 <div class="box good">

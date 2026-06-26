@@ -4,61 +4,71 @@ subtitle: "A surprising null result walks in. Spin up five testable mechanisms."
 description: "A core live challenge: hand the AI a baffling pain-science null result and race to generate five testable mechanistic hypotheses, then stress-test them for feasibility and a discriminating experiment."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258" role="img" aria-label="A roulette wheel of glowing hypotheses radiating from a flat null-result line">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4" role="img" aria-label="A roulette wheel whose pointer radiates five branching hypothesis paths from a central null-result point">
   <defs>
     <linearGradient id="g-hypothesis-roulette" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <radialGradient id="g-hr-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- soft glow behind the wheel -->
-  <circle cx="250" cy="110" r="120" fill="url(#g-hr-glow)"/>
+  <!-- flat "null" baseline -->
+  <line x1="40" y1="110" x2="760" y2="110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 8"/>
+  <text x="628" y="100" fill="#64748b" font-family="ui-sans-serif,system-ui" font-size="13">expected effect</text>
+  <text x="646" y="150" fill="#0891b2" font-family="ui-sans-serif,system-ui" font-size="13">observed: ~0</text>
 
-  <!-- the flat "null" baseline cutting across the panel -->
-  <line x1="40" y1="110" x2="760" y2="110" stroke="#9aa6c7" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
-  <text x="630" y="100" fill="#9aa6c7" font-family="ui-sans-serif,system-ui" font-size="13" opacity="0.8">expected effect</text>
-  <text x="648" y="148" fill="#36e0d0" font-family="ui-sans-serif,system-ui" font-size="13">observed: ~0</text>
-
-  <!-- roulette wheel of hypotheses: spokes radiating from a hub -->
-  <g stroke="url(#g-hypothesis-roulette)" stroke-width="2.5" fill="none" opacity="0.9">
-    <line x1="250" y1="110" x2="250" y2="20"/>
-    <line x1="250" y1="110" x2="335" y2="55"/>
-    <line x1="250" y1="110" x2="355" y2="155"/>
-    <line x1="250" y1="110" x2="170" y2="180"/>
-    <line x1="250" y1="110" x2="150" y2="60"/>
+  <!-- roulette wheel rim and tick marks -->
+  <circle cx="250" cy="110" r="92" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+  <g stroke="#94a3b8" stroke-width="1.5">
+    <line x1="250" y1="18" x2="250" y2="30"/>
+    <line x1="342" y1="110" x2="330" y2="110"/>
+    <line x1="250" y1="202" x2="250" y2="190"/>
+    <line x1="158" y1="110" x2="170" y2="110"/>
+    <line x1="315" y1="45" x2="307" y2="53"/>
+    <line x1="315" y1="175" x2="307" y2="167"/>
+    <line x1="185" y1="175" x2="193" y2="167"/>
+    <line x1="185" y1="45" x2="193" y2="53"/>
   </g>
 
-  <!-- hypothesis nodes at the spoke ends -->
-  <g font-family="ui-sans-serif,system-ui" font-size="14" font-weight="600" fill="#0b1020">
-    <circle cx="250" cy="20" r="15" fill="#22d3ee"/><text x="250" y="25" text-anchor="middle">1</text>
-    <circle cx="335" cy="55" r="15" fill="#36e0d0"/><text x="335" y="60" text-anchor="middle">2</text>
-    <circle cx="355" cy="155" r="15" fill="#ff4d8d"/><text x="355" y="160" text-anchor="middle">3</text>
-    <circle cx="170" cy="180" r="15" fill="#f472b6"/><text x="170" y="185" text-anchor="middle">4</text>
-    <circle cx="150" cy="60" r="15" fill="#8b5cf6"/><text x="150" y="65" text-anchor="middle">5</text>
+  <!-- five branching hypothesis paths radiating from the hub -->
+  <g stroke="url(#g-hypothesis-roulette)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 110 L250 36 M250 60 L228 44 M250 60 L272 44"/>
+    <path d="M250 110 L322 62 M300 76 L296 50 M300 76 L324 84"/>
+    <path d="M250 110 L334 150 M308 138 L300 162 M308 138 L332 124"/>
+    <path d="M250 110 L182 174 M204 152 L178 152 M204 152 L196 176"/>
+    <path d="M250 110 L168 66 M194 80 L188 54 M194 80 L168 88"/>
   </g>
 
-  <!-- the central hub: where the null sits -->
-  <circle cx="250" cy="110" r="22" fill="#0b1020" stroke="url(#g-hypothesis-roulette)" stroke-width="3"/>
-  <text x="250" y="115" text-anchor="middle" fill="#e6ebff" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="700">H0?</text>
+  <!-- hypothesis nodes at the branch ends -->
+  <g font-family="ui-sans-serif,system-ui" font-size="14" font-weight="700" fill="#ffffff">
+    <circle cx="250" cy="36" r="14" fill="#0891b2"/><text x="250" y="41" text-anchor="middle">1</text>
+    <circle cx="322" cy="62" r="14" fill="#475569"/><text x="322" y="67" text-anchor="middle">2</text>
+    <circle cx="334" cy="150" r="14" fill="#e11d6b"/><text x="334" y="155" text-anchor="middle">3</text>
+    <circle cx="182" cy="174" r="14" fill="#64748b"/><text x="182" y="179" text-anchor="middle">4</text>
+    <circle cx="168" cy="66" r="14" fill="#7c3aed"/><text x="168" y="71" text-anchor="middle">5</text>
+  </g>
 
-  <!-- discriminating-experiment arrow pointing out of the wheel -->
-  <g opacity="0.95">
-    <line x1="430" y1="110" x2="560" y2="110" stroke="#fbbf24" stroke-width="3"/>
-    <polygon points="560,110 548,103 548,117" fill="#fbbf24"/>
-    <text x="430" y="92" fill="#fbbf24" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600">discriminating test</text>
+  <!-- central hub: the null sits here -->
+  <circle cx="250" cy="110" r="22" fill="#ffffff" stroke="url(#g-hypothesis-roulette)" stroke-width="3"/>
+  <text x="250" y="115" text-anchor="middle" fill="#475569" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="700">H0?</text>
+
+  <!-- pointer / spinner indicating the central point -->
+  <polygon points="250,72 244,88 256,88" fill="#475569"/>
+
+  <!-- discriminating-experiment arrow -->
+  <g>
+    <line x1="430" y1="110" x2="560" y2="110" stroke="#7c3aed" stroke-width="2.5"/>
+    <polygon points="560,110 548,103 548,117" fill="#7c3aed"/>
+    <text x="430" y="94" fill="#7c3aed" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600">discriminating test</text>
   </g>
 
   <!-- accent dots -->
-  <circle cx="700" cy="55" r="3" fill="#22d3ee"/>
-  <circle cx="730" cy="180" r="3" fill="#ff4d8d"/>
-  <circle cx="90" cy="150" r="3" fill="#8b5cf6"/>
-  <circle cx="610" cy="190" r="3" fill="#36e0d0"/>
+  <circle cx="700" cy="55" r="3" fill="#0891b2"/>
+  <circle cx="730" cy="180" r="3" fill="#e11d6b"/>
+  <circle cx="90" cy="150" r="3" fill="#7c3aed"/>
+  <!-- crimson signature dot -->
+  <circle cx="612" cy="190" r="3.5" fill="#b91c1c"/>
 </svg>
 
 The data refused to cooperate. Now turn one stubborn null into five hypotheses worth testing.
@@ -80,21 +90,20 @@ Take one surprising null result and walk out with <strong>five genuinely differe
 
 ## Why it matters
 
-Null results are where careers either stall or pivot. A flat line in your data is not a dead end — it is a fork with five unmarked roads, and the skill is seeing them quickly before you talk yourself into the boring one. Reviewers, PIs, and grant panels all reward the researcher who can say "here are the competing explanations, and here is the experiment that adjudicates between them."
+Null results are often where a project either stalls or pivots. A flat line in your data is not a dead end — it is a fork with several unmarked roads, and the skill is seeing them quickly before settling on the obvious one. Reviewers, PIs, and grant panels reward the researcher who can say "here are the competing explanations, and here is the experiment that adjudicates between them."
 
-That generative, divergent step is exactly where a chat AI shines as a thinking partner: it never gets attached to your pet theory, it will happily propose the mechanism you were too embarrassed to say out loud, and — if you push it — it will turn around and shred its own ideas on feasibility. You stay the scientist of record; it just keeps the idea funnel full. By the end you will have practiced the move that turns a disappointing Tuesday into a follow-up aim.
+That generative, divergent step is where a chat AI works well as a thinking partner: it has no attachment to your preferred theory, it will propose mechanisms you might hesitate to raise, and — if you ask it to — it will critique its own ideas on feasibility. You stay the scientist of record; it keeps the idea funnel full. By the end you will have practiced the move that turns a disappointing result into a follow-up aim.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
 
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
@@ -117,7 +126,7 @@ It assigns a role (skeptic), removes the easy out (forbids "underpowered"), forc
 - <strong>Decompose the creative goal.</strong> Don't ask for "hypotheses" in one breath. Ask first for mechanisms at five <em>different levels of analysis</em> (molecular, circuit, systems/network, psychological/cognitive, social-contextual). Forcing distinct levels kills the "five flavors of the same idea" problem.
 - <strong>Role-play a hostile committee.</strong> "You are a reviewer who thinks my whole effect was a Type I error to begin with" surfaces sharper, less polite hypotheses than a neutral assistant. Swap roles (clinician vs. computational modeler) and compare what each notices.
 - <strong>Forbid the lazy answers.</strong> Explicitly ban "underpowered," "noisy measurement," and "the effect just isn't real" unless the AI can specify the <em>substantive</em> version (e.g., "ceiling effect on the 0-10 NRS because baseline pain was already low").
-- <strong>Adversarial self-evaluation.</strong> After it lists the five, say: "Now act as the harshest possible critic. Score each hypothesis 1-5 on feasibility AND plausibility, flag the one that's secretly untestable, and tell me which two you're least confident you can distinguish." Calibrated doubt beats confident sludge.
+- <strong>Adversarial self-evaluation.</strong> After it lists the five, say: "Now act as the harshest possible critic. Score each hypothesis 1-5 on feasibility AND plausibility, flag the one that's secretly untestable, and tell me which two you're least confident you can distinguish." Calibrated doubt is more useful than confident filler.
 - <strong>Demand a discriminating experiment.</strong> The deliverable isn't five ideas — it's the one study that splits two of them. "Design the cheapest experiment whose result would be different under H2 vs H4, and state the predicted result for each."
 - <strong>Ask it to improve your prompt.</strong> "Before answering, rewrite my prompt to get a more rigorous, more creative set of hypotheses, then answer your improved version." Steal the upgrade for the next round.
 
@@ -170,9 +179,9 @@ Hand each team this brief. It has enough method detail to actually reason about 
 
 ## Level up
 
-- <strong>Pre-register on the spot.</strong> Have the AI draft a one-paragraph pre-registration for your discriminating experiment: directional prediction, primary outcome, and the result that would falsify your favored hypothesis. Falsifiability or it doesn't count.
+- <strong>Pre-register on the spot.</strong> Have the AI draft a one-paragraph pre-registration for your discriminating experiment: directional prediction, primary outcome, and the result that would falsify your favored hypothesis. If it can't be falsified, it isn't done.
 - <strong>Adversarial steelman.</strong> Feed your five hypotheses to a <em>second</em> AI (or a fresh chat) and ask it to find the single hypothesis that, if true, would make the other four irrelevant — then defend or dismantle that claim with your team.
-- <strong>Cost the experiment.</strong> Ask the AI for a rough resource estimate (participants, hours, equipment, IRB considerations) for your discriminating study, then sanity-check every number it gives you. Practice trusting nothing it can't justify.
+- <strong>Cost the experiment.</strong> Ask the AI for a rough resource estimate (participants, hours, equipment, IRB considerations) for your discriminating study, then sanity-check every number it gives you. Treat each figure as a claim to verify, not a fact.
 
 ---
 

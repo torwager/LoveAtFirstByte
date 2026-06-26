@@ -17,12 +17,13 @@
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Palette (kept in sync with theme.scss)
+  // Palette (kept in sync with theme.scss) — blue-gray network on white,
+  // with a crimson "vampire" accent that follows the pointer.
   const COLORS = {
-    node:   [34, 211, 238],   // cyan
-    node2:  [139, 92, 246],   // violet
-    spark:  [255, 77, 141],   // rose
-    line:   [120, 150, 210],
+    node:   [71, 85, 105],    // slate-600 (blue-gray)
+    node2:  [100, 116, 139],  // slate-500
+    spark:  [185, 28, 28],    // crimson — pointer / "first byte" accent
+    line:   [100, 116, 139],  // blue-gray synapses
   };
 
   let W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
@@ -107,7 +108,7 @@
         const d2 = dx * dx + dy * dy;
         if (d2 > LINK_DIST * LINK_DIST) continue;
         const d = Math.sqrt(d2);
-        let alpha = (1 - d / LINK_DIST) * 0.22;
+        let alpha = (1 - d / LINK_DIST) * 0.32;
 
         // brighten links near the pointer
         let lit = 0;
@@ -147,9 +148,9 @@
       }
       ctx.beginPath();
       ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-      ctx.fillStyle = rgba(n.hue, 0.85);
-      ctx.shadowColor = rgba(n.hue, 0.9);
-      ctx.shadowBlur = 8 + glow * 8;
+      ctx.fillStyle = rgba(n.hue, 0.9);
+      ctx.shadowColor = rgba(n.hue, 0.45);
+      ctx.shadowBlur = 3 + glow * 4;
       ctx.fill();
       ctx.shadowBlur = 0;
     }

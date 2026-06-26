@@ -4,62 +4,68 @@ subtitle: "Build the evidence case for a contested claim — then argue it."
 description: "Use research-capable AI to assemble the strongest case (and counter-case) for a contested pain-neuroscience claim, with citations you actually check."
 ---
 
-<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
   <defs>
     <linearGradient id="g-flash-debate" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#ff4d8d"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
-    <filter id="glow-fd" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <!-- central scale beam: the balance of evidence -->
-  <line x1="400" y1="56" x2="400" y2="112" stroke="url(#g-flash-debate)" stroke-width="3" opacity="0.85"/>
-  <circle cx="400" cy="50" r="9" fill="url(#g-flash-debate)" filter="url(#glow-fd)"/>
-  <line x1="180" y1="92" x2="620" y2="128" stroke="#36e0d0" stroke-width="3" opacity="0.7"/>
+  <!-- caption -->
+  <text x="400" y="28" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" fill="#64748b" letter-spacing="2">the balance of evidence</text>
 
-  <!-- PRO pan (left, cyan) -->
-  <g opacity="0.95">
-    <line x1="180" y1="92" x2="180" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.6"/>
-    <ellipse cx="180" cy="158" rx="70" ry="16" fill="#22d3ee" opacity="0.12"/>
-    <circle cx="150" cy="150" r="6" fill="#22d3ee"/>
-    <circle cx="180" cy="160" r="7" fill="#36e0d0"/>
-    <circle cx="212" cy="151" r="5" fill="#22d3ee"/>
-    <text x="180" y="196" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="15" fill="#22d3ee" letter-spacing="3">PRO</text>
+  <!-- central balance: fulcrum + beam -->
+  <line x1="400" y1="118" x2="400" y2="170" stroke="#475569" stroke-width="3"/>
+  <polygon points="400,168 384,196 416,196" fill="#94a3b8"/>
+  <line x1="384" y1="196" x2="416" y2="196" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="400" cy="118" r="6" fill="url(#g-flash-debate)"/>
+  <line x1="232" y1="104" x2="568" y2="132" stroke="url(#g-flash-debate)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- PRO podium (left, cyan) -->
+  <g>
+    <line x1="232" y1="104" x2="232" y2="138" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="176" y="138" width="112" height="58" rx="6" fill="none" stroke="#0891b2" stroke-width="2.5"/>
+    <line x1="176" y1="158" x2="288" y2="158" stroke="#0891b2" stroke-width="2"/>
+    <line x1="198" y1="170" x2="266" y2="170" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="198" y1="182" x2="248" y2="182" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <text x="232" y="153" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600" fill="#0891b2" letter-spacing="3">PRO</text>
   </g>
 
-  <!-- CON pan (right, rose) -->
-  <g opacity="0.95">
-    <line x1="620" y1="128" x2="620" y2="150" stroke="#ff4d8d" stroke-width="2" opacity="0.6"/>
-    <ellipse cx="620" cy="158" rx="70" ry="16" fill="#ff4d8d" opacity="0.12"/>
-    <circle cx="592" cy="151" r="5" fill="#f472b6"/>
-    <circle cx="620" cy="160" r="7" fill="#ff4d8d"/>
-    <circle cx="650" cy="150" r="6" fill="#ff4d8d"/>
-    <text x="620" y="196" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="15" fill="#ff4d8d" letter-spacing="3">CON</text>
+  <!-- CON podium (right, rose) -->
+  <g>
+    <line x1="568" y1="132" x2="568" y2="138" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="512" y="138" width="112" height="58" rx="6" fill="none" stroke="#e11d6b" stroke-width="2.5"/>
+    <line x1="512" y1="158" x2="624" y2="158" stroke="#e11d6b" stroke-width="2"/>
+    <line x1="534" y1="170" x2="602" y2="170" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="534" y1="182" x2="584" y2="182" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <text x="568" y="153" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600" fill="#e11d6b" letter-spacing="3">CON</text>
   </g>
 
-  <!-- synaptic citation network feeding the beam -->
-  <g stroke="#8b5cf6" stroke-width="1.4" opacity="0.5" fill="none">
-    <path d="M70,40 C150,30 260,60 360,52"/>
-    <path d="M730,46 C650,36 540,64 440,54"/>
-    <path d="M60,120 C160,150 250,120 330,96"/>
-    <path d="M740,118 C640,150 560,118 470,98"/>
+  <!-- evidence nodes feeding each podium -->
+  <g stroke="#94a3b8" stroke-width="1.4" fill="none" opacity="0.8">
+    <path d="M64,58 C120,72 168,86 200,100"/>
+    <path d="M64,120 C128,118 176,112 210,106"/>
+    <path d="M736,58 C680,72 632,86 600,100"/>
+    <path d="M736,120 C672,118 624,112 590,106"/>
   </g>
-  <circle cx="70" cy="40" r="4" fill="#8b5cf6"/>
-  <circle cx="730" cy="46" r="4" fill="#8b5cf6"/>
-  <circle cx="60" cy="120" r="3.5" fill="#fbbf24"/>
-  <circle cx="740" cy="118" r="3.5" fill="#fbbf24"/>
-  <circle cx="120" cy="70" r="2.5" fill="#36e0d0" opacity="0.8"/>
-  <circle cx="690" cy="80" r="2.5" fill="#f472b6" opacity="0.8"/>
+  <circle cx="64" cy="58" r="5" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <circle cx="64" cy="120" r="5" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <circle cx="736" cy="58" r="5" fill="none" stroke="#e11d6b" stroke-width="2"/>
+  <circle cx="736" cy="120" r="5" fill="none" stroke="#e11d6b" stroke-width="2"/>
+  <circle cx="120" cy="72" r="3" fill="#64748b"/>
+  <circle cx="680" cy="72" r="3" fill="#64748b"/>
 
-  <text x="400" y="30" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" fill="#9aa6c7" letter-spacing="2">the balance of evidence</text>
+  <!-- violet accent: the connecting question -->
+  <circle cx="400" cy="62" r="4" fill="#7c3aed"/>
+  <line x1="400" y1="66" x2="400" y2="112" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="3 4" opacity="0.7"/>
+
+  <!-- crimson signature dot -->
+  <circle cx="408" cy="118" r="2" fill="#b91c1c"/>
 </svg>
 
-A contested claim, two teams, and an AI that will happily argue either side — your job is to make it argue *well*, with receipts.
+A contested claim, two teams, and an AI that will argue either side just as readily — your job is to make it argue *well*, with citations you can defend.
 
 <div class="meta-row">
   <span class="pill cyan">35 min</span>
@@ -71,31 +77,30 @@ A contested claim, two teams, and an AI that will happily argue either side — 
 ## The goal
 
 <div class="box goal"><span class="box-label">The Goal</span>
-By the end, your team can stand up and deliver a 90-second case on your assigned side of a contested pain-neuroscience resolution — anchored by your three strongest pieces of evidence, a plausible mechanism, and a pre-loaded rebuttal to the other side's best shot. Every citation you put on the slide is one a teammate has actually verified exists and says what you claim it says. Winning means *defensible*, not just *fluent*.
+By the end, your team can stand up and deliver a 90-second case on your assigned side of a contested pain-neuroscience resolution — anchored by your three strongest pieces of evidence, a plausible mechanism, and a pre-loaded rebuttal to the other side's best shot. Every citation you put on the slide is one a teammate has actually verified exists and says what you claim it says. The bar is *defensible*, not just *fluent*.
 </div>
 
 ## Why it matters
 
 Science is an argument that never fully ends, and your career is a long series of structured disagreements: defending a hypothesis in your dissertation committee, answering Reviewer 2, justifying a grant aim, steering a journal club away from over-reading one flashy fMRI figure. Research-capable AI can collapse hours of literature triage into minutes — but it can also fabricate a citation that looks perfect down to the DOI, or quietly give you only the evidence that flatters your side.
 
-This challenge trains the two skills that separate a useful AI research partner from a confident liar: getting it to *steelman both sides* of a real controversy, and *checking its work* before you stake your name on it. The opioid-remodeling resolution below is genuinely unsettled in the literature, which is exactly the point — there is real evidence and real counter-evidence to find.
+This challenge trains the two skills that separate a useful AI research partner from a confidently wrong one: getting it to *steelman both sides* of a real controversy, and *checking its work* before you stake your name on it. The opioid-remodeling resolution below is genuinely unsettled in the literature, which is exactly the point — there is real evidence and real counter-evidence to find.
 
 ## Run of show
 
 <ul class="timeline">
-  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
-  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
-  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
-  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
-  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
 </ul>
-<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
 
 ## Bad prompt to better prompt
 
 <div class="box bad"><span class="box-label">Weak prompt</span>
 <div class="prompt">Give me evidence that chronic opioid use remodels opioid receptors in the brain and causes psychological harm.</div>
-Why it disappoints: you asked a yes-man to confirm a foregone conclusion, so it returns a tidy paragraph of agreeable generalities, a couple of plausible-sounding citations you can't verify, and zero counter-evidence. You now have a case that will collapse the instant the CON team asks one question.
+Why it disappoints: you asked the model to confirm a foregone conclusion, so it returns a tidy paragraph of agreeable generalities, a couple of plausible-sounding citations you can't verify, and no counter-evidence. You now have a case that will collapse the moment the CON team asks one question.
 </div>
 
 <div class="box good"><span class="box-label">Strong prompt</span>
