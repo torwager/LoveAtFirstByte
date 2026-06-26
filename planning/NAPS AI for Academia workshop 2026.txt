@@ -1,0 +1,172 @@
+﻿NAPS AI for Academia workshop 2026
+This doc: NAPS AI for Academia workshop 2026
+
+
+AI in Academia: Love at first byte?
+
+
+“In the era of AI, answers have become cheap. It’s judgment that is expensive.”
+* Santiago Schnell, Provost, Dartmouth College
+
+
+Schedule:
+1. Intro (20 min): 
+* Audience discussion (10 min): What do you use AI for [at work]?
+* Tor - Ideas and possibilities (10 min)
+2. Challenge 1 (35 min)
+3. Challenge 2 (35 min)
+
+
+Challenge format: 
+AI Challenge Match 2x 
+Phase 1 (5 minutes): Instructor (Tor) introduces the challenge, which specifies the goal, but not the algorithm for solving it.  Group brainstorming on what approaches could be most helpful.
+
+
+Phase 2 (15 minutes): Breakout groups work on it, and report prompts and key findings in shared documents. 
+
+
+Phase 3 (10 minutes): Show results and debrief.  
+
+
+Overall strategy tips:
+* Think creatively about high-level goals.  AI can do a lot but you have to tell it what to do. What are different relevant subtasks and angles that will help you + AI achieve the goal?
+* Identity-based prompting: Agents now have “souls” (Soul.md files). Tell the AI agent who it is and what role to play in the project.  I.e., one famous prompt: “You are an open-source coding GOD!!!!”
+* Adversarial thinking: Ask AI to play an evaluator role and score its confidence – and find flaws in – its own arguments.  This can range from checking work to metacognitive judgments of accuracy/need to iterate
+* Ask it: Ask AI for how to improve your prompting
+
+
+Facilitation tip: Open each challenge by demoing a *bad* prompt live, showing the mediocre output, then challenging groups to do better. It immediately makes the task concrete and lowers the intimidation factor.
+
+
+I also want to show them what is possible with more advanced models.
+Students may pick - may have to set up account/model in advance
+
+
+Basic challenge ideas:
+
+
+Picture this*:  Take a data table (or concept) and generate an informative visualization.
+
+
+Model horserace: Assign each breakout group a *different* free AI tool: Claude, Google Gemini, Microsoft Copilot, Perplexity, and Meta AI
+        Debrief: "which AI handled this best and why”
+
+
+Hypothesis Roulette: Give groups a surprising null result and have them prompt the AI to generate 5 testable mechanistic hypotheses. The room votes on the most creative vs. the most feasible.
+
+
+The Rebuttal: Give groups a harsh mock peer review and have them draft the most persuasive point-by-point response.
+
+
+IRB Speed Round: draft a risks/benefits section from a brief study description. Great for surfacing AI limitations and hallucinations.
+
+
+Experiment Generator*: Take a finding (e.g., “experience-dependent sensitization”), and come up with three basic science and three clinical/psychosocial experiments to define the mechanism of this new phenomenon. Possibly: exploring different aspects.
+
+
+Rapid review: Given a pain neuroscience question, use AI tools to find the best answer to the question and draft a 2-page review with key papers and references. E.g., answer the questions: “Does chronic opioid use cause remodeling of opioid-receptors and related circuits in the brain? Does this remodeling cause adverse psychological and behavioral outcomes? Which aspects of these changes are reversible?”
+
+
+Flash debate: Given a pain neuroscience question, use AI tools to find evidence on the proposition to use in a debate. E.g., “Resolved: chronic opioid use causes remodeling of opioid-receptors and related circuits in the brain, which mediates adverse psychological outcomes.”
+
+
+Meet the speaker: Your team is giving a talk at a prestigious, world renowned university – McGill. You really want to impress them by presenting something as relevant as possible to your (collective) work. Analyze the faculty research interests in pain science-relevant units at McGill and their match to your own research topics. Come up with a talk title and a list of faculty you’d like to meet with during your visit, and why.
+
+
+Policy Wonk: The U.S. Office of Management and Budget has recently issued new rule changes, with a proposed public comment period ending in July.  Use AI tools to research the issues, response deadlines, information about what kinds of response are likely to be most impactful, and a practical list of next steps to respond with comments. 
+
+
+Party Planner: You are visiting a university to give a talk and have been given an itinerary of speakers you’re scheduled to meet. Use AI tools to research these speakers and their work and rapidly educate yourself on how to have an engaging and meaningful conversation with them.
+
+
+Other basic challenges (don’t use for various reasons):
+
+
+Plain Language Gauntlet: Groups digest and summarize a complex pain neuroimaging paper. Task: prompt the AI to explain it to three audiences, a 10th grader, a patient advocate, and a non-specialist NIH program officer.
+
+
+Codex/Claude Code challenges  (advanced)
+
+
+Reviewer 4: 
+You’ve written an R01 and want to get a great score. Evaluate and improve your grant using AI tools.
+
+
+Strategies (not available to students until after the challenge): 
+In 10-15 min, it is possible to set up a multi-task evaluation of a grant that: 
+(1) Provides a complete peer review and scores; 
+(2) Checks the review and provides a confidence rating; 
+(3) Identifies the best-fitting study section and standing members of matching panels;
+(4) Identifies directly relevant work that is not considered or cited in the grant;
+(5) Identifies concepts expert reviewers may not understand or object to and how to clarify them;
+(6) Analyze the logical flow of the argument and make suggestions on reorganization;
+(7) Provide detailed, line-by-line copyediting suggestions;
+(8) (just for fun) revises the grant and confirms compliance with formatting guidelines. 
+
+
+NOTE: Students could try this with a sample grant (which I could provide) or with their own grant.
+
+
+NOTE: A discussion of ethics is critical during debrief.  Using this system for actual grant reviews is NOT allowed. But it can be helpful for improving your own draft grants.
+
+
+Journal club: 
+Prepare a journal club on a scientific paper.  
+
+
+The social network:
+
+
+Journal recommender: 
+
+
+Junkyard dog: 
+Search for open datasets on pain science, identifying and summarizing them, downloading them, and write code to integrate them into 
+
+
+Web designer: 
+
+
+Who are my friends?
+You have written a flawless scientific paper of staggering beauty. You want to share it with the world, especially with reviewers who will appreciate it as much as you do. Design a system to identify appropriate reviewers.
+
+
+Strategies (not available to students until after the challenge): 
+1. Find authors with relevant expertise doing work on related topics.
+2. Find who cites my previous papers on the topic.  Read those papers to find the context in which they cite my work, and assign a sentiment score to each author.
+3. Find social media posts that mention or respond to my previous papers on the topic. Assign a sentiment score to each author. 
+4. Post a bioarxiv paper first.  Search for authors with relevant expertise who may be interested, and draft an email to each of them sharing the paper with them personally.  Wait a while, and see who posts on social media and/or cites the paper.
+5.  
+
+
+
+
+
+
+* On the access problem: I'd suggest ditching ChatGPT entirely and turning the constraint into a feature. Assign each breakout group a *different* free AI tool: Claude, Google Gemini, Microsoft Copilot, Perplexity, and Meta AI are all free with no hard prompt limits. Now the debrief isn't just "what did your group produce" but  
+* On the graph challenge:  Yes, keep it. I'd frame it as rescuing an ugly/messy data table rather than just "make a pretty graph”: groups have to prompt the AI to produce the most *informative* visualization, including axis labels, error bars, colorblind-friendly palettes, etc. Debrief on what instructions were actually needed to get there.
+ 
+* A third challenge idea I'd add: Plain Language Gauntlet: Give all groups the same dense methods paragraph from a pain neuroimaging paper. Task: prompt the AI to explain it to three audiences, a 10th grader, a patient advocate, and a non-specialist NIH program officer. Pick the best version for one audience to share. This is directly useful for our grant writing and patient engagement work.
+ 
+Some backup ideas if you want a fourth option:
+- Hypothesis Roulette: give groups a surprising null result and have them prompt the AI to generate 5 testable mechanistic hypotheses. The room votes on the most creative vs. the most feasible.
+- The Rebuttal: give groups a harsh mock peer review and have them draft the most persuasive point-by-point response.
+- IRB Speed Round: draft a risks/benefits section from a brief study description. Great for surfacing AI limitations and hallucinations.
+ 
+One facilitation tip: Open each challenge by demoing a *bad* prompt live, showing the mediocre output, then challenging groups to do better. It immediately makes the task concrete and lowers the intimidation factor.
+ 
+The 5/10/10 timing structure works well. I'd also have each group write their single best prompt on a shared slide before the debrief:  the prompt share is often more valuable than the output share.
+On the access problem: I'd suggest ditching ChatGPT entirely and turning the constraint into a feature. Assign each breakout group a *different* free AI tool: Claude, Google Gemini, Microsoft Copilot, Perplexity, and Meta AI are all free with no hard prompt limits. Now the debrief isn't just "what did your group produce" but "which AI handled this best and why”:  a much richer conversation.
+ 
+On the graph challenge:  Yes, keep it. I'd frame it as rescuing an ugly/messy data table rather than just "make a pretty graph”: groups have to prompt the AI to produce the most *informative* visualization, including axis labels, error bars, colorblind-friendly palettes, etc. Debrief on what instructions were actually needed to get there.
+ 
+A third challenge idea I'd add: Plain Language Gauntlet: Give all groups the same dense methods paragraph from a pain neuroimaging paper. Task: prompt the AI to explain it to three audiences, a 10th grader, a patient advocate, and a non-specialist NIH program officer. Pick the best version for one audience to share. This is directly useful for our grant writing and patient engagement work.
+ 
+Some backup ideas if you want a fourth option:
+- Hypothesis Roulette: give groups a surprising null result and have them prompt the AI to generate 5 testable mechanistic hypotheses. The room votes on the most creative vs. the most feasible.
+- The Rebuttal: give groups a harsh mock peer review and have them draft the most persuasive point-by-point response.
+- IRB Speed Round: draft a risks/benefits section from a brief study description. Great for surfacing AI limitations and hallucinations.
+ 
+One facilitation tip: Open each challenge by demoing a *bad* prompt live, showing the mediocre output, then challenging groups to do better. It immediately makes the task concrete and lowers the intimidation factor.
+ 
+The 5/10/10 timing structure works well. I'd also have each group write their single best prompt on a shared slide before the debrief:  the prompt share is often more valuable than the output share.
