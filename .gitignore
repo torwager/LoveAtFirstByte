@@ -17,3 +17,11 @@ _site/
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
 .DS_Store
+
+# --- Quarto / site build (added for Love at First Byte) ---
+/_site/
+/.quarto/
+*.quarto_ipynb
+.DS_Store
+
+**/*.quarto_ipynb

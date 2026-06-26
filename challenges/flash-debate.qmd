@@ -1,0 +1,187 @@
+---
+title: "Flash Debate"
+subtitle: "Build the evidence case for a contested claim — then argue it."
+description: "Use research-capable AI to assemble the strongest case (and counter-case) for a contested pain-neuroscience claim, with citations you actually check."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-flash-debate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow-fd" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- central scale beam: the balance of evidence -->
+  <line x1="400" y1="56" x2="400" y2="112" stroke="url(#g-flash-debate)" stroke-width="3" opacity="0.85"/>
+  <circle cx="400" cy="50" r="9" fill="url(#g-flash-debate)" filter="url(#glow-fd)"/>
+  <line x1="180" y1="92" x2="620" y2="128" stroke="#36e0d0" stroke-width="3" opacity="0.7"/>
+
+  <!-- PRO pan (left, cyan) -->
+  <g opacity="0.95">
+    <line x1="180" y1="92" x2="180" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.6"/>
+    <ellipse cx="180" cy="158" rx="70" ry="16" fill="#22d3ee" opacity="0.12"/>
+    <circle cx="150" cy="150" r="6" fill="#22d3ee"/>
+    <circle cx="180" cy="160" r="7" fill="#36e0d0"/>
+    <circle cx="212" cy="151" r="5" fill="#22d3ee"/>
+    <text x="180" y="196" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="15" fill="#22d3ee" letter-spacing="3">PRO</text>
+  </g>
+
+  <!-- CON pan (right, rose) -->
+  <g opacity="0.95">
+    <line x1="620" y1="128" x2="620" y2="150" stroke="#ff4d8d" stroke-width="2" opacity="0.6"/>
+    <ellipse cx="620" cy="158" rx="70" ry="16" fill="#ff4d8d" opacity="0.12"/>
+    <circle cx="592" cy="151" r="5" fill="#f472b6"/>
+    <circle cx="620" cy="160" r="7" fill="#ff4d8d"/>
+    <circle cx="650" cy="150" r="6" fill="#ff4d8d"/>
+    <text x="620" y="196" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="15" fill="#ff4d8d" letter-spacing="3">CON</text>
+  </g>
+
+  <!-- synaptic citation network feeding the beam -->
+  <g stroke="#8b5cf6" stroke-width="1.4" opacity="0.5" fill="none">
+    <path d="M70,40 C150,30 260,60 360,52"/>
+    <path d="M730,46 C650,36 540,64 440,54"/>
+    <path d="M60,120 C160,150 250,120 330,96"/>
+    <path d="M740,118 C640,150 560,118 470,98"/>
+  </g>
+  <circle cx="70" cy="40" r="4" fill="#8b5cf6"/>
+  <circle cx="730" cy="46" r="4" fill="#8b5cf6"/>
+  <circle cx="60" cy="120" r="3.5" fill="#fbbf24"/>
+  <circle cx="740" cy="118" r="3.5" fill="#fbbf24"/>
+  <circle cx="120" cy="70" r="2.5" fill="#36e0d0" opacity="0.8"/>
+  <circle cx="690" cy="80" r="2.5" fill="#f472b6" opacity="0.8"/>
+
+  <text x="400" y="30" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" fill="#9aa6c7" letter-spacing="2">the balance of evidence</text>
+</svg>
+
+A contested claim, two teams, and an AI that will happily argue either side — your job is to make it argue *well*, with receipts.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Advanced</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Research-capable AI</span>
+</div>
+
+## The goal
+
+<div class="box goal"><span class="box-label">The Goal</span>
+By the end, your team can stand up and deliver a 90-second case on your assigned side of a contested pain-neuroscience resolution — anchored by your three strongest pieces of evidence, a plausible mechanism, and a pre-loaded rebuttal to the other side's best shot. Every citation you put on the slide is one a teammate has actually verified exists and says what you claim it says. Winning means *defensible*, not just *fluent*.
+</div>
+
+## Why it matters
+
+Science is an argument that never fully ends, and your career is a long series of structured disagreements: defending a hypothesis in your dissertation committee, answering Reviewer 2, justifying a grant aim, steering a journal club away from over-reading one flashy fMRI figure. Research-capable AI can collapse hours of literature triage into minutes — but it can also fabricate a citation that looks perfect down to the DOI, or quietly give you only the evidence that flatters your side.
+
+This challenge trains the two skills that separate a useful AI research partner from a confident liar: getting it to *steelman both sides* of a real controversy, and *checking its work* before you stake your name on it. The opioid-remodeling resolution below is genuinely unsettled in the literature, which is exactly the point — there is real evidence and real counter-evidence to find.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+<div class="prompt">Give me evidence that chronic opioid use remodels opioid receptors in the brain and causes psychological harm.</div>
+Why it disappoints: you asked a yes-man to confirm a foregone conclusion, so it returns a tidy paragraph of agreeable generalities, a couple of plausible-sounding citations you can't verify, and zero counter-evidence. You now have a case that will collapse the instant the CON team asks one question.
+</div>
+
+<div class="box good"><span class="box-label">Strong prompt</span>
+<div class="prompt">You are preparing a graduate journal club to debate this resolution: "Chronic opioid use causes remodeling of opioid receptors and related circuits in the brain, which mediates adverse psychological outcomes."
+
+I am arguing PRO. Do three things, clearly separated:
+
+1) EVIDENCE FOR: List the 3-4 strongest empirical findings supporting the resolution. For each, give the study type (human PET, rodent autoradiography, longitudinal cohort, etc.), the specific finding, the approximate sample/species, and a citation (authors, year, journal). Prioritize causal or longitudinal designs over cross-sectional correlation.
+
+2) STEELMAN THE OPPOSITION: Give the 3 strongest counterarguments a sharp CON team would raise — confounds, reverse causation, species-translation problems, receptor downregulation being adaptive rather than harmful.
+
+3) SELF-AUDIT: For each citation, rate your confidence it is real and accurately characterized (high/medium/low) and flag any you may have approximated. Then tell me the single weakest link in my PRO case.</div>
+Why it works: it assigns a role and a stance, decomposes the task into evidence / steelman / audit, demands study design and verifiable citation details (so you can check them), forces it to build the other team's case, and makes it score its own confidence and name its own weak point.
+</div>
+
+## Prompting moves to try
+
+- **Decompose the case (claim → evidence → mechanism → rebuttal).** Ask for each layer separately. A debate point with a mechanism beats a debate point that's just a correlation, and a rebuttal you wrote before the round beats one you improvise on stage.
+- **Role + stance prompting.** "You are a skeptical addiction neuroscientist on the CON side" produces sharper, more adversarial output than a neutral "summarize the evidence." Run it once for your side, once for the opposition.
+- **Adversarial self-evaluation.** After it gives you a case, prompt: *"Now play Reviewer 2. Attack this case as harshly as a hostile peer reviewer would, then rate the strength of each of my points from 1-10 and tell me which would not survive cross-examination."*
+- **Force a confidence + citation audit.** Make it tag every reference high/medium/low confidence and explicitly flag anything it might have fabricated or paraphrased from memory. Treat "low" as "do not cite until verified."
+- **Ask it to improve your prompt.** *"Before you answer, rewrite my prompt to get a more rigorous, less one-sided debate brief — then answer the improved version."*
+- **Hunt for the disconfirming study.** *"Find the strongest single study that contradicts my side, and explain why my evidence still holds despite it."* This is how you pre-empt the other team.
+
+## Starter materials
+
+**The resolution (read it aloud, assign sides):**
+
+<div class="box goal"><span class="box-label">Resolution</span>
+"Chronic opioid use causes remodeling of opioid receptors and related circuits in the brain, which mediates adverse psychological outcomes (e.g., depression, anhedonia, dysphoria)."<br/><br/>
+Teams are assigned <span class="pill cyan">PRO</span> or <span class="pill rose">CON</span> at random. CON is not arguing "opioids are harmless" — CON argues that the *specific causal chain* (use → receptor/circuit remodeling → psychological harm) is not established by the evidence.
+</div>
+
+**Debate-prep scaffold — fill one row per argument (copy into your shared doc):**
+
+| Slot | PRO fills in | CON fills in |
+|---|---|---|
+| **Claim** (one sentence) | Chronic exposure drives lasting μ-opioid receptor downregulation / circuit changes | The receptor changes are inconsistent, reversible, or not the cause of mood symptoms |
+| **Evidence #1** (study type, finding, citation) | | |
+| **Evidence #2** | | |
+| **Evidence #3** | | |
+| **Mechanism** (the causal "how") | e.g., receptor downregulation → blunted endogenous reward signaling → anhedonia | e.g., pain, withdrawal, and pre-existing depression confound the link |
+| **Best opposing point** (steelman) | | |
+| **Rebuttal** (your answer to it) | | |
+| **Weakest link in our case** | | |
+
+**Evidence-quality rubric — rank what AI hands you before you trust it:**
+
+| Tier | What it looks like | Debate weight |
+|---|---|---|
+| A | Longitudinal / interventional human study, or converging human + animal causal evidence | Lead with it |
+| B | Cross-sectional human imaging (PET/fMRI), or controlled rodent study | Solid support |
+| C | Single small study, narrative review, or animal-only with weak translation | Use with a caveat |
+| D | Mechanistic speculation, no primary data, or a citation you can't verify | Do not put on the slide |
+
+**Citation-check protocol (do this before the prompt-post):**
+
+1. Copy each citation the AI gave you. Search the title or DOI in a real database (PubMed / Google Scholar / your library).
+2. Confirm three things: the paper **exists**, the authors/year/journal **match**, and the finding **actually says** what your brief claims (open the abstract).
+3. Any citation that fails → drop it or downgrade to Tier D. Note in your doc: "AI-claimed, unverified."
+4. Bonus: if a real paper exists but the AI got the finding subtly wrong, log *that* — it is the most teachable failure in the room.
+
+**Two pre-loaded landmines (hand one to each side as a stress test):**
+
+<div class="box tip"><span class="box-label">For CON to deploy</span>
+"Receptor downregulation after chronic agonist exposure is a normal, often reversible homeostatic adaptation — present it as evidence of harm and you've confused a thermostat for a fire. Where is the human evidence that the receptor change *causes* the mood change, rather than both being caused by ongoing pain or withdrawal?"
+</div>
+
+<div class="box tip"><span class="box-label">For PRO to deploy</span>
+"Reversibility doesn't mean harmless: blunted endogenous opioid signaling during use can plausibly mediate anhedonia and dysphoria in real time, and there is converging rodent and human imaging evidence. Absence of a perfect longitudinal human RCT is not absence of a causal signal."
+</div>
+
+## Debrief questions
+
+1. Which AI tool produced the most *verifiable* evidence — not the most fluent — and how could you tell the difference from the output alone?
+2. How many citations survived the check protocol? What did the failures look like — invented outright, real-paper-wrong-finding, or right-paper-overstated?
+3. Did asking the AI to steelman the *opposite* side change your own case? What was the strongest counterargument you would have missed?
+4. When the AI rated its own confidence, was it calibrated — were its "high confidence" claims actually the ones that checked out?
+5. Where is the genuine scientific honest answer here? After all this, is the resolution PRO, CON, or "the evidence doesn't settle it yet"?
+
+## Level up
+
+- **Run the opposite side.** Feed your finished PRO brief to a fresh AI session and ask it to demolish you as the CON team, then patch every hole it finds. Bring the patched version to the round.
+- **Force a quantitative claim.** Make the AI give an effect size or a number (e.g., percent change in receptor availability, hazard ratio for depression) — then verify that number against the primary source. Numbers are where fabrication hides best.
+- **Multi-model triangulation.** Run the same brief through two different research-capable tools and only put a finding on the slide if both surface it *and* it survives the citation check. Note where the two models disagreed — that's your map of the genuinely contested terrain.
+
+---
+
+<p class="meta-row"><a class="pill cyan" href="../index.qmd">← Challenge menu</a> <a class="pill violet" href="../intro/tools.qmd">AI Toolkit →</a></p>

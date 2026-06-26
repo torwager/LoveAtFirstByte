@@ -1,0 +1,171 @@
+---
+title: "Experiment Generator"
+subtitle: "From a single finding to six experiments that nail the mechanism."
+description: "Turn one phenomenon into three basic-science and three clinical experiments that triangulate the mechanism across levels of analysis."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-experiment-generator" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-eg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft glow halo behind the seed -->
+  <circle cx="120" cy="110" r="80" fill="url(#g-eg-glow)"/>
+
+  <!-- the single "finding" seed node -->
+  <circle cx="120" cy="110" r="22" fill="url(#g-experiment-generator)"/>
+  <circle cx="120" cy="110" r="34" fill="none" stroke="#36e0d0" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="120" y="170" text-anchor="middle" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif">finding</text>
+
+  <!-- branching synapse lines to six experiment nodes -->
+  <g stroke="url(#g-experiment-generator)" stroke-width="2" fill="none" opacity="0.75">
+    <path d="M142 100 C 280 40, 420 40, 560 52"/>
+    <path d="M144 106 C 290 80, 430 86, 560 100"/>
+    <path d="M144 116 C 290 120, 430 128, 560 148"/>
+    <path d="M142 122 C 280 180, 420 184, 560 196"/>
+    <path d="M143 96  C 300 30, 470 24, 660 40"/>
+    <path d="M143 126 C 300 200, 470 206, 660 196"/>
+  </g>
+
+  <!-- six experiment nodes: cyan trio = basic, rose trio = clinical -->
+  <g font-family="system-ui,sans-serif" font-size="11">
+    <circle cx="560" cy="52"  r="13" fill="#22d3ee" opacity="0.95"/>
+    <circle cx="560" cy="100" r="13" fill="#36e0d0" opacity="0.95"/>
+    <circle cx="560" cy="148" r="13" fill="#22d3ee" opacity="0.95"/>
+    <circle cx="660" cy="40"  r="13" fill="#ff4d8d" opacity="0.95"/>
+    <circle cx="660" cy="196" r="13" fill="#f472b6" opacity="0.95"/>
+    <circle cx="560" cy="196" r="13" fill="#ff4d8d" opacity="0.95"/>
+  </g>
+
+  <!-- legend dots -->
+  <circle cx="690" cy="92"  r="5" fill="#22d3ee"/>
+  <text x="702" y="96" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif">basic</text>
+  <circle cx="690" cy="116" r="5" fill="#ff4d8d"/>
+  <text x="702" y="120" fill="#9aa6c7" font-size="12" font-family="system-ui,sans-serif">clinical</text>
+
+  <!-- accent sparks -->
+  <circle cx="340" cy="58" r="2.5" fill="#fbbf24"/>
+  <circle cx="410" cy="150" r="2.5" fill="#fbbf24"/>
+  <circle cx="250" cy="120" r="2" fill="#8b5cf6"/>
+</svg>
+
+One finding goes in; six experiments that triangulate its mechanism come out — across cells, circuits, and lives.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Intermediate</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Any chat AI</span>
+</div>
+
+## The goal
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Starting from a <strong>single robust finding</strong>, produce <strong>six experiments</strong> — three basic-science and three clinical/psychosocial — that together would <strong>define the mechanism</strong> of the phenomenon. The set should span different levels of analysis (molecular, cellular, circuit, behavioral, cognitive, social) and the experiments should be <em>complementary</em>: each one rules out something the others can't. We care about the destination (a convergent, mechanism-defining battery), not the route you take with the AI to get there.
+</div>
+
+## Why it matters
+
+The leap from "we observed X" to "here is *why* X happens" is the hardest move in science, and it's exactly what reviewers, thesis committees, and grant panels grill you on. A finding only earns the word *mechanism* when it survives attack from multiple directions: a knockout AND a fMRI study AND a longitudinal cohort that all point the same way. Most of us get stuck inside one level of analysis — the molecular person designs more molecular studies, the clinician designs more trials. AI is a frighteningly good brainstorming partner for jumping levels: it will cheerfully propose an optogenetics experiment and a workplace-stress cohort in the same breath. Your job is to be the skeptic who keeps it honest — pruning the plausible-but-untestable and demanding that each experiment actually isolate a cause. Get good at this and you have a reusable engine for Aim 2 of every grant you'll ever write.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+<div class="prompt">Give me some experiments to study experience-dependent sensitization in pain.</div>
+Why the output disappoints: you get a generic listicle — "do an animal study," "do a survey," "use fMRI" — with no hypotheses, no predictions, and no thought about what each design rules out. Everything clusters at one comfortable level of analysis, the experiments are interchangeable rather than complementary, and nothing actually isolates a <em>cause</em>. It reads like a textbook margin, not a research program.
+</div>
+
+<div class="box good"><span class="box-label">Strong prompt</span>
+<div class="prompt">You are a study-section reviewer with a joint appointment in molecular pain neuroscience and clinical psychology. I'll give you one robust finding and a short background. Design SIX experiments that together would define its MECHANISM: exactly three basic-science and three clinical/psychosocial, and force them to span different levels of analysis (molecular, cellular/circuit, behavioral, cognitive, social). The experiments must be COMPLEMENTARY — each must rule out something the others cannot. For each, output a card with: (1) Hypothesis (a specific causal claim), (2) Design (species/sample, manipulation, key measure, control), (3) Prediction (the result that would SUPPORT the hypothesis, plus the result that would FALSIFY it), (4) Confound (the single most likely alternative explanation and how the design addresses it). After the six cards, add a one-paragraph "Convergence" note: if all six came out as predicted, what mechanistic claim would we now be entitled to make? Finding and background below.</div>
+Why it works: it assigns a cross-level identity, hard-codes the 3+3 structure and the levels-of-analysis spread, demands falsification (not just confirmation) and an explicit confound per card, and ends with a convergence test that checks whether the six experiments actually add up to a mechanism. The output becomes a defensible research program instead of a brainstorm.
+</div>
+
+## Prompting moves to try
+
+- **Decompose the goal first.** Before asking for experiments, ask the AI to list the candidate *causal levels* at which the finding could operate (receptor, synapse, circuit, learning, appraisal, social context). Then request one experiment per level — you've turned a vague ask into a structured grid.
+- **Role-prompt for range.** Give it a deliberately interdisciplinary identity ("molecular pain neuroscientist who also runs RCTs"). Single-discipline personas produce single-level experiments; hybrid personas jump levels.
+- **Make it falsify itself.** For every card, force both the supporting AND the falsifying prediction. A hypothesis you can't imagine disconfirming isn't a hypothesis — it's a mood.
+- **Adversarial self-review.** After the six cards, prompt: "Now act as a brutal R01 reviewer. Score each experiment 1-10 on how cleanly it isolates the mechanism, flag the weakest one, and rewrite it." Then ask it to rate its own confidence (0-100%) that the set truly defines the mechanism.
+- **Hunt the redundancy.** Ask: "Which two of these six are secretly testing the same thing? Replace the redundant one with an experiment at a level we're missing." This is what makes the set *complementary* rather than six variations on a theme.
+- **Let it fix your prompt.** End with: "Before answering, rewrite my prompt to get a sharper, more mechanistic answer, then proceed with your improved version." You'll often learn a better question than the one you asked.
+
+## Starter materials
+
+Paste the finding and background below into your AI, then use the card template to structure the output. (Swap in any finding from your own work if you'd rather — the template is the reusable part.)
+
+<div class="box tip"><span class="box-label">The finding (paste this)</span>
+<strong>Finding:</strong> Experience-dependent sensitization. After a single painful or threatening episode in a given context, both rodents and humans show <em>amplified</em> pain responses to later, milder stimuli encountered in that same context — and the amplification grows with repeated exposure rather than habituating.
+
+<strong>Background (≈120 words):</strong> Sensitization is the lab cousin of "once bitten, twice shy" — but for nociception. In a classic demonstration, animals given an inflammatory insult to one paw later show lowered withdrawal thresholds not only at the injured site but in surrounding and even contralateral tissue, and the effect strengthens with each subsequent challenge. Parallel human work shows that people with prior painful medical procedures report higher pain and stronger anticipatory anxiety to standardized noxious stimuli delivered in similar settings. The phenomenon spans peripheral changes (nociceptor excitability), spinal mechanisms (central sensitization, wind-up), supraspinal modulation, and learning (Pavlovian fear conditioning, expectancy). What's unresolved is which level(s) <em>drive</em> the amplification, whether the same mechanism operates in acute lab settings and chronic clinical pain, and why some individuals sensitize while others habituate.
+</div>
+
+<div class="box goal"><span class="box-label">Experiment card template (use for all six)</span>
+
+<strong>Experiment N — [short name] · Level: [molecular / cellular-circuit / behavioral / cognitive / social] · Track: [basic | clinical]</strong>
+
+- <strong>Hypothesis:</strong> a single specific causal claim — "X causes/modulates the amplification via Y."
+- <strong>Design:</strong> species or sample + N; the manipulation (what you do to whom); the key outcome measure; the control or comparison condition.
+- <strong>Prediction:</strong> the result that would <em>support</em> the hypothesis — and the result that would <em>falsify</em> it.
+- <strong>Confound:</strong> the single most likely alternative explanation, and the one design feature that rules it out.
+
+</div>
+
+<div class="box tip"><span class="box-label">Worked example card (so teams know the bar)</span>
+
+<strong>Experiment 1 — Block the wind-up · Level: cellular-circuit · Track: basic</strong>
+
+- <strong>Hypothesis:</strong> NMDA-receptor-dependent spinal central sensitization is necessary for the contextual amplification, not just for baseline nociception.
+- <strong>Design:</strong> Mice (n≈12/group) receive repeated mild noxious heat in a distinctive chamber. Intrathecal NMDA antagonist (e.g., MK-801) vs. vehicle delivered <em>before each session</em>. Outcome: withdrawal-threshold drop across sessions (slope of sensitization). Control: same drug given in a <em>different</em> chamber to separate spinal blockade from context.
+- <strong>Prediction:</strong> Support → antagonist flattens the session-by-session sensitization slope while leaving first-session threshold intact. Falsify → sensitization slope is unchanged, implicating a non-NMDA (e.g., supraspinal/learning) driver.
+- <strong>Confound:</strong> The drug could simply blunt acute pain (analgesia mimicking "less sensitization"). Addressed by checking that first-exposure thresholds are normal and by the cross-chamber control.
+
+</div>
+
+<div class="box tip"><span class="box-label">Coverage checklist (score your six)</span>
+
+- [ ] Exactly 3 basic + 3 clinical/psychosocial.
+- [ ] At least 4 different levels of analysis represented across the set.
+- [ ] Every card has a falsifying prediction, not just a confirming one.
+- [ ] No two experiments are secretly testing the same thing.
+- [ ] At least one experiment directly tests the basic↔clinical translation (does the same mechanism operate in both?).
+- [ ] The convergence note states a mechanism claim the full set would earn.
+
+</div>
+
+## Debrief questions
+
+1. Which level of analysis did your AI reach for first — and which did it ignore until you forced it? What does that reveal about its (and your) defaults?
+2. Point to the two experiments in your set that are the *most* complementary. What can the pair conclude together that neither could alone?
+3. Did any card have a falsifying prediction that was actually hard to imagine? If so, was it a real hypothesis or a disguised assumption?
+4. When the AI critiqued and scored its own experiments, was it right about which was weakest? Where was its confidence miscalibrated?
+5. If all six came back exactly as predicted, what would you *still* be unable to claim about the mechanism?
+
+## Level up
+
+- **Demand the cheap-and-fast version.** Ask the AI to redesign your strongest experiment under brutal constraints: one undergrad, $500, eight weeks, no animal facility. Mechanism on a shoestring is a real grant skill.
+- **Pre-register one card.** Have the AI turn a single experiment into a mini pre-registration: hypotheses, primary outcome, sample-size justification, and analysis plan with a stopping rule. Notice what gets harder when you can't move the goalposts.
+- **Build the kill-shot study.** Ask: "Design the ONE experiment whose result would most cleanly distinguish your top two competing mechanisms — and tell me which existing finding it would have to contradict to matter." That's the experiment a study section remembers.
+
+---
+
+<p style="color:#9aa6c7"><a href="../index.qmd">← Back to the Challenge menu</a> · <a href="../intro/tools.qmd">AI Toolkit →</a></p>

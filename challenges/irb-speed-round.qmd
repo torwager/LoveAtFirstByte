@@ -1,0 +1,180 @@
+---
+title: "IRB Speed Round"
+subtitle: "Draft a risks & benefits section fast — and catch the AI when it bluffs."
+description: "From a brief study description, draft a risks/benefits section — then hunt down the fabricated regs and invented numbers the AI slipped in."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-irb-speed-round" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#ff4d8d"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow-irb" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- clipboard / consent form silhouette -->
+  <rect x="60" y="34" width="180" height="150" rx="10" fill="#0b1020" stroke="url(#g-irb-speed-round)" stroke-width="2" opacity="0.95"/>
+  <rect x="120" y="26" width="60" height="18" rx="6" fill="url(#g-irb-speed-round)" opacity="0.85"/>
+  <line x1="80" y1="70" x2="220" y2="70" stroke="#22d3ee" stroke-width="3" opacity="0.7"/>
+  <line x1="80" y1="92" x2="200" y2="92" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
+  <line x1="80" y1="114" x2="210" y2="114" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
+  <line x1="80" y1="136" x2="180" y2="136" stroke="#9aa6c7" stroke-width="3" opacity="0.5"/>
+  <!-- checkbox of approval -->
+  <rect x="80" y="152" width="16" height="16" rx="3" fill="none" stroke="#36e0d0" stroke-width="2"/>
+  <path d="M83 160 l4 5 l8 -11" fill="none" stroke="#36e0d0" stroke-width="2.5" filter="url(#glow-irb)"/>
+
+  <!-- synapse network bridging to a magnifier (verification) -->
+  <g opacity="0.92">
+    <line x1="240" y1="110" x2="360" y2="70" stroke="#22d3ee" stroke-width="1.5" opacity="0.6"/>
+    <line x1="240" y1="110" x2="380" y2="150" stroke="#ff4d8d" stroke-width="1.5" opacity="0.6"/>
+    <line x1="360" y1="70" x2="470" y2="110" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="380" y1="150" x2="470" y2="110" stroke="#36e0d0" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="360" cy="70" r="7" fill="#22d3ee" filter="url(#glow-irb)"/>
+    <circle cx="380" cy="150" r="6" fill="#ff4d8d" filter="url(#glow-irb)"/>
+    <circle cx="470" cy="110" r="8" fill="#8b5cf6" filter="url(#glow-irb)"/>
+  </g>
+
+  <!-- magnifying glass over a suspicious "§" citation -->
+  <g filter="url(#glow-irb)">
+    <circle cx="600" cy="100" r="46" fill="none" stroke="url(#g-irb-speed-round)" stroke-width="4"/>
+    <line x1="634" y1="134" x2="672" y2="172" stroke="url(#g-irb-speed-round)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="114" font-family="Georgia, serif" font-size="42" fill="#fbbf24" text-anchor="middle" opacity="0.95">§</text>
+  <!-- red flag dot signalling a hallucinated reg -->
+  <circle cx="636" cy="64" r="6" fill="#ff4d8d" filter="url(#glow-irb)"/>
+
+  <!-- accent dots -->
+  <circle cx="300" cy="180" r="3" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="520" cy="50" r="3" fill="#36e0d0" opacity="0.8"/>
+  <circle cx="730" cy="120" r="3" fill="#22d3ee" opacity="0.8"/>
+</svg>
+
+You have a study, a deadline, and an AI that will happily cite a federal regulation that does not exist — your job is to draft fast and then catch it lying.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Intermediate</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Any chat AI</span>
+</div>
+
+## The goal
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Produce a tight, IRB-ready <strong>Risks &amp; Benefits</strong> section for the study described below — and, alongside it, a <strong>verification log</strong> that flags every factual claim the AI made that you could not confirm. A "winning" team turns in copy that a real IRB reviewer would nod at <em>and</em> a list of the bluffs they caught. We are deliberately not telling you how to prompt for either one. That is the puzzle.
+</div>
+
+## Why it matters
+
+Human-subjects protocols are where good science meets institutional reality. Every pain study you ever run — a thermal QST battery, a cuff-pressure paradigm, an opioid challenge, an fMRI scan in people who cannot lie flat without flaring — needs a risks-and-benefits section that is honest, specific, and correctly grounded in regulation. AI can get you from blank page to credible draft in minutes, which is genuinely useful when an IRB submission is due Friday.
+
+But this is also the single best place to watch an LLM hallucinate with total confidence. It will invent regulatory citations (a plausible-looking "45 CFR" subpart that does not say what it claims), assign false numeric risk rates ("first-degree burns occur in approximately 2.3% of QST sessions"), and confidently mis-describe SAR limits or contrast-agent risks for a scan that does not even use contrast. If you cannot catch that in a low-stakes workshop, you will not catch it in your grant, your methods section, or your consent form. This challenge trains the reflex that matters most: draft fast, then trust nothing until you have verified it.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+
+<div class="prompt">Write the risks and benefits section for my fMRI pain study and cite the relevant regulations.</div>
+
+The output reads fine and is almost entirely untrustworthy. It produces generic boilerplate ("participants may experience mild discomfort"), invents precise-sounding risk percentages with no source, and drops in official-looking citations like "per 45 CFR 46.404, thermal stimuli are limited to 50 degrees C" — a regulation number that exists but says nothing of the kind. Worst of all, it never tells you which claims it made up, so you cannot tell the real risks from the confabulated ones.
+</div>
+
+<div class="box good"><span class="box-label">Stronger prompt</span>
+
+<div class="prompt">You are an experienced IRB analyst at a US academic medical center. Below is a study description. Draft a Risks &amp; Benefits section in two columns: (1) the section text, and (2) a parallel verification log.
+
+For EVERY factual claim — each risk, each probability or severity rating, and each regulatory or guideline citation — add a tag in the log: [VERIFIED] only if it is common, uncontroversial knowledge you are highly confident about; [CHECK] if it is plausible but I must confirm it against a primary source; [UNCERTAIN/POSSIBLY FABRICATED] if you are inferring or guessing. Do NOT invent specific numeric incidence rates; if you state one, mark it [CHECK] and name exactly what document I should look it up in.
+
+After the draft, list the 5 claims most likely to be wrong and tell me how to verify each. Then rate your overall confidence 0-100 and explain the score.
+
+STUDY: [paste the study description]</div>
+
+It works because it forces the model to separate prose it can fluently generate from facts it actually knows, bans the most dangerous behavior (made-up incidence rates) unless explicitly flagged, and ends with adversarial self-critique plus a calibrated confidence score — turning the AI into both drafter and its own first reviewer.
+</div>
+
+## Prompting moves to try
+
+- <strong>Decompose the goal.</strong> Split the task into "draft the prose" and "audit the facts" as two passes (or two columns). Quality jumps when the model is not doing both at once.
+- <strong>Role / identity prompting.</strong> "You are an IRB analyst" vs. "you are the skeptical reviewer who rejects unsupported claims" produce very different drafts. Run both and diff them.
+- <strong>Adversarial self-evaluation.</strong> After the draft, ask: "Act as a hostile IRB reviewer. List every claim you cannot defend and every citation you are not certain is real. Score your own confidence 0-100 per claim." Watch the confidence collapse on the fabricated bits.
+- <strong>Bait the bluff.</strong> Explicitly ask for "the exact CFR subpart and a one-line quote of what it says." Fabrications get more obvious when the model has to produce a verbatim quote it does not have.
+- <strong>Ask it to improve your prompt.</strong> "Rewrite my prompt so the output is harder to hallucinate in. What did you change and why?" Then run the upgraded version.
+- <strong>Force a source map.</strong> Require a final line: "Which of these claims would survive a Google Scholar / official .gov check, and which would not?"
+
+## Starter materials
+
+Paste the study description below into your AI. The detail is deliberate — enough to draft from, with several traps where a careless model will fabricate.
+
+<div class="box tip"><span class="box-label">Study description (paste this)</span>
+
+<strong>Title:</strong> Central sensitization signatures in chronic low back pain: a combined QST, thermal pain, and fMRI study.
+
+<strong>Population:</strong> 60 adults (ages 18-65) with chronic low back pain (≥3 months, average intensity ≥4/10) and 30 pain-free controls. Excludes pregnancy, active substance use disorder, MRI contraindications (pacemaker, ferromagnetic implants, claustrophobia), and current opioid use above 30 morphine milligram equivalents/day.
+
+<strong>Session 1 (≈2 hr, behavioral lab):</strong> Quantitative sensory testing (QST) per a standardized battery — thermal detection and pain thresholds via a contact thermode on the forearm and lower back (cutoff 50 degrees C), pressure pain thresholds via handheld algometer, and a brief conditioned pain modulation task using a cold-water immersion conditioning stimulus (hand in ~10 degrees C water for up to 60 s, participant may withdraw at any time).
+
+<strong>Session 2 (≈1 hr, 3T MRI):</strong> Structural and functional MRI. During the scan, participants receive individually calibrated noxious heat stimuli (target 5-6/10 pain) to the lower leg via an MRI-compatible thermode, and rate pain on a visual analog scale. No contrast agent is used. Standard 3T scanner with manufacturer-standard SAR limits.
+
+<strong>Compensation:</strong> 75 USD per session. Participants may stop at any time without penalty.
+
+<strong>Data:</strong> De-identified; neuroimaging stored on an institutional secure server; a coded key links to a separate access-controlled file.
+</div>
+
+<div class="box tip"><span class="box-label">Verification log template (paste this)</span>
+
+Have the AI fill this in, one row per factual claim:
+
+<strong>Claim</strong> | <strong>Type (risk / number / citation / benefit)</strong> | <strong>AI confidence 0-100</strong> | <strong>Status: VERIFIED / CHECK / POSSIBLY FABRICATED</strong> | <strong>How I would verify it</strong> | <strong>Verdict after human check</strong>
+</div>
+
+<div class="box bad"><span class="box-label">Planted traps — see how many your team catches</span>
+These are the kinds of bluffs models commonly produce on this exact study. Do not show participants until the debrief.
+
+<ul>
+<li><strong>Invented incidence numbers.</strong> e.g. "thermal QST causes burns in ~1-3% of sessions" — there is no such established rate; a 50 degrees C cutoff thermode is designed to prevent tissue damage.</li>
+<li><strong>Fabricated or misapplied citations.</strong> e.g. "per 45 CFR 46.404…" (that subpart is about research on children, not thermal limits), or a made-up "FDA guideline" on cold-pressor duration.</li>
+<li><strong>Phantom risks.</strong> Listing gadolinium / contrast-agent risks, or IV-line risks — this study uses no contrast and no IV.</li>
+<li><strong>Wrong regulatory framing.</strong> Calling cold-water immersion or calibrated heat "greater than minimal risk" or "minimal risk" without justification, or citing a specific SAR number it cannot source.</li>
+<li><strong>Overstated direct benefit.</strong> Claiming participants will receive diagnostic or therapeutic benefit from a research scan, which they generally will not.</li>
+</ul>
+</div>
+
+## Debrief questions
+
+1. Which claims did the AI mark high-confidence that turned out to be fabricated? What did "confident and wrong" look like — and would you have caught it without the verification log?
+2. Of the planted traps, which did your team catch and which slipped through? What made the missed ones convincing?
+3. Did adding a role ("hostile reviewer") or a self-scoring step actually change what the AI was willing to flag, or just change the tone?
+4. Where is the line between a risk the AI can reasonably state (discomfort from heat) and a number it must never invent (a burn incidence rate)?
+5. If you had 60 more seconds before submitting this to a real IRB, what is the single highest-value thing you would verify by hand?
+
+## Level up
+
+- <strong>Cross-examine two models.</strong> Run the same prompt on two different AIs and have a third pass adjudicate: "Here are two risk sections. Which claims do they disagree on, and which disagreement signals a likely hallucination?"
+- <strong>Build a reusable verification harness.</strong> Turn your best prompt into a saved template that ends with a calibration table and a "claims to verify" list — something you could reuse for your next real protocol's first draft.
+- <strong>Trace one citation to ground truth.</strong> Pick the single most official-sounding citation the AI produced and actually find the primary source (or prove it does not exist). Report back what the regulation really says.
+
+## Ethics
+
+<div class="box ethics"><span class="box-label">Responsible use</span>
+AI can draft a first pass of a risks/benefits section, but <strong>you</strong> are accountable for every word submitted to an IRB. Never submit AI-generated regulatory citations, incidence rates, or risk language without verifying each against a primary source — fabricated regs in a protocol are a real integrity problem, not a typo. Use AI on <strong>your own</strong> draft protocols only; do not paste collaborators' unpublished study designs into tools without permission, and never use it to process or fast-track someone else's confidential submission you have been assigned to review. The verification log is not busywork — it is the part you sign your name to.
+</div>
+
+---
+
+<p class="meta-row"><a class="pill cyan" href="index.qmd">← Challenge menu</a> <a class="pill violet" href="../intro/tools.qmd">AI Toolkit →</a></p>

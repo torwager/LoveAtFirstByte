@@ -1,0 +1,77 @@
+---
+title: ""
+pagetitle: "Love at First Byte — AI in Academia"
+page-layout: custom
+toc: false
+sidebar: false
+anchor-sections: false
+---
+
+```{=html}
+<script>document.body.classList.add('lafb-landing');</script>
+```
+
+::: {.lafb-hero}
+<canvas id="constellation" aria-hidden="true"></canvas>
+
+::: {.lafb-hero-inner}
+<div class="lafb-eyebrow">NAPS · AI for Academia · 2026</div>
+
+<h1 class="lafb-title">Love at First <span class="grad-text">Byte</span></h1>
+
+<p class="lafb-sub">A hands-on workshop on using AI in pain science &amp; academia. In the era of AI, answers are cheap — it’s <em>judgment</em> that’s expensive. Come build yours.</p>
+
+<div class="lafb-cta">
+  <a class="btn-lafb btn-primary-lafb" href="intro/overview.qmd">Start the Workshop →</a>
+  <a class="btn-lafb btn-ghost-lafb" href="challenges/index.qmd">Browse Challenges</a>
+</div>
+:::
+
+<div class="lafb-hint">move your cursor — the network responds ✨</div>
+:::
+
+::: {.lafb-section}
+<div class="quote-block">
+“In the era of AI, answers have become cheap. It’s judgment that is expensive.”
+<span class="by">— Santiago Schnell, Provost, Dartmouth College</span>
+</div>
+:::
+
+::: {.lafb-section}
+## What you’ll do {.text-center}
+<p class="lead">Two fast-paced AI Challenge Matches. You bring the research questions; AI brings the horsepower; the room brings the judgment.</p>
+
+::: {.card-grid}
+<a class="lafb-card" href="intro/overview.qmd">
+<h3>🗺️ The Format</h3>
+<p>A 90-minute arc: a quick intro, then two timed challenges run as friendly matches. See the schedule and the rules of play.</p>
+</a>
+<a class="lafb-card" href="intro/tools.qmd">
+<h3>🧰 The AI Toolkit</h3>
+<p>Best free tools for beginners (chat apps) and power users (Claude Code, Codex, Gemini CLI) — with setup links.</p>
+</a>
+<a class="lafb-card" href="challenges/index.qmd">
+<h3>⚡ The Challenges</h3>
+<p>From rescuing an ugly figure to drafting a rebuttal to auditing your own grant. Pick your match.</p>
+</a>
+<a class="lafb-card" href="facilitation/facilitator-guide.qmd">
+<h3>🎤 For Facilitators</h3>
+<p>Run-of-show, timing scripts, the “bad-prompt” demo, debrief prompts, and the ethics moment.</p>
+</a>
+:::
+:::
+
+::: {.lafb-section}
+<div class="stat-strip">
+  <div class="stat"><div class="num">90</div><div class="lbl">minutes</div></div>
+  <div class="stat"><div class="num">2</div><div class="lbl">challenge matches</div></div>
+  <div class="stat"><div class="num">14</div><div class="lbl">challenges to choose from</div></div>
+  <div class="stat"><div class="num">$0</div><div class="lbl">free tools, no subscription</div></div>
+</div>
+:::
+
+::: {.lafb-section style="text-align:center; margin-bottom:4rem;"}
+<a class="btn-lafb btn-primary-lafb" href="intro/overview.qmd">Get started →</a>
+:::
+
+<script src="assets/js/neural-constellation.js" defer></script>

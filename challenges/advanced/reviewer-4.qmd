@@ -1,0 +1,200 @@
+---
+title: "Reviewer 4"
+subtitle: "Stand up a multi-agent grant clinic that critiques your R01 like a study section."
+description: "Use agentic AI to run a full mock peer review of your own grant draft — scores, missing citations, study-section fit, and a brutally honest line edit."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-reviewer-4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-reviewer-4-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft glow behind the table -->
+  <ellipse cx="400" cy="110" rx="300" ry="90" fill="url(#g-reviewer-4-glow)"/>
+
+  <!-- the "document" under review -->
+  <rect x="70" y="40" width="150" height="140" rx="10" fill="#0b1020" stroke="url(#g-reviewer-4)" stroke-width="2" opacity="0.95"/>
+  <line x1="90" y1="66" x2="200" y2="66" stroke="#36e0d0" stroke-width="3" opacity="0.8"/>
+  <line x1="90" y1="84" x2="200" y2="84" stroke="#9aa6c7" stroke-width="2" opacity="0.6"/>
+  <line x1="90" y1="98" x2="200" y2="98" stroke="#9aa6c7" stroke-width="2" opacity="0.6"/>
+  <line x1="90" y1="112" x2="180" y2="112" stroke="#9aa6c7" stroke-width="2" opacity="0.6"/>
+  <line x1="90" y1="126" x2="200" y2="126" stroke="#9aa6c7" stroke-width="2" opacity="0.6"/>
+  <line x1="90" y1="140" x2="170" y2="140" stroke="#9aa6c7" stroke-width="2" opacity="0.6"/>
+  <circle cx="205" cy="50" r="10" fill="#ff4d8d" opacity="0.9"/>
+  <text x="205" y="54" font-family="monospace" font-size="11" fill="#0b1020" text-anchor="middle" font-weight="bold">!</text>
+
+  <!-- four reviewer "agent" nodes around a study-section table -->
+  <g stroke="url(#g-reviewer-4)" stroke-width="1.6" opacity="0.7">
+    <line x1="300" y1="70" x2="430" y2="110"/>
+    <line x1="300" y1="150" x2="430" y2="110"/>
+    <line x1="560" y1="60" x2="430" y2="110"/>
+    <line x1="600" y1="150" x2="430" y2="110"/>
+    <line x1="690" y1="105" x2="430" y2="110"/>
+  </g>
+
+  <!-- central synthesis node -->
+  <circle cx="430" cy="110" r="22" fill="#0b1020" stroke="url(#g-reviewer-4)" stroke-width="2.5"/>
+  <circle cx="430" cy="110" r="8" fill="#fbbf24" opacity="0.95"/>
+
+  <!-- reviewer agents -->
+  <g>
+    <circle cx="300" cy="70" r="16" fill="#0b1020" stroke="#22d3ee" stroke-width="2"/>
+    <text x="300" y="75" font-family="monospace" font-size="13" fill="#22d3ee" text-anchor="middle">R1</text>
+  </g>
+  <g>
+    <circle cx="300" cy="150" r="16" fill="#0b1020" stroke="#36e0d0" stroke-width="2"/>
+    <text x="300" y="155" font-family="monospace" font-size="13" fill="#36e0d0" text-anchor="middle">R2</text>
+  </g>
+  <g>
+    <circle cx="560" cy="60" r="16" fill="#0b1020" stroke="#f472b6" stroke-width="2"/>
+    <text x="560" y="65" font-family="monospace" font-size="13" fill="#f472b6" text-anchor="middle">R3</text>
+  </g>
+  <g>
+    <circle cx="600" cy="150" r="16" fill="#0b1020" stroke="#ff4d8d" stroke-width="2"/>
+    <text x="600" y="155" font-family="monospace" font-size="13" fill="#ff4d8d" text-anchor="middle">R4</text>
+  </g>
+  <g>
+    <circle cx="690" cy="105" r="16" fill="#0b1020" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="690" y="110" font-family="monospace" font-size="13" fill="#8b5cf6" text-anchor="middle">R5</text>
+  </g>
+
+  <!-- a score badge -->
+  <rect x="700" y="40" width="58" height="26" rx="13" fill="#0b1020" stroke="#fbbf24" stroke-width="1.6"/>
+  <text x="729" y="58" font-family="monospace" font-size="13" fill="#fbbf24" text-anchor="middle">2.1</text>
+
+  <!-- accent dots -->
+  <circle cx="250" cy="40" r="3" fill="#22d3ee"/>
+  <circle cx="500" cy="185" r="3" fill="#ff4d8d"/>
+  <circle cx="380" cy="55" r="2.5" fill="#fbbf24"/>
+  <circle cx="640" cy="95" r="2.5" fill="#36e0d0"/>
+</svg>
+
+You wrote an R01. Now convene a study section that never sleeps, never gets territorial, and tells you exactly where your aims will get shredded — before the real one does.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Advanced · Claude Code / Codex</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Agentic CLI</span>
+</div>
+
+## The goal
+
+<div class="box goal">
+  <span class="box-label">The Goal</span>
+  Take a real grant draft (the instructor's sample, or your own) and walk away with an <strong>impact score, a written critique, and a prioritized revision list</strong> that you actually trust. Trust is the hard part: the output should tell you where it is confident, where it is guessing, and which fixes will move the score the most. If your team could hand the result to your PI and have them nod, you have won.
+</div>
+
+## Why it matters
+
+Study section is a black box that decides whether your science happens. Most trainees see it exactly once per submission, months too late, through three terse paragraphs from "Reviewer 4" — the one who clearly read a different grant. You cannot rehearse a panel. But you can simulate one.
+
+A well-orchestrated agent doesn't just proofread. It role-plays a skeptical immunologist who doesn't believe your pain model translates, finds the 2023 paper you should have cited (and dreaded), notices that Aim 2 secretly depends on Aim 1 succeeding, and flags that "central sensitization" is doing far too much load-bearing work in your Significance section. That is the feedback loop that turns a fundable idea into a funded one — and it is exactly the loop a busy mentor rarely has time to run line by line.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad">
+  <span class="box-label">Weak prompt</span>
+  <div class="prompt">Here is my grant. Review it and tell me if it's good.</div>
+  The model returns a polite book report: "This is a well-written proposal on an important topic." It praises your enthusiasm, suggests you "add more detail," and assigns no score. It has no persona, no rubric, no incentive to be hard on you — so it is reflexively nice. You learn nothing a friendly labmate wouldn't tell you over coffee.
+</div>
+
+<div class="box good">
+  <span class="box-label">Strong prompt</span>
+  <div class="prompt">You are a permanent member of NIH study section reviewing this R01 under the NINDS portfolio. Read SOUL.md for your persona and TASKS.md for the rubric. Score Significance, Investigators, Innovation, Approach, and Environment each 1-9 (1=exceptional, 9=poor), then give an Overall Impact score. Be the harshest fair reviewer on the panel — assume the applicant is talented and the bar is the top 10th percentile. For every criticism, cite the exact sentence or aim it attacks. End with: (a) your three most score-limiting concerns, ranked, and (b) a confidence rating (low/med/high) for each, plus what additional info would raise your confidence.</div>
+  It works because it assigns an <strong>identity</strong> with a stake, a <strong>scoring rubric</strong> the model must fill in, an <strong>adversarial standard</strong> (top decile, harshest-but-fair), a demand for <strong>evidence-anchored</strong> critique, and a <strong>self-calibration</strong> step so you know which complaints to take seriously.
+</div>
+
+## Prompting moves to try
+
+- <strong>Decompose the review into agents.</strong> Don't ask for "a review" — ask for five named reviewers (a mechanism person, a clinician, a statistician, a translational skeptic, a generalist) who each score independently, then a Chair who reconciles them into one impact score. Disagreement between agents is signal.
+- <strong>Role with a real address.</strong> "You are a permanent member of the Somatosensory & Pain Systems (SPS) study section" beats "you are a reviewer." Ask it to name the most likely standing members and what each tends to care about, so you can pre-empt their hobbyhorses.
+- <strong>Adversarial self-evaluation.</strong> After the critique, have the model grade its own review: "Which of your criticisms are airtight vs. speculative? Rate your confidence 1-5 and flag anything you may have hallucinated, especially citations." Then verify the flagged ones yourself.
+- <strong>Citation gap hunt.</strong> Ask specifically for "directly relevant work from the last 3 years that this draft fails to cite, and why a reviewer would expect it." Treat every suggested reference as a lead to verify, not a fact.
+- <strong>Ask the AI to improve your prompt.</strong> "Before you start, rewrite my instructions to get a more rigorous review, then proceed with your improved version." Models are often better at specifying the job than you are.
+- <strong>Separate diagnosis from surgery.</strong> Run critique first; only after you trust it, ask for line edits and a revised draft. Mixing them produces a rewrite that papers over the real problems.
+
+## Starter materials
+
+Drop these two files in your working folder, point the agent at them, then feed it the grant. Built for Claude Code or Codex, but the contents work in any chat.
+
+<strong>SOUL.md</strong> — the reviewer persona
+
+<div class="prompt">
+# SOUL.md — Reviewer persona<br/><br/>
+You are MORGAN REYES, PhD/MD, a permanent member of an NIH study section that reviews pain neuroscience R01s (think Somatosensory & Pain Systems). 18 years funded; two R01s and a U19. You have reviewed ~400 grants.<br/><br/>
+VOICE: Direct, dry, occasionally witty, never cruel. You respect the applicant's time and intelligence. You assume the person is smart, so you do not explain basics — you pressure-test logic.<br/><br/>
+STANDARD: The payline is brutal. A "good idea" scores a 4. To get a fundable score the grant must be important AND feasible AND de-risked AND clearly written. You reward de-risking (preliminary data, alternatives, power) and punish hand-waving.<br/><br/>
+HABITS:<br/>
+- You read the Aims page first and decide if you care. If Aim 2 depends on Aim 1, you say so.<br/>
+- You hunt for the rate-limiting experiment and ask what happens if it fails.<br/>
+- You are allergic to jargon used as proof ("central sensitization explains this") and to clinical-significance claims unsupported by effect sizes.<br/>
+- You always anchor a criticism to a specific sentence or figure.<br/>
+- You distinguish what you KNOW from what you SUSPECT, and you say which is which.<br/><br/>
+RED LINES: You never fabricate citations or data. If you are unsure a reference exists, you say "verify this" rather than asserting it.
+</div>
+
+<strong>TASKS.md</strong> — the orchestration checklist
+
+<div class="prompt">
+# TASKS.md — Grant clinic run order<br/><br/>
+Work through these as separate, labeled sections. Do 1-3 before any rewriting.<br/><br/>
+1. FULL REVIEW. Adopt SOUL.md. Score Significance, Investigators, Innovation, Approach, Environment (1-9 each) and give an Overall Impact (1-9). Write a Strengths / Weaknesses critique per criterion, anchored to specific text.<br/>
+2. REVIEW THE REVIEW. Re-read your own critique. Rate confidence (low/med/high) for each major point. Flag anything speculative or possibly hallucinated. List what info would raise your confidence.<br/>
+3. STUDY SECTION FIT. Name the 1-2 best-fitting NIH study sections for this proposal and 3-5 standing-member archetypes likely to be assigned, with what each will scrutinize. (Verify section names; do not invent specific people.)<br/>
+4. MISSING CITATIONS. List directly relevant work from the last ~3 years the draft should cite, with one line on why each matters. Mark each "verify."<br/>
+5. CONCEPT RISK. Flag terms/assumptions reviewers may not share or may object to (e.g., model translatability, biomarker validity). For each, give a one-sentence clarification to add.<br/>
+6. LOGICAL FLOW. Map the argument from Significance to Aims. Note gaps, circularity, and aim dependencies. Suggest a reorder if it helps.<br/>
+7. LINE EDIT. Copyedit the Specific Aims page line by line for clarity and concision. Show before/after.<br/>
+8. (FOR FUN) REVISE + COMPLY. Produce a tightened Aims page addressing the top 3 concerns, and check formatting compliance (margins, font, page limits, required sections) against current NIH rules.
+</div>
+
+<strong>Sample target (use if you don't have your own).</strong> Paste this stub as the grant under review — it has deliberate flaws for the agents to find.
+
+<div class="prompt">
+SPECIFIC AIMS (draft). Chronic low back pain (cLBP) affects 80M U.S. adults and current opioids fail most of them. We have discovered that microglial TREM2 signaling drives central sensitization. We hypothesize that blocking TREM2 will reverse chronic pain. Aim 1: Using our novel mouse cLBP model, we will show TREM2 knockout reduces mechanical allodynia. Aim 2: We will use the validated biomarker from Aim 1 to stratify human cLBP patients in a pilot trial and show our TREM2 inhibitor works. Aim 3: We will perform fMRI to prove central sensitization is reduced. This work will cure chronic pain. Preliminary data: n=4 mice show a trend (p=0.08).
+</div>
+
+## Debrief questions
+
+- Which criticism from the agent would actually change how you'd revise — and which was generic filler you could have written yourself? What made the difference in the prompt?
+- The model rated its own confidence. Where was it overconfident, and how would you catch that without already being an expert?
+- Did the multi-agent panel surface disagreements a single reviewer would have missed? Was the synthesis honest about them or did it smooth them over?
+- Every suggested missing citation is a hypothesis. What is your verification workflow before you'd add one to a real grant?
+- Where did the persona (SOUL.md) clearly change the output versus a default model? Which trait mattered most — the harsh standard, the evidence-anchoring, or the "say what you don't know" rule?
+
+## Level up
+
+- <strong>Run a rebuttal loop.</strong> Have a second agent play the applicant writing the Introduction-to-Resubmission, responding to Reviewer Morgan's critique. Then have Morgan re-score. Did your responses actually move the number?
+- <strong>Calibrate against ground truth.</strong> If you have a previously reviewed grant with real summary-statement scores, run the clinic blind and compare. How close was the simulated impact score, and where did it diverge?
+- <strong>Build a reusable panel.</strong> Turn SOUL.md and TASKS.md into a slash command / saved project so any draft can be dropped in and reviewed in one shot — your personal pre-submission study section.
+
+## Ethics
+
+<div class="box ethics">
+  <span class="box-label">Responsible use</span>
+  <strong>Never run this on a grant you have been assigned to review.</strong> NIH, CIHR, and journal peer review are confidential. Uploading someone else's submission to an AI tool breaches that confidentiality, may violate your reviewer agreement, and can constitute research misconduct — even if you only use the AI to "help organize your thoughts." This challenge is for improving <strong>your own drafts</strong> (or shared teaching samples) only. Two more: (1) Treat every AI-suggested citation, statistic, and study-section name as <em>unverified</em> until you confirm it — models hallucinate references with great confidence. (2) The judgment stays yours. Use the panel to find blind spots, not to outsource the thinking that makes the science yours.
+</div>
+
+---
+
+<p class="meta-row"><a href="../index.qmd">← Back to the Challenge menu</a> · <a href="../../intro/tools.qmd">AI Toolkit →</a></p>

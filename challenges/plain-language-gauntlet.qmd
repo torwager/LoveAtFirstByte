@@ -1,0 +1,189 @@
+---
+title: "Plain Language Gauntlet"
+subtitle: "One dense methods paragraph, three very different audiences."
+description: "Take a jargon-dense pain-neuroimaging methods paragraph and make an AI translate it for a 10th grader, a patient advocate, and an NIH program officer — then ship the best one."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-plain-language-gauntlet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-plg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft glow behind the source node -->
+  <circle cx="150" cy="110" r="80" fill="url(#g-plg-glow)"/>
+
+  <!-- dense source: a tight cluster of small nodes = jargon -->
+  <g opacity="0.95">
+    <circle cx="120" cy="80" r="5" fill="#9aa6c7"/>
+    <circle cx="148" cy="70" r="5" fill="#9aa6c7"/>
+    <circle cx="175" cy="92" r="5" fill="#9aa6c7"/>
+    <circle cx="132" cy="108" r="5" fill="#9aa6c7"/>
+    <circle cx="162" cy="120" r="5" fill="#9aa6c7"/>
+    <circle cx="110" cy="132" r="5" fill="#9aa6c7"/>
+    <circle cx="186" cy="128" r="5" fill="#9aa6c7"/>
+    <circle cx="150" cy="146" r="5" fill="#9aa6c7"/>
+    <g stroke="#3a4775" stroke-width="1.4" opacity="0.7">
+      <line x1="120" y1="80" x2="148" y2="70"/>
+      <line x1="148" y1="70" x2="175" y2="92"/>
+      <line x1="175" y1="92" x2="162" y2="120"/>
+      <line x1="132" y1="108" x2="162" y2="120"/>
+      <line x1="120" y1="80" x2="132" y2="108"/>
+      <line x1="110" y1="132" x2="132" y2="108"/>
+      <line x1="162" y1="120" x2="186" y2="128"/>
+      <line x1="150" y1="146" x2="162" y2="120"/>
+    </g>
+  </g>
+
+  <!-- central prism / translator node -->
+  <polygon points="360,70 420,110 360,150 300,110" fill="url(#g-plain-language-gauntlet)" opacity="0.9"/>
+  <polygon points="360,70 420,110 360,150 300,110" fill="none" stroke="#e6ebff" stroke-width="1" opacity="0.4"/>
+
+  <!-- three fanning synapse beams to three audiences -->
+  <g stroke-width="2.5" fill="none" opacity="0.85">
+    <path d="M420,110 C520,60 600,55 690,55" stroke="#22d3ee"/>
+    <path d="M420,110 C520,110 600,110 690,110" stroke="#ff4d8d"/>
+    <path d="M420,110 C520,160 600,165 690,165" stroke="#8b5cf6"/>
+  </g>
+
+  <!-- three audience nodes, clean and bright = clarity -->
+  <g>
+    <circle cx="700" cy="55" r="14" fill="#22d3ee" opacity="0.95"/>
+    <circle cx="700" cy="110" r="14" fill="#ff4d8d" opacity="0.95"/>
+    <circle cx="700" cy="165" r="14" fill="#8b5cf6" opacity="0.95"/>
+    <circle cx="700" cy="55" r="22" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.4"/>
+    <circle cx="700" cy="110" r="22" fill="none" stroke="#ff4d8d" stroke-width="1" opacity="0.4"/>
+    <circle cx="700" cy="165" r="22" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- accent dots -->
+  <circle cx="250" cy="40" r="3" fill="#fbbf24"/>
+  <circle cx="480" cy="180" r="3" fill="#36e0d0"/>
+  <circle cx="560" cy="30" r="3" fill="#f472b6"/>
+</svg>
+
+One paragraph of impenetrable methods-speak walks in; three crystal-clear explanations walk out — and you decide which one is good enough to actually send.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Beginner-friendly</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Any chat AI</span>
+  <span class="pill rose">Recommended core challenge</span>
+</div>
+
+## The goal
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Take the dense methods paragraph below and produce a version your <strong>assigned audience</strong> would actually understand and trust — a 10th grader, a patient advocate, or a non-specialist NIH program officer. By the end you should have <strong>one</strong> explanation polished enough that you'd be comfortable pasting it into a grant aim, a study newsletter, or a recruitment flyer. We are judging the <em>output for a real reader</em>, not the cleverness of the method you used to get there.
+</div>
+
+## Why it matters
+
+Every translational pain scientist lives a triple life. You write Specific Aims that a program officer outside your subfield has to find compelling in 90 seconds. You sit on community advisory boards where a patient with fibromyalgia asks what your scanner actually measures. You do outreach, mentor undergrads, and explain your work at Thanksgiving. The skill of compressing "resting-state functional connectivity of the periaqueductal gray" into something a smart non-expert grasps — without lying to them — is one of the highest-leverage academic skills there is, and it is exactly the kind of task a chat AI is shockingly good at scaffolding. Learn to drive it well here and you'll reuse the move on every abstract, lay summary, and Plain Language Statement you write for the rest of your career.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+
+<div class="prompt">Explain this paragraph in simple terms: [paste methods paragraph]</div>
+
+The AI will dutifully swap a few big words for slightly smaller words and call it a day. "Simple terms" has no audience, no length, no purpose, and no quality bar — so you get a flat, generic gloss that's still too technical for a patient and too vague for a program officer. It also keeps the paper's hedging ("we examined the association between...") instead of telling the reader why any of it matters.
+</div>
+
+<div class="box good"><span class="box-label">Strong prompt</span>
+
+<div class="prompt">You are explaining a pain-neuroimaging study to a patient advocate on our community advisory board — a smart, motivated adult with no science background who has lived with chronic low back pain for years.
+
+Rewrite the methods paragraph below into about 120 words at a 9th-grade reading level. Rules: no acronyms without a plain-English gloss the first time; use one everyday analogy for "functional connectivity"; lead with what we were trying to find out and why it could matter to someone in pain; never overclaim — keep it honest about what a brain scan can and can't show.
+
+Then, in a separate section, list any sentence where you simplified something in a way a methods expert might object to, and rate your own confidence (1-5) that each sentence is still accurate.
+
+Methods paragraph: [paste]</div>
+
+It works because it nails the four levers the weak prompt missed: a concrete <strong>audience</strong> (with a backstory that sets vocabulary and stakes), a <strong>format</strong> (length + reading level), explicit <strong>constraints</strong> (gloss acronyms, one analogy, no overclaiming), and a built-in <strong>self-check</strong> that surfaces exactly the spots a domain expert needs to verify. You get a usable draft <em>and</em> a map of where to fact-check it.
+</div>
+
+## Prompting moves to try
+
+- <strong>Cast the reader, not just the topic.</strong> Give the AI a one-sentence persona with stakes: "a program officer who funds basic neuroscience but isn't a pain specialist and skims 40 aims a day." Specific readers produce specific prose.
+- <strong>Decompose the goal.</strong> Ask first for a glossary of the 5 hardest terms in plain English, then ask it to write the explanation using that glossary. Splitting "understand" from "rewrite" beats doing both in one shot.
+- <strong>Demand an analogy budget.</strong> "Use exactly one analogy for connectivity, and flag it as an analogy" stops the AI from drowning a patient in metaphors or none at all.
+- <strong>Adversarial self-evaluation.</strong> "Now critique your own version as a skeptical senior methods reviewer: what did you oversimplify, and where might a reader be misled? Score each risky sentence 1-5 for accuracy." This catches the polite-but-wrong sentences.
+- <strong>Make it improve your prompt.</strong> Paste your prompt and ask: "Before answering, rewrite my instructions to get a clearer result for this audience, then proceed." You'll often learn what you forgot to specify.
+- <strong>Force a contrast.</strong> "Give me two versions — one cautious, one vivid — and tell me which you'd send to this audience and why." Comparison makes the right voice obvious.
+
+## Starter materials
+
+<strong>The dense methods paragraph (give this identical text to every group):</strong>
+
+<div class="box tip"><span class="box-label">Methods excerpt — "Altered descending pain modulation in chronic low back pain"</span>
+Forty-two patients with chronic low back pain (cLBP) and 40 age- and sex-matched pain-free controls underwent quantitative sensory testing (QST) and resting-state functional MRI on a 3T scanner. QST included pressure pain thresholds (PPT) over the lumbar paraspinals and a conditioned pain modulation (CPM) paradigm using a cold-pressor conditioning stimulus, indexed as the change in PPT from baseline. Resting-state BOLD data (TR = 2000 ms, 6 min, eyes open) were preprocessed with motion scrubbing (FD > 0.5 mm censored), nuisance regression (24 motion parameters, white matter and CSF signals, aCompCor), and band-pass filtering (0.01–0.1 Hz). We computed seed-based functional connectivity between the periaqueductal gray (PAG), rostral ventromedial medulla (RVM), and dorsolateral prefrontal cortex (dlPFC), and tested group differences using a general linear model with age and framewise displacement as covariates, thresholded at a voxelwise p &lt; 0.001 with cluster-level FWE correction (p &lt; 0.05). PAG–dlPFC connectivity was negatively correlated with CPM efficiency across the full sample (r = -0.34, p = 0.002).
+</div>
+
+<strong>Audience cards (assign ONE per group):</strong>
+
+<div class="card-grid">
+  <a class="lafb-card">
+    <h3>Card A · 10th grader</h3>
+    <p>A curious 15-year-old in a high-school biology class. Goal: they could explain back to a friend "what these scientists did and what they found." ~100 words, no jargon, one good analogy.</p>
+  </a>
+  <a class="lafb-card">
+    <h3>Card B · Patient advocate</h3>
+    <p>An adult with chronic low back pain on your community advisory board. Goal: they trust that the study respects their experience and grasp why a brain scan is relevant to <em>their</em> pain. ~120 words, honest about limits.</p>
+  </a>
+  <a class="lafb-card">
+    <h3>Card C · NIH program officer</h3>
+    <p>A non-specialist program officer who funds neuroscience broadly. Goal: the significance and rigor land in ~90 seconds of skimming. ~120 words, keep one quantitative result, emphasize the "so what."</p>
+  </a>
+</div>
+
+<strong>Quality rubric (use this to pick your one best version):</strong>
+
+| Criterion | Failing | Solid | Excellent |
+|---|---|---|---|
+| Audience fit | Wrong vocabulary / level | Mostly right register | Sounds written *for* that reader |
+| Accuracy | Introduces an error | Technically defensible | Honest about what's uncertain |
+| Clarity | Jargon survives | Plain but flat | Plain and genuinely vivid |
+| "So what" | Missing | Stated | Compelling and specific |
+
+<strong>Self-check the AI should run before you trust it:</strong>
+
+<div class="prompt">Re-read your explanation as the target reader. List anything they still wouldn't understand, anything that overstates what a brain scan or QST can prove, and the single weakest sentence. Then fix only those.</div>
+
+## Debrief questions
+
+- Which audience was hardest to write for, and why? (Most rooms find the patient advocate hardest — honesty plus warmth is a real constraint.)
+- Where did the AI quietly overclaim? Did "correlated with" silently become "causes," or did a scan become a "pain detector"?
+- What single line in your prompt produced the biggest jump in quality?
+- Compare two groups who had the same audience but different AIs or prompts — what explains the gap, the tool or the prompt?
+- Would you actually send your best version as-is? If not, what would <em>you</em> still need to fix by hand, and what does that tell you about where AI stops being trustworthy?
+
+## Level up
+
+- <strong>Round-trip test.</strong> Feed your plain-language version back to a fresh AI session and ask it to reconstruct the original methods. Compare to the real paragraph — what got lost or distorted is your accuracy leak.
+- <strong>One source, three outputs, one prompt.</strong> Write a single reusable template with an {{AUDIENCE}} variable that produces all three versions in one go, then have the AI grade each against the rubric above.
+- <strong>Ship it for real.</strong> Turn the program-officer version into the opening 3 sentences of a Significance section, and the patient version into a 50-word recruitment-flyer blurb — then critique both as if you were the IRB and the study section.
+
+---
+
+<p style="color:#9aa6c7"><a href="../index.qmd">← Back to the Challenge menu</a> · <a href="../intro/tools.qmd">AI Toolkit →</a></p>

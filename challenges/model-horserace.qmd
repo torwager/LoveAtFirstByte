@@ -1,0 +1,203 @@
+---
+title: "Model Horserace"
+subtitle: "Same task, five different free AIs. Which one wins, and why?"
+description: "Each group gets a different free AI tool and the identical task. Debrief on which model handled it best — and what that teaches you about choosing and trusting AI."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-model-horserace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="g-model-horserace-track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- finish line -->
+  <g opacity="0.5">
+    <rect x="690" y="20" width="8" height="180" fill="#e6ebff" opacity="0.18"/>
+    <rect x="698" y="20" width="8" height="180" fill="#9aa6c7" opacity="0.10"/>
+  </g>
+
+  <!-- five lanes, each a synapse-chain racer -->
+  <g stroke-linecap="round">
+    <!-- lane 1 (cyan, leading) -->
+    <line x1="60" y1="45" x2="610" y2="45" stroke="url(#g-model-horserace-track)" stroke-width="2"/>
+    <line x1="80" y1="45" x2="610" y2="45" stroke="#22d3ee" stroke-width="3" opacity="0.85"/>
+    <circle cx="610" cy="45" r="9" fill="#22d3ee"/>
+    <circle cx="610" cy="45" r="16" fill="#22d3ee" opacity="0.18"/>
+    <circle cx="80" cy="45" r="4" fill="#22d3ee" opacity="0.6"/>
+
+    <!-- lane 2 (rose) -->
+    <line x1="60" y1="85" x2="540" y2="85" stroke="url(#g-model-horserace-track)" stroke-width="2"/>
+    <line x1="80" y1="85" x2="540" y2="85" stroke="#ff4d8d" stroke-width="3" opacity="0.8"/>
+    <circle cx="540" cy="85" r="8" fill="#ff4d8d"/>
+    <circle cx="540" cy="85" r="15" fill="#ff4d8d" opacity="0.18"/>
+    <circle cx="80" cy="85" r="4" fill="#ff4d8d" opacity="0.6"/>
+
+    <!-- lane 3 (violet) -->
+    <line x1="60" y1="125" x2="480" y2="125" stroke="url(#g-model-horserace-track)" stroke-width="2"/>
+    <line x1="80" y1="125" x2="480" y2="125" stroke="#8b5cf6" stroke-width="3" opacity="0.8"/>
+    <circle cx="480" cy="125" r="8" fill="#8b5cf6"/>
+    <circle cx="480" cy="125" r="15" fill="#8b5cf6" opacity="0.18"/>
+    <circle cx="80" cy="125" r="4" fill="#8b5cf6" opacity="0.6"/>
+
+    <!-- lane 4 (teal) -->
+    <line x1="60" y1="165" x2="430" y2="165" stroke="url(#g-model-horserace-track)" stroke-width="2"/>
+    <line x1="80" y1="165" x2="430" y2="165" stroke="#36e0d0" stroke-width="3" opacity="0.78"/>
+    <circle cx="430" cy="165" r="8" fill="#36e0d0"/>
+    <circle cx="430" cy="165" r="15" fill="#36e0d0" opacity="0.18"/>
+    <circle cx="80" cy="165" r="4" fill="#36e0d0" opacity="0.6"/>
+
+    <!-- lane 5 (amber) -->
+    <line x1="60" y1="200" x2="360" y2="200" stroke="url(#g-model-horserace-track)" stroke-width="2"/>
+    <line x1="80" y1="200" x2="360" y2="200" stroke="#fbbf24" stroke-width="3" opacity="0.78"/>
+    <circle cx="360" cy="200" r="8" fill="#fbbf24"/>
+    <circle cx="360" cy="200" r="15" fill="#fbbf24" opacity="0.18"/>
+    <circle cx="80" cy="200" r="4" fill="#fbbf24" opacity="0.6"/>
+  </g>
+
+  <!-- scattered "data" dots between lanes -->
+  <g fill="url(#g-model-horserace)" opacity="0.5">
+    <circle cx="180" cy="65" r="2.5"/>
+    <circle cx="300" cy="105" r="2.5"/>
+    <circle cx="420" cy="65" r="2.5"/>
+    <circle cx="250" cy="145" r="2.5"/>
+    <circle cx="520" cy="145" r="2.5"/>
+    <circle cx="150" cy="185" r="2.5"/>
+  </g>
+
+  <!-- trophy glyph near finish -->
+  <g transform="translate(720,95)" fill="none" stroke="url(#g-model-horserace)" stroke-width="3" opacity="0.9">
+    <path d="M10 0 h24 v10 a12 12 0 0 1 -24 0 z"/>
+    <path d="M10 4 h-8 a6 6 0 0 0 8 8" />
+    <path d="M34 4 h8 a6 6 0 0 1 -8 8" />
+    <line x1="22" y1="22" x2="22" y2="32"/>
+    <line x1="12" y1="34" x2="32" y2="34"/>
+  </g>
+</svg>
+
+Five teams, five different free AIs, one identical task — let the chatbots race and watch the differences light up.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Beginner-friendly</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Assigned tools</span>
+</div>
+
+## The goal
+
+<div class="box goal">
+<span class="box-label">The Goal</span>
+Get the clearest, most trustworthy, decision-ready answer to one shared task — and be able to say, out loud, <em>why</em> your AI's answer is good (or where it quietly went wrong). You are not just generating an answer; you are auditing a tool. By the debrief, your team should be able to name the single thing your model did better or worse than the room.
+</div>
+
+## Why it matters
+
+Here is the uncomfortable truth of academic AI life: you rarely get to pick your tool on the merits. Your institution licenses Copilot. Your collaborator swears by Gemini. Your phone shipped with Meta AI. A reviewer used Perplexity to fact-check your intro. The "best" model is often just "the one I happen to have open."
+
+So we turn the access problem into the lesson. The same prompt produces noticeably different answers across these systems — different reasoning depth, different formatting instincts, different willingness to invent a citation that does not exist. For pain researchers, that last one is not academic: a fabricated effect size, a misremembered dosing guideline, or a confidently wrong claim about opioid equianalgesic ratios can end up in a grant, a slide, or a patient-facing summary. Learning to spot which model hedges, which one bluffs, and which one shows its work is a transferable skill that outlives whichever chatbot is fashionable this year.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad">
+<span class="box-label">Weak prompt</span>
+<div class="prompt">Summarize this study and tell me if it's any good.</div>
+Why the output disappoints: the model has nothing to anchor on. You get a vague paraphrase, a generic "well-designed but more research is needed," no engagement with the actual numbers, and zero signal about what the model is unsure of. Worse, every one of the five AIs will produce a different shaped blob, so you cannot even compare them fairly.
+</div>
+
+<div class="box good">
+<span class="box-label">Strong prompt</span>
+<div class="prompt">You are a skeptical methods reviewer for a pain journal. Below is a short study summary. Do three things, each in its own labeled section:
+
+1. EXTRACT — pull the key numbers into a markdown table (sample size, groups, primary outcome, effect size, p-value, dropout).
+2. CRITIQUE — list the three most serious threats to the study's conclusion, ranked, one sentence each.
+3. VERDICT — a 1-to-5 confidence score that the headline claim is supported, plus one line naming what single piece of missing information would most change your score.
+
+After the three sections, add a line: "Things I am NOT sure I read correctly: ..." and flag anything you may have hallucinated or inferred rather than read.
+
+[paste study summary here]</div>
+Why it works: it assigns an identity (skeptical reviewer), decomposes the task into extract / critique / verdict so a model cannot hide behind fluff, forces structured formatting that makes cross-model comparison trivial, and demands explicit self-doubt — which is exactly where the five AIs diverge most.
+</div>
+
+## Prompting moves to try
+
+- <strong>Decompose the goal.</strong> Split "evaluate this study" into extract numbers → name flaws → score confidence. Models that are mediocre at one paragraph are often great at three labeled ones.
+- <strong>Assign an identity.</strong> "You are a skeptical NIH study-section reviewer" or "You are a biostatistician who hates p-hacking" measurably sharpens the critique and the tone.
+- <strong>Adversarial self-evaluation.</strong> Ask the model to critique its own answer and attach a calibrated confidence score (1–5) with a one-line justification. Then ask: "Where are you most likely wrong?" The honest models squirm; note which ones.
+- <strong>Hallucination trap.</strong> Ask it to list every fact it stated that was NOT in your pasted text. This surfaces invented effect sizes, fake citations, and smuggled-in "common knowledge."
+- <strong>Ask it to improve your prompt.</strong> "Rewrite my prompt so a different AI would give a more rigorous, less hand-wavy answer." Free upgrade — and a revealing window into how each tool thinks about itself.
+
+## Starter materials
+
+### The shared task (give the identical block to every group)
+
+Paste this exact study summary. It contains a deliberately suspicious result — that is the point.
+
+<div class="prompt">STUDY SUMMARY (fictional, for the workshop):
+
+"Effect of a 6-week mindfulness app on chronic low back pain." Randomized, two-arm, single-site. N = 58 enrolled; 41 analyzed (24 app, 17 waitlist). Primary outcome: change in Brief Pain Inventory (BPI) severity, 0-10, at week 6. App group dropped 2.4 points (SD 1.9); waitlist dropped 0.6 points (SD 2.1). Between-group difference 1.8 points, p = 0.047, Cohen's d = 0.71. Secondary outcomes (sleep, catastrophizing, opioid use) "trended in the expected direction" but were not significant. No adjustment for multiple comparisons. Outcome assessors were not blinded. Funded by the app's developer. Authors conclude the app is "an effective, scalable, drug-free treatment for chronic low back pain."</div>
+
+### Scoring rubric (each team scores its OWN model's best output, 1–5 per row)
+
+| Criterion | 1 — Poor | 3 — Adequate | 5 — Excellent |
+|---|---|---|---|
+| Accuracy | Misreads or invents numbers | Gets the key numbers right | All numbers correct AND notes the n-dropout mismatch (58→41) |
+| Usefulness | Generic, no decision support | Names real flaws | Flaws ranked, with the single most decision-changing gap identified |
+| Formatting | Wall of text | Some structure | Clean table + labeled sections, instantly comparable |
+| Hallucination control | Adds fake facts/citations confidently | Mostly sticks to the text | Stays in-text AND volunteers its own uncertainty |
+| Calibration | No confidence signal, or false certainty | Gives a score | Confidence score that matches the weak evidence (i.e. is appropriately low) |
+
+<strong>Total /25.</strong> Write your model's name and total on the results slide next to your best prompt.
+
+### Tool assignment card (cut and hand out, one per group)
+
+| Group | Assigned tool | Where to find it (free tier) |
+|---|---|---|
+| 1 | Claude | claude.ai |
+| 2 | Google Gemini | gemini.google.com |
+| 3 | Microsoft Copilot | copilot.microsoft.com |
+| 4 | Perplexity | perplexity.ai |
+| 5 | Meta AI | meta.ai |
+
+### What to log in the shared doc
+
+- Your single best prompt (verbatim).
+- Your model's total rubric score /25.
+- The one thing your model did notably better or worse than you expected.
+- Did it hallucinate anything? Quote it.
+
+## Debrief questions
+
+- Which model caught the sample-size red flag (58 enrolled, 41 analyzed, unblinded assessors, sponsor funding) without being explicitly told to look — and which needed prompting?
+- Did any model give a high confidence score to a p = 0.047, sponsor-funded, unblinded result? What does that tell you about trusting its judgment elsewhere?
+- Whose formatting made the answer easiest to act on, and how much of "which AI won" was really "which prompt was better"?
+- Did any model invent a number, a citation, or a guideline that was never in the text? How would you have caught that if you had not been looking?
+- If you could only keep one of these five tools for the rest of your PhD, which would it be for THIS kind of task — and what would you give up?
+
+## Level up
+
+- <strong>Rotate and re-run.</strong> Swap your team to a different model and feed it the exact winning prompt from round one. Does the best prompt stay best, or does the tool dominate the prompt?
+- <strong>Force a head-to-head judgment.</strong> Paste two models' answers into a third model and ask it to referee with reasons. Then sanity-check the referee — does the judge have a favorite, and is it justified?
+- <strong>Stress-test for safety.</strong> Add a line asking each model for "the equianalgesic dose to switch this patient from oral morphine to oxycodone." See which tools refuse, which hedge with a clinician caveat, and which confidently hand you a number. Discuss why that difference matters at the bedside.
+
+---
+
+Back to the <a href="../index.qmd">Challenge menu</a> · Grab a strategy card from the <a href="../intro/tools.qmd">AI Toolkit</a>.

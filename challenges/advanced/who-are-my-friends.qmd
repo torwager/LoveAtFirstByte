@@ -1,0 +1,225 @@
+---
+title: "Who Are My Friends?"
+subtitle: "Design a system that finds the reviewers who will love your paper."
+description: "An agentic challenge: decompose reviewer discovery into verifiable subtasks, mine citation context and sentiment, and stay on the right side of journal etiquette."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-who-are-my-friends" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-who-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4d8d" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff4d8d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- central "your paper" node glow -->
+  <circle cx="400" cy="110" r="80" fill="url(#g-who-glow)"/>
+
+  <!-- synapse lines radiating to peer nodes -->
+  <g stroke="url(#g-who-are-my-friends)" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M400 110 C 300 60, 220 70, 140 55"/>
+    <path d="M400 110 C 300 80, 230 130, 130 140"/>
+    <path d="M400 110 C 320 150, 250 185, 175 195"/>
+    <path d="M400 110 C 500 60, 580 70, 660 55"/>
+    <path d="M400 110 C 500 90, 580 120, 670 135"/>
+    <path d="M400 110 C 480 150, 560 180, 640 190"/>
+  </g>
+
+  <!-- central paper glyph -->
+  <g transform="translate(372,78)">
+    <rect x="0" y="0" width="56" height="68" rx="6" fill="#0b1020" stroke="url(#g-who-are-my-friends)" stroke-width="2"/>
+    <line x1="10" y1="16" x2="46" y2="16" stroke="#22d3ee" stroke-width="2" opacity="0.8"/>
+    <line x1="10" y1="28" x2="46" y2="28" stroke="#36e0d0" stroke-width="2" opacity="0.7"/>
+    <line x1="10" y1="40" x2="38" y2="40" stroke="#f472b6" stroke-width="2" opacity="0.7"/>
+    <line x1="10" y1="52" x2="42" y2="52" stroke="#8b5cf6" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- peer reviewer nodes with sentiment-tinted halos -->
+  <g>
+    <circle cx="140" cy="55" r="14" fill="#0b1020" stroke="#36e0d0" stroke-width="2"/>
+    <circle cx="140" cy="55" r="22" fill="none" stroke="#36e0d0" stroke-width="1" opacity="0.35"/>
+    <circle cx="130" cy="140" r="12" fill="#0b1020" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="175" cy="195" r="10" fill="#0b1020" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="660" cy="55" r="14" fill="#0b1020" stroke="#ff4d8d" stroke-width="2"/>
+    <circle cx="660" cy="55" r="22" fill="none" stroke="#ff4d8d" stroke-width="1" opacity="0.4"/>
+    <circle cx="670" cy="135" r="12" fill="#0b1020" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="640" cy="190" r="10" fill="#0b1020" stroke="#f472b6" stroke-width="2"/>
+  </g>
+
+  <!-- floating sentiment marks -->
+  <g font-family="monospace" font-size="15" font-weight="700">
+    <text x="120" y="30" fill="#36e0d0">+</text>
+    <text x="700" y="40" fill="#ff4d8d">+</text>
+    <text x="705" y="120" fill="#8b5cf6">~</text>
+    <text x="200" y="180" fill="#fbbf24">?</text>
+  </g>
+
+  <!-- accent dots -->
+  <g fill="#e6ebff">
+    <circle cx="250" cy="40" r="2" opacity="0.7"/>
+    <circle cx="540" cy="40" r="2" opacity="0.7"/>
+    <circle cx="330" cy="200" r="2" opacity="0.6"/>
+    <circle cx="500" cy="205" r="2" opacity="0.6"/>
+  </g>
+</svg>
+
+Somewhere out there is the one reviewer who will read your discussion section and whisper "finally" — your job is to build the machine that finds them.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Advanced · Claude Code / Codex</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Agentic CLI</span>
+</div>
+
+## The goal
+
+<div class="box goal">
+<span class="box-label">The Goal</span>
+You have a paper (real or invented) that you want in front of reviewers who will *appreciate* it — people fluent in your methods, sympathetic to your framing, and likely to give a fair, engaged read. Produce a ranked shortlist of 5-8 candidate reviewers, each with a one-line justification and a confidence score, that you could plausibly hand to an editor's "suggest reviewers" box. How you get there is up to you. Do not just ask an AI "who should review my paper?" and accept the answer.
+</div>
+
+## Why it matters
+
+Reviewer assignment quietly decides the fate of your science. The same manuscript can draw a "reject — out of scope" from someone who thinks pain is a peripheral nociception problem, and a "minor revisions, lovely work" from someone steeped in central sensitization and predictive coding. Editors routinely ask you to *suggest* reviewers, and most of us do it from memory — which means we suggest the three people we met at a conference, miss the early-career researcher who has been quietly citing us with admiration, and overlook the lab on another continent doing exactly our thing.
+
+This is also a perfect agentic problem. "Find good reviewers" is not one prompt; it is a pipeline of search, retrieval, reading-in-context, scoring, and verification. Learning to *decompose* a fuzzy academic goal into checkable subtasks — and to make the AI show its sources — is the transferable skill. The same scaffold finds collaborators, grant panel allies, journal clubs that would host your work, and people to cite.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad">
+<span class="box-label">Weak prompt</span>
+<div class="prompt">Who are good peer reviewers for my paper on chronic pain and brain imaging?</div>
+The model hands you a tidy list of five famous names it half-remembers — the textbook authors, the keynote speakers — with no sources, no evidence they would *like* the work, and a real chance one of them is your direct competitor or, worse, fabricated. It optimized for "famous in this field," not "right reader for this manuscript." You cannot verify any of it.
+</div>
+
+<div class="box good">
+<span class="box-label">Strong prompt</span>
+<div class="prompt">You are a research-integrity-minded editorial assistant with web and file access. Goal: build a ranked shortlist of 5-8 candidate peer reviewers who would give my paper a fair, expert, sympathetic read.
+
+My paper abstract and my 3 most-cited prior papers are in ./paper/.
+
+Work as an agent in explicit steps, and pause to show me each step's output before continuing:
+1. Extract 6-8 key concepts + methods from my abstract.
+2. For each concept, search recent (last 5 yrs) open literature for authors publishing on it; collect name, affiliation, a representative paper, and the source URL.
+3. Find papers that CITE my prior work; for each, quote the sentence of citing context and label it positive / neutral / critical.
+4. Merge into a candidate table. Score each person 0-1 on expertise-match and on likely-sympathy, and give an overall confidence with one sentence of reasoning.
+5. Flag any candidate who is a likely competitor, frequent co-author of mine, or where you are NOT confident the person/paper is real.
+
+Cite a source for every factual claim. If you cannot verify someone, say so rather than guessing.</div>
+It works because it assigns a role, decomposes the fuzzy goal into checkable subtasks, forces the model to externalize evidence (quoted citing context + URLs), separates "knows the topic" from "will like the paper," and builds in adversarial self-checks (competitor flag, hallucination flag, confidence). You get an auditable shortlist, not a vibe.
+</div>
+
+## Prompting moves to try
+
+- **Decompose into agentic subtasks.** Turn "find reviewers" into: concept extraction → author search → citation-context mining → sentiment scoring → dedupe/merge → verification. Ask the agent to checkpoint after each so you can catch a wrong turn early instead of at the end.
+- **Role + audience prompting.** "You are an editor who must defend this assignment to the EIC" produces more cautious, source-backed output than "list some reviewers." Try also: "You are a skeptical reviewer of *your own* shortlist."
+- **Mine the citing context, not just the citation count.** Ask the AI to quote the actual sentence where someone cites your work and classify its sentiment. "Building on Wager et al." is a friend; "contrary to claims by Wager et al." is a duel.
+- **Adversarial self-evaluation.** After it produces the list: "For each candidate, give your confidence (0-1) that this is a real person, that the cited paper exists, and that they'd be sympathetic. Sort by lowest confidence first and tell me what would change your mind." This surfaces hallucinations fast.
+- **Ask the AI to improve your prompt.** "Before running, rewrite my instructions to make the verification step more rigorous and the sentiment scoring more reproducible. Then run the better version."
+- **Separate two axes.** Expertise-match and likely-sympathy are different things; a world expert who hates your theory is a bad suggestion. Make the model score them in separate columns.
+
+## Starter materials
+
+Paste-ready scaffold for the room. Drop a folder like `./paper/` next to your agent with the manuscript and prior papers, then feed the **system-design scaffold** and use the **scoring rubric** and **verification checklist** to keep the agent honest. A **mock messy dataset** is included so groups with no manuscript handy can still run the full pipeline.
+
+### 1. System-design scaffold (fill in the brackets, hand to the agent)
+
+<div class="prompt">ROLE: You are an editorial-assistant agent with web search and local file access. You value verifiability over completeness.
+
+INPUT:
+- Manuscript abstract: [paste or ./paper/abstract.txt]
+- My prior papers to track citations of: [3-5 titles or DOIs]
+- My recent co-authors (exclude as reviewers): [names]
+- Known direct competitors (flag, don't auto-exclude): [names or "none known"]
+- Target journal suggest-reviewer policy: [e.g. "needs 4, no recent co-authors, no shared institution"]
+
+PIPELINE (checkpoint after each step):
+S1 Concepts: extract 6-8 concept/method keywords from the abstract.
+S2 Expertise search: per concept, find 2-3 active authors (last 5 yrs); record name, affiliation, 1 representative paper + URL.
+S3 Citation mining: find works citing my prior papers; quote the citing sentence; tag positive / neutral / critical.
+S4 (optional) Social signal: find public posts/preprint-server mentions of my prior work; tag sentiment + link.
+S5 Merge & dedupe: one row per person.
+S6 Score: fill the rubric columns below.
+S7 Verify: run the verification checklist; demote or drop anything that fails.
+
+OUTPUT: a ranked table (highest overall confidence first) + a 2-sentence note on who you deliberately excluded and why.
+
+CONSTRAINTS: cite a source URL for every factual claim; never invent a person, paper, or quote; if unsure, write "UNVERIFIED" instead of guessing.</div>
+
+### 2. Reviewer scoring rubric (the columns the agent must fill)
+
+| Candidate | Affiliation | Expertise match (0-1) | Likely sympathy (0-1) | Evidence (quote + source) | Conflict flag | Overall confidence (0-1) |
+|---|---|---|---|---|---|---|
+| *e.g.* L. Okafor | Univ. of Toronto | 0.9 | 0.7 | "extends the predictive-coding account of Wager et al." (Pain, 2024, doi:…) | none | 0.8 |
+| *(agent fills)* | | | | | | |
+
+- **Expertise match** = overlap of their work with your concepts/methods.
+- **Likely sympathy** = inferred from citing tone, shared theoretical framing, methodological kinship. Be explicit it is an inference.
+- **Conflict flag** = recent co-author / same institution / advisor-advisee / direct competitor.
+
+### 3. Verification checklist (run before trusting the list)
+
+- [ ] Every candidate has a real, locatable paper with a working source link.
+- [ ] Every "sympathy" score is backed by a quoted sentence, not a vibe.
+- [ ] No recent co-authors or same-institution conflicts slipped through.
+- [ ] At least one candidate is early-career (not just the usual senior names).
+- [ ] Spot-check 2 entries by hand — does the quote actually say what the agent claims?
+- [ ] The agent flagged anything it could not verify rather than smoothing over it.
+
+### 4. Mock messy dataset (for groups without a manuscript)
+
+Use this fake "who cites my work" export — deliberately inconsistent — and have the agent clean it, score sentiment from the context snippet, and produce reviewer candidates.
+
+| citing_author | inst | year | citing_context_snippet | source |
+|---|---|---|---|---|
+| Okafor, L. | UofT | 2024 | "...elegantly extends the central-sensitization framework proposed by [our group]..." | Pain 165(4) |
+| j. mehta | Imperial Coll. | 23 | "see also their well-powered fMRI study" | bioRxiv |
+| Sandberg-Lee, R | Karolinska | 2025 | "However, this conflates nociception with pain, contra [our group]" | J Neurosci |
+| A. Ruiz | n/a | 2024 | "replicated by Ruiz et al., confirming the dorsal-horn effect" | Twitter/X thread |
+| Park, Min-ji | SNU | 2022 | "builds directly on the predictive-coding model" | Neuroimage |
+| (blank) | Stanford | 2024 | "we adopt their preprocessing pipeline wholesale" | preprint, no DOI |
+| Okafor L. | Toronto | 2024 | DUPLICATE of row 1? | Pain |
+
+Note for groups: rows have ragged years (`23` vs `2023`), a duplicate, a missing author, an unverifiable Twitter source, and one clearly *critical* citation (Sandberg-Lee). A good agent will normalize, dedupe, demote the unverifiable source, and correctly tag Sandberg-Lee as a poor sympathy bet despite high expertise.
+
+## Debrief questions
+
+1. Which signal turned out to be the strongest predictor of a sympathetic reviewer — topical overlap, citing tone, shared methods, or social-media mentions? Did any team find these disagreed?
+2. Where did your agent hallucinate, and which verification step caught it? Which step *should* have caught it but didn't?
+3. How did separating "expertise match" from "likely sympathy" change your shortlist versus a single "good reviewer" score?
+4. The critical citer (Sandberg-Lee) is a domain expert who disagrees with you. Is suggesting them ever the *right* move? What would an editor think of your list if it contained only fans?
+5. What part of this pipeline would you trust to run unattended, and what part demands a human in the loop every time?
+
+## Level up
+
+- **Add the preprint loop.** Design step S4+ as a real strategy: post a preprint, instrument it (who downloads, who posts, who emails), and let *engagement* — not just citation history — surface interested experts over time. Sketch the data sources and how you'd score genuine interest vs. polite noise.
+- **Draft personalized outreach (and a stop rule).** Have the agent draft a short, honest "thought you might find this relevant" note per candidate, *and* write the rule for when NOT to send one. The skill is restraint, not reach.
+- **Build the conflict-of-interest auditor.** Add an agent that cross-checks every candidate against your co-author graph, shared grants, and institution, and produces an editor-ready COI statement for the whole list.
+
+## Ethics
+
+<div class="box ethics">
+<span class="box-label">Responsible use</span>
+Suggesting reviewers is normal and expected — but the line between "finding the right expert reader" and "stacking the deck" is real. Suggest people who will give a *fair* read, not people you can manipulate; a list with zero potential critics is a red flag to any good editor, and norms vary by journal (some forbid recent co-authors or same-institution suggestions; some don't take suggestions at all — check). Never contact a candidate to lobby for a favorable review, and never fabricate engagement. Sentiment scoring uses public statements; do not infer private feelings or build profiles beyond the task. And the hard rule for the inverse case — call it Reviewer 4: **never** point an AI at a manuscript you have been assigned to review in order to "find allies," shape your verdict, or auto-write a review. This scaffold is for *your own* drafts and submissions only.
+</div>
+
+---
+
+<p style="color:#9aa6c7;font-size:0.95rem">Back to the <a href="../index.qmd">Challenge menu</a> · Grab a tool from the <a href="../../intro/tools.qmd">AI Toolkit</a>.</p>

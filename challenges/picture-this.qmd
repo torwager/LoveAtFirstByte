@@ -1,0 +1,180 @@
+---
+title: "Picture This"
+subtitle: "Rescue an ugly data table and turn it into the most informative figure in the room."
+description: "A core live challenge: prompt an AI to turn a messy pain-science data table into a genuinely informative figure — right chart type, error bars, colorblind-safe palette, honest labels."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-picture-this" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="g-picture-this-bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#36e0d0" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- left: the ugly table, faint and crooked -->
+  <g transform="translate(60,52) rotate(-6)" opacity="0.5">
+    <rect x="0" y="0" width="190" height="120" rx="8" fill="#0b1020" stroke="#3a4570"/>
+    <line x1="0" y1="30" x2="190" y2="30" stroke="#3a4570"/>
+    <line x1="0" y1="60" x2="190" y2="60" stroke="#273258"/>
+    <line x1="0" y1="90" x2="190" y2="90" stroke="#273258"/>
+    <line x1="63" y1="0" x2="63" y2="120" stroke="#273258"/>
+    <line x1="126" y1="0" x2="126" y2="120" stroke="#273258"/>
+    <g fill="#9aa6c7" font-family="monospace" font-size="9">
+      <text x="8" y="20">subj_ID</text>
+      <text x="70" y="20">grp</text>
+      <text x="133" y="20">VAS</text>
+      <text x="8" y="50">p001</text><text x="70" y="50">drg</text><text x="133" y="50">7.2</text>
+      <text x="8" y="80">p002</text><text x="70" y="80">pbo</text><text x="133" y="80">-999</text>
+      <text x="8" y="110">p003</text><text x="70" y="110">drg</text><text x="133" y="110">4.1</text>
+    </g>
+  </g>
+
+  <!-- arrow / synapse flow from table to figure -->
+  <path d="M270 112 C 340 112, 360 112, 420 112" fill="none" stroke="url(#g-picture-this)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <polygon points="420,112 408,105 408,119" fill="#ff4d8d"/>
+  <circle cx="312" cy="112" r="3.5" fill="#22d3ee"/>
+  <circle cx="360" cy="112" r="3" fill="#f472b6"/>
+
+  <!-- right: the clean, informative figure -->
+  <g transform="translate(470,40)">
+    <rect x="0" y="0" width="270" height="150" rx="10" fill="#0b1020" stroke="#273258"/>
+    <!-- axes -->
+    <line x1="40" y1="20" x2="40" y2="124" stroke="#9aa6c7" stroke-width="1.5"/>
+    <line x1="40" y1="124" x2="250" y2="124" stroke="#9aa6c7" stroke-width="1.5"/>
+    <!-- bars with error bars -->
+    <rect x="78" y="62" width="34" height="62" rx="3" fill="url(#g-picture-this-bar)"/>
+    <line x1="95" y1="50" x2="95" y2="74" stroke="#e6ebff" stroke-width="2"/>
+    <line x1="88" y1="50" x2="102" y2="50" stroke="#e6ebff" stroke-width="2"/>
+    <line x1="88" y1="74" x2="102" y2="74" stroke="#e6ebff" stroke-width="2"/>
+
+    <rect x="160" y="36" width="34" height="88" rx="3" fill="#ff4d8d" opacity="0.85"/>
+    <line x1="177" y1="24" x2="177" y2="48" stroke="#e6ebff" stroke-width="2"/>
+    <line x1="170" y1="24" x2="184" y2="24" stroke="#e6ebff" stroke-width="2"/>
+    <line x1="170" y1="48" x2="184" y2="48" stroke="#e6ebff" stroke-width="2"/>
+    <!-- jittered data dots -->
+    <circle cx="90" cy="80" r="2" fill="#22d3ee"/><circle cx="100" cy="96" r="2" fill="#22d3ee"/><circle cx="95" cy="110" r="2" fill="#22d3ee"/>
+    <circle cx="172" cy="58" r="2" fill="#f472b6"/><circle cx="182" cy="74" r="2" fill="#f472b6"/><circle cx="177" cy="92" r="2" fill="#f472b6"/>
+    <!-- title + labels -->
+    <text x="135" y="14" text-anchor="middle" fill="#e6ebff" font-family="sans-serif" font-size="10" font-weight="700">Pain relief by group (95% CI)</text>
+    <text x="95" y="138" text-anchor="middle" fill="#9aa6c7" font-family="sans-serif" font-size="8">Drug</text>
+    <text x="177" y="138" text-anchor="middle" fill="#9aa6c7" font-family="sans-serif" font-size="8">Placebo</text>
+    <text x="18" y="72" fill="#9aa6c7" font-family="sans-serif" font-size="8" transform="rotate(-90 18 72)" text-anchor="middle">ΔVAS (cm)</text>
+  </g>
+</svg>
+
+You inherit a data table that looks like it survived a coffee spill and a merge conflict. Your job: get an AI to make it *understandable*, not just *pretty*.
+
+<div class="meta-row">
+  <span class="pill rose">Recommended core challenge</span>
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Beginner-friendly</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Any chat AI</span>
+</div>
+
+## The goal
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Starting from the messy table in <strong>Starter materials</strong>, produce the single <strong>most informative</strong> figure a reader could glance at and immediately understand. "Informative" means: the right chart type for this question, honest treatment of the missing-value codes, error/uncertainty shown, a colorblind-safe palette, real axis labels with units, and a title that states the finding. A figure that is gorgeous but misleading <em>loses</em>. We are deliberately not telling you which chart or which tool sequence to use — that discovery is the point.
+</div>
+
+## Why it matters
+
+Half of peer review is really an argument about figures. Reviewers form an opinion of your study in the three seconds it takes to read Figure 2 — before they read a word of your methods. A clear figure of a VAS pain score across treatment arms can carry a paper; a rainbow 3D pie chart with no error bars can sink one. And the messy table you are about to meet is not a strawman: real pain datasets arrive with `-999` missing codes, mixed units, cryptic column names, and a "notes" column where someone typed feelings. Learning to steer an AI from that raw mess to an honest, publishable figure is a skill you will use on your very next manuscript, grant figure, or journal-club slide.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+<div class="prompt">Make a nice graph from this data.</div>
+Why it disappoints: the AI guesses everything. It happily plots the `-999` missing codes as real values (so the placebo group looks like it cured pain into negative numbers), invents a chart type, drops the units, gives you a default red/green palette that 8% of men can't distinguish, and titles it "Chart." It looks tidy and is quietly wrong.
+</div>
+
+<div class="box good"><span class="box-label">Strong prompt</span>
+<div class="prompt">You are a data-viz editor for a pain-medicine journal. Here is a messy trial table (pasted below). First, tell me back the data dictionary as YOU interpret it — what each column means, the units, and how you'll handle the missing-value code -999 — and STOP for my confirmation before plotting. Then propose the single most informative chart to compare post-treatment pain between the Drug and Placebo groups, and explain in one line why that chart type beats the alternatives. Build it with: group means with 95% confidence intervals, individual participant points jittered behind the bars, a colorblind-safe palette (Okabe-Ito), axis labels with units, and a title that states the actual finding. Use cm for VAS throughout and convert any rows recorded in mm. Flag any row you had to drop and say why.</div>
+Why it works: it assigns a role, forces the AI to surface its assumptions <em>before</em> committing (catching the `-999` and the mm/cm mix), specifies the comparison rather than "a graph," and pins down every element that separates an honest figure from a pretty one — uncertainty, raw points, accessible color, units, and a title that earns its place.
+</div>
+
+## Prompting moves to try
+
+- <strong>Decompose the goal.</strong> Split "make a figure" into stages — (1) infer the data dictionary, (2) clean missing codes and units, (3) choose the chart, (4) render it — and make the AI pause after stage 1 for your sign-off. Most bad figures are bad because step 1 was skipped.
+- <strong>Role / identity prompting.</strong> "You are a reviewer for *Pain*" or "You are the figure editor at *Nature Neuroscience*" pulls in conventions (CIs not SEMs, accessible palettes, no chartjunk) you'd otherwise have to enumerate.
+- <strong>Adversarial self-evaluation.</strong> After the first draft: "Critique this figure as a harsh Reviewer 2. List three ways it could mislead a reader, then rate your confidence (0-100%) that the missing data were handled correctly." Make the AI attack its own work before you do.
+- <strong>Ask the AI to improve your prompt.</strong> "Here's my prompt and the figure it produced. Rewrite my prompt so the next attempt is more informative and harder to misread." Steal the AI's own upgrade.
+- <strong>Force the chart-type defense.</strong> "Give me three chart types for this comparison, rank them for *informativeness* (not beauty), and justify the winner." Bar-with-CI vs. raincloud vs. paired-slope is a real decision — make it explicit.
+- <strong>Demand a units & exclusions log.</strong> "List every transformation you applied and every row you excluded, with the reason." This is your methods paragraph, free.
+
+## Starter materials
+
+Paste this entire block into your AI. It is deliberately messy — mixed column names, two units of measurement, a `-999` missing code, a stray text entry, and inconsistent group labels. Cleaning it up is part of the challenge.
+
+<div class="prompt">Study: randomized double-blind trial of a novel mu-opioid-sparing analgesic vs placebo for chronic low-back pain. Outcome = change in pain from baseline to week 6. Higher pain score = worse. Some sites recorded VAS in cm (0-10), one site logged in mm (0-100). Missing/withdrawn = -999.
+
+subj_ID,Grp,age_yrs,sex,VAS_base,VAS_wk6,unit,opioid_MME_day,notes
+P001,drg,54,F,7.2,4.1,cm,0,
+P002,Placebo,61,M,6.8,-999,cm,15,withdrew wk3
+P003,DRG,47,f,8.1,3.9,cm,0,
+P004,pbo,39,M,5.9,5.4,cm,20,
+P005,drug,66,F,7.7,4.8,cm,5,"felt better, mostly"
+P006,Placebo,52,m,90,76,mm,30,
+P007,drg,58,F,6.4,-999,cm,0,lost to follow-up
+P008,pbo,44,M,7.0,6.6,cm,25,
+P009,Drug,71,F,81,33,mm,0,
+P010,placebo,49,M,6.1,5.9,cm,18,
+P011,drg,63,f,7.9,4.2,cm,0,
+P012,PBO,55,M,6.7,6.1,cm,22,
+P013,drug,41,F,8.4,5.0,cm,10,
+P014,Placebo,68,M,70,68,mm,28,
+P015,drg,50,F,7.1,3.7,cm,0,protocol deviation?
+P016,pbo,57,M,6.9,6.3,cm,24,</div>
+
+Landmines hidden on purpose (don't tell your AI — see if it catches them):
+
+- <strong>Group labels are a mess:</strong> `drg / DRG / drug / Drug / drudg`-adjacent typos all mean Drug; `pbo / PBO / Placebo / placebo` all mean Placebo.
+- <strong>Two units:</strong> rows P006, P009, P014 are in mm (0-100); everything else is cm (0-10). They must be reconciled before plotting.
+- <strong>`-999` is missing data,</strong> not a pain score of negative nine hundred.
+- <strong>The real outcome is a change score</strong> (`VAS_wk6 - VAS_base`), more negative = more relief — not the raw week-6 value.
+- <strong>`opioid_MME_day`</strong> (morphine milligram equivalents) is a tempting secondary variable for a "level up."
+
+Quick scoring rubric for the debrief (1 point each, 6 max):
+
+- Correct chart type for a two-group comparison with uncertainty
+- Missing-value code handled (excluded or imputed, and stated)
+- Units reconciled to a single scale
+- Colorblind-safe palette
+- Axis labels with units + finding-stating title
+- Change score used, not raw week-6 pain
+
+## Debrief questions
+
+- Which single instruction moved the figure the most — and which group's prompt got there fastest?
+- Did your AI catch the `-999` and the mm/cm mix on its own, or only after you forced it to state assumptions? What does that tell you about trusting silent output?
+- Bar-with-CI, raincloud, or paired-slope: which chart type best honors this design, and did any AI argue for one you hadn't considered?
+- Where did the AI confidently do something wrong? How would a reader have ever known?
+- If you handed this figure to Reviewer 2 right now, what's the first thing they'd attack?
+
+## Level up
+
+- <strong>Add a covariate honestly.</strong> Ask for a second panel relating baseline opioid use (`opioid_MME_day`) to relief — without implying causation the design can't support.
+- <strong>Reproducibility test.</strong> Have the AI emit the actual plotting code (R/ggplot2 or Python/matplotlib) and a one-paragraph figure legend, then re-run it to confirm the figure matches the description.
+- <strong>Stress-test for honesty.</strong> Ask the AI to produce the *most misleading* defensible version of the same figure (truncated y-axis, SEM disguised as CI, dropped withdrawals), then explain how a reader would spot each trick. Knowing the cheats makes you a better reviewer.
+
+---
+
+<p style="color:#9aa6c7"><a href="../index.qmd">← Back to the Challenge menu</a> &nbsp;·&nbsp; <a href="../intro/tools.qmd">AI Toolkit →</a></p>

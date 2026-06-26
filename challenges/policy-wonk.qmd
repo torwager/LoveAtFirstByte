@@ -1,0 +1,194 @@
+---
+title: "Policy Wonk"
+subtitle: "Turn a dense federal rule change into an effective public comment."
+description: "Use research-capable AI to decode a funding rule change, find the deadline, and draft a comment that actually moves the needle."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-policy-wonk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow-policy-wonk" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- dense rule text on the left: stacked lines morphing into signal -->
+  <g opacity="0.55">
+    <rect x="40" y="46" width="150" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="64" width="200" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="82" width="120" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="100" width="210" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="118" width="160" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="136" width="190" height="6" rx="3" fill="#9aa6c7"/>
+    <rect x="40" y="154" width="110" height="6" rx="3" fill="#9aa6c7"/>
+  </g>
+
+  <!-- distilling funnel / synapse path from dense text to a clear signal -->
+  <path d="M270 100 C 360 60, 430 160, 540 110" fill="none" stroke="url(#g-policy-wonk)" stroke-width="3" opacity="0.9" filter="url(#glow-policy-wonk)"/>
+  <path d="M270 120 C 370 170, 440 70, 540 130" fill="none" stroke="url(#g-policy-wonk)" stroke-width="2" opacity="0.5"/>
+
+  <!-- nodes along the path -->
+  <circle cx="270" cy="100" r="6" fill="#22d3ee" filter="url(#glow-policy-wonk)"/>
+  <circle cx="405" cy="92" r="5" fill="#36e0d0" opacity="0.9"/>
+  <circle cx="540" cy="110" r="7" fill="#ff4d8d" filter="url(#glow-policy-wonk)"/>
+
+  <!-- the "comment" document on the right: clean, signed -->
+  <g transform="translate(600,52)" filter="url(#glow-policy-wonk)">
+    <rect x="0" y="0" width="120" height="120" rx="10" fill="#0b1020" stroke="url(#g-policy-wonk)" stroke-width="2"/>
+    <rect x="16" y="20" width="80" height="5" rx="2.5" fill="#22d3ee" opacity="0.85"/>
+    <rect x="16" y="36" width="88" height="5" rx="2.5" fill="#e6ebff" opacity="0.5"/>
+    <rect x="16" y="52" width="60" height="5" rx="2.5" fill="#e6ebff" opacity="0.5"/>
+    <rect x="16" y="68" width="88" height="5" rx="2.5" fill="#e6ebff" opacity="0.5"/>
+    <!-- signature swoosh -->
+    <path d="M18 96 C 36 84, 52 108, 70 92 S 96 100, 104 90" fill="none" stroke="#ff4d8d" stroke-width="2.5"/>
+  </g>
+
+  <!-- deadline clock motif -->
+  <g transform="translate(470,150)" opacity="0.95">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#fbbf24" stroke-width="2.5" filter="url(#glow-policy-wonk)"/>
+    <line x1="0" y1="0" x2="0" y2="-12" stroke="#fbbf24" stroke-width="2.5"/>
+    <line x1="0" y1="0" x2="9" y2="4" stroke="#fbbf24" stroke-width="2.5"/>
+  </g>
+
+  <!-- accent dots -->
+  <circle cx="330" cy="180" r="3" fill="#8b5cf6"/>
+  <circle cx="700" cy="40" r="3" fill="#36e0d0"/>
+  <circle cx="150" cy="190" r="3" fill="#f472b6"/>
+</svg>
+
+A 60-page federal rule just dropped, the comment window closes soon, and the future of your funding line is buried in subsection (c)(2)(iv). Make AI read it so you can answer it.
+
+<div class="meta-row">
+  <span class="pill cyan">35 min</span>
+  <span class="pill violet">Advanced</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Research-capable AI</span>
+</div>
+
+## The goal
+
+<div class="box goal">
+<span class="box-label">The Goal</span>
+Starting from the dense rule-change scenario below, produce a one-page <strong>action packet</strong> your team could actually use to submit a public comment: (1) the real submission deadline and where to file, (2) the 2-3 provisions that most affect early-career pain researchers, (3) a short list of the most <em>persuasive</em> points to make, and (4) a concrete next-steps checklist with who-does-what. Every date, docket number, and factual claim must be marked as verified against a primary source or flagged "UNVERIFIED — check before filing." How you get there is up to you.
+</div>
+
+## Why it matters
+
+Federal funding agencies, ethics boards, and reporting requirements are reshaped through rules you are legally invited to comment on, and almost nobody does. Pain researchers have lived the consequences: opioid-prescribing guidance, data-sharing mandates, indirect-cost caps, IRB and human-subjects rules, and effort-reporting changes all passed through comment periods. A well-aimed comment from a working scientist (concrete, evidence-based, naming a specific harm or fix) genuinely influences final rules and the agency's response-to-comments. The skill is reading impenetrable regulatory prose fast, separating what changed from boilerplate, and saying something an agency lawyer will actually log. AI is very good at the first part and dangerously confident on the second, which is exactly why this is the advanced challenge.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Phase 1 — Frame it (5 min)</span><br/>Instructor demos a deliberately <strong>bad prompt</strong> live and shows the mediocre output (≈2 min), reveals the GOAL (not the method), then groups do a 2-min "how would we attack this?" brainstorm. Beat that baseline.</li>
+  <li><span class="t">0:05–0:20 · Phase 2 — Build it (15 min)</span><br/>Breakout groups work on their <em>assigned</em> tool. They iterate, apply at least one strategy card (role / adversarial / decompose), and log prompts + key findings in the shared doc.</li>
+  <li><span class="t">0:20–0:22 · Prompt post (2 min)</span><br/>Each group pastes its <strong>single best prompt</strong> onto the shared results slide. Locked in — no more editing.</li>
+  <li><span class="t">0:22–0:32 · Phase 3 — Debrief (10 min)</span><br/>2–3 groups show output; whole room compares "which AI won and why"; instructor reads the best prompts aloud and names the move that made them work. 60-sec ethics/limitations beat.</li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span><br/>Buffer: re-form groups, rotate tool assignments, advance slides. Absorbs overrun so the next match starts on time.</li>
+</ul>
+<p><em>Reconciliation:</em> the organizer's 5 + 15 + 10 = 30 leaves the 35-min slot 5 min short. We add a <strong>2-min prompt-post</strong> (the highest-value artifact) and a <strong>3-min reset buffer</strong> → exactly 35. Phases 1–3 keep their original lengths.</p>
+
+## Bad prompt to better prompt
+
+<div class="box bad">
+<span class="box-label">Weak prompt</span>
+<div class="prompt">Summarize this federal rule and write a public comment opposing it.</div>
+Why it disappoints: it asks for a summary of something the model may not have actually read, then leaps straight to "opposing" without knowing what changed or whether opposition is even the right move. You get a vague, generic comment full of confident-sounding claims, an invented or stale deadline, and no instructions you could follow. It is the regulatory equivalent of "write my discussion section."
+</div>
+
+<div class="box good">
+<span class="box-label">Strong prompt</span>
+<div class="prompt">You are a regulatory-affairs analyst helping an early-career pain researcher respond to a public comment period. I am pasting a rule-change scenario below.
+
+Work in three passes and label each:
+
+PASS 1 — DECODE. List, in plain English, every substantive change to funding policy (ignore boilerplate). For each, note exactly who it helps and who it hurts, with the affected dollar amount or timeline if stated.
+
+PASS 2 — LOGISTICS. Extract the comment deadline, docket/RIN number, and where comments are filed. Put each fact in a table with a column "Source: quote the exact text it came from." If a fact is not in the text I gave you, write UNVERIFIED and tell me what primary source I must check.
+
+PASS 3 — STRATEGY. Based on what actually makes public comments persuasive to an agency, give me the 3 strongest, most specific points an early-career researcher could make, each tied to a concrete harm and, where possible, a proposed alternative. Avoid form-letter language.
+
+Then end with a 6-item next-steps checklist (who does what, by when) to get a comment filed before the deadline.
+
+[PASTE SCENARIO]</div>
+Why it works: it assigns an expert role, decomposes the job into decode / logistics / strategy so each gets real attention, forces source-quoting and explicit UNVERIFIED flags so hallucinated deadlines cannot hide, and asks for an actionable checklist instead of finished prose you cannot defend.
+</div>
+
+## Prompting moves to try
+
+- <strong>Decompose the monster.</strong> Split the task into decode -> logistics -> persuasion -> checklist. A rule change has at least three different jobs hiding in it; one mega-prompt blurs them.
+- <strong>Wear a badge.</strong> "You are a regulatory-affairs analyst / a former agency desk officer who logs comments" pulls different, more useful knowledge than a generic assistant. Try two roles and compare.
+- <strong>Force the receipts.</strong> Make every date, docket number, and dollar figure carry a "quote the source text" column, and require the model to write UNVERIFIED for anything not in the material you pasted. This is your hallucination tripwire.
+- <strong>Adversarial self-eval.</strong> After a draft action packet, prompt: "Now critique this as a skeptical agency reviewer. Which claims are unsupported? Rate your confidence 0-100 on the deadline and each factual claim, and flag the weakest persuasive point." Low self-confidence is a flag to go to primary sources.
+- <strong>Ask it to improve your prompt.</strong> "Before answering, rewrite my prompt to get a more rigorous, source-grounded result, then run the better version." Steal the upgrade.
+- <strong>Steelman both sides.</strong> Ask for the strongest comment supporting AND opposing the rule before you decide your position. Persuasive comments engage the agency's stated rationale, not a strawman.
+
+## Starter materials
+
+Paste the scenario below into your assigned tool. It is <strong>fictional and illustrative</strong> — the docket number, dates, and figures are invented for the workshop. Treat every fact as something to verify; that is the point.
+
+<div class="box tip">
+<span class="box-label">Scenario — fictional rule change</span>
+
+<strong>FEDERAL REGISTER (ILLUSTRATIVE / FICTIONAL)</strong><br/>
+<strong>Office of Management and Budget — Office of Research Integrity Coordination</strong><br/>
+<strong>RIN:</strong> 0991-AX42 &nbsp;|&nbsp; <strong>Docket:</strong> OMB-2026-0117<br/>
+<strong>Title:</strong> "Uniform Guidance Amendments: Indirect Cost Recovery, Trainee Effort Reporting, and Data Sharing for Federally Funded Biomedical Research"<br/>
+<strong>Action:</strong> Notice of Proposed Rulemaking (NPRM). <strong>Comments due:</strong> 11:59 p.m. ET, August 14, 2026. <strong>Submit at:</strong> the Federal eRulemaking Portal, Docket OMB-2026-0117.
+
+<strong>SUMMARY.</strong> This proposed rule would amend the Uniform Administrative Requirements (2 CFR 200) governing federal research awards. Three changes are proposed.
+
+<strong>(a) Indirect cost recovery cap.</strong> Negotiated facilities-and-administrative (F&A) reimbursement on new and renewal awards would be capped at 18% of modified total direct costs, replacing institution-specific negotiated rates that currently average ~55% at research universities. Effective for awards issued on or after October 1, 2026. The agency estimates a $3.1 billion annual reduction in federal F&A outlays.
+
+<strong>(b) Trainee effort reporting.</strong> Predoctoral and postdoctoral trainees supported in whole or part by federal funds would be required to file monthly itemized effort certifications, in 15-minute increments, distinguishing "research," "training," "clinical," and "administrative" activities, countersigned by two faculty supervisors. Currently effort is certified at the project level, typically once or twice per year.
+
+<strong>(c) Data sharing acceleration.</strong> De-identified individual-level data underlying any published, federally funded finding would have to be deposited in an approved public repository within 90 days of publication, reduced from the current 12 months. Subsection (c)(2)(iv) provides a waiver "where deposit would compromise participant privacy or proprietary clinical interests," to be granted at program-officer discretion on a case-by-case basis. No standard for neuroimaging or chronic-pain phenotype data is specified.
+
+<strong>REGULATORY IMPACT.</strong> The agency asserts the rule will "improve taxpayer return on research investment and accelerate scientific transparency." It requests comment specifically on: the appropriateness of an 18% F&A cap for laboratory-based versus computational research; the administrative burden of monthly effort certification; and whether 90 days is feasible for studies involving sensitive human-subjects data such as functional neuroimaging.
+
+<strong>NOTE (workshop).</strong> One internal cost figure below is intentionally inconsistent with the summary above. Finding it is part of the exercise.<br/>
+Buried in the impact analysis: "...the trainee effort-reporting provision is expected to impose no more than 30 additional hours of administrative effort per trainee per year, a negligible burden." (Thirty hours / year across monthly 15-minute-increment certifications countersigned by two faculty — sanity-check this.)
+</div>
+
+<div class="box good">
+<span class="box-label">Effective-comment checklist (rubric for the action packet)</span>
+
+A persuasive public comment usually does most of these. Score your AI's output against it.
+
+- <strong>Identifies itself and standing.</strong> Who you are and why this rule affects you (early-career pain researcher, trainee, PI).
+- <strong>Names the specific provision.</strong> Cites the docket and the exact subsection, not "this rule" in general.
+- <strong>One concrete harm or benefit.</strong> A real, specific consequence — not "this is bad." E.g., "monthly 15-minute-increment certification adds ~X hours that come out of patient-facing research time."
+- <strong>Evidence, not just opinion.</strong> A number, a citation, lived experience, or a worked example. Agencies weight substantive comments over form letters.
+- <strong>Engages the agency's own rationale.</strong> Responds to what the agency said it wants (e.g., transparency) and shows your concern on its terms.
+- <strong>Proposes an alternative.</strong> "Instead of 90 days, X" beats "don't do this." Give the agency a path.
+- <strong>Targets a question the agency actually asked.</strong> Rules explicitly request comment on specific items; answering those is highest-value.
+- <strong>Verified logistics.</strong> Correct deadline, docket number, and filing location — checked against the primary source.
+- <strong>Brief and signed.</strong> Clear, on-point, attributed. One strong page beats five rambling ones.
+</div>
+
+<div class="box ethics">
+<span class="box-label">Verify before you file</span>
+This scenario is invented. In real life, AI will state deadlines, docket numbers, and "the rule says" claims with total confidence and sometimes total fiction — including hallucinated regulations that do not exist. Before any real comment goes out: confirm the deadline and docket on the official Federal eRulemaking Portal, read the actual provision text yourself, and make sure no confidential or pre-decisional information ends up in a tool that retains your inputs. AI drafts; you sign. You are accountable for every word filed under your name.
+</div>
+
+## Debrief questions
+
+- Which provision did your AI flag as most harmful to early-career pain researchers, and did it find the planted inconsistency in the cost estimate?
+- Did the tool invent or misstate the deadline or docket number? How would you have caught it if you did not already know it was fictional?
+- "Strongest persuasive point" — did the AI give you a real, specific harm with an alternative, or generic form-letter outrage? What separated the good ones?
+- Did the data-sharing waiver in (c)(2)(iv) get treated as a feature or a loophole? What would a comment from a neuroimaging researcher say about it?
+- Which AI tool "won" this challenge and why — was it better reading, better sourcing, or better strategy?
+
+## Level up
+
+- <strong>Write the real thing.</strong> Turn the action packet into an actual draft comment under 400 words that hits the checklist, then run the adversarial reviewer pass and revise until confidence is high and every fact is sourced.
+- <strong>Find a live one.</strong> Have your AI help you locate a genuine open comment period relevant to pain or biomedical research on the official portal, then verify the deadline and provision text yourself against the primary source before trusting a single AI-stated fact.
+- <strong>Coalition mode.</strong> Draft a short "comment toolkit" others could personalize (key points + a fill-in template), since agencies weight substantive individualized comments more than identical form letters — make personalization easy without making it a form letter.
+
+---
+
+<p class="muted">Back to the <a href="../index.qmd">Challenge menu</a> · Need a tool? See the <a href="../intro/tools.qmd">AI Toolkit</a>.</p>

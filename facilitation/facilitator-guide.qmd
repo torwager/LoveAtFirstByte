@@ -1,0 +1,240 @@
+---
+title: "Facilitator Guide"
+subtitle: "Everything you need to run the room with confidence."
+description: "The minute-by-minute script, the rituals that make it work, and the prep checklist for Love at First Byte."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-facil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-facil-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft stage glow -->
+  <ellipse cx="400" cy="200" rx="300" ry="60" fill="url(#g-facil-glow)" opacity="0.6"/>
+
+  <!-- podium -->
+  <rect x="360" y="120" width="80" height="80" rx="6" fill="url(#g-facil)" opacity="0.85"/>
+  <rect x="372" y="98" width="56" height="14" rx="4" fill="#e6ebff" opacity="0.9"/>
+  <line x1="400" y1="112" x2="400" y2="120" stroke="#9aa6c7" stroke-width="3"/>
+
+  <!-- network arc above the podium: facilitator radiating to the room -->
+  <g stroke="url(#g-facil)" stroke-width="1.6" opacity="0.7" fill="none">
+    <path d="M400 96 C 300 40, 180 60, 120 110"/>
+    <path d="M400 96 C 340 30, 250 30, 230 70"/>
+    <path d="M400 96 C 460 30, 550 30, 570 70"/>
+    <path d="M400 96 C 500 40, 620 60, 680 110"/>
+    <path d="M400 96 C 400 40, 400 30, 400 24"/>
+  </g>
+
+  <!-- audience / table nodes -->
+  <g>
+    <circle cx="120" cy="110" r="11" fill="#22d3ee"/>
+    <circle cx="230" cy="70" r="9" fill="#36e0d0"/>
+    <circle cx="400" cy="24" r="10" fill="#fbbf24"/>
+    <circle cx="570" cy="70" r="9" fill="#f472b6"/>
+    <circle cx="680" cy="110" r="11" fill="#8b5cf6"/>
+  </g>
+
+  <!-- accent synapse dots -->
+  <circle cx="300" cy="55" r="3" fill="#ff4d8d" opacity="0.9"/>
+  <circle cx="500" cy="55" r="3" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="180" cy="92" r="2.5" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="620" cy="92" r="2.5" fill="#36e0d0" opacity="0.9"/>
+
+  <!-- small "spotlight" beams -->
+  <path d="M380 112 L 250 200 L 200 200 Z" fill="url(#g-facil)" opacity="0.10"/>
+  <path d="M420 112 L 550 200 L 600 200 Z" fill="url(#g-facil)" opacity="0.10"/>
+</svg>
+
+<div class="meta-row">
+  <span class="pill cyan">90 minutes</span>
+  <span class="pill rose">2 challenge matches</span>
+  <span class="pill violet">5 tools, 5 tables</span>
+  <span class="pill amber">mixed experience</span>
+  <span class="pill teal">browser-only</span>
+</div>
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Run a fast, inclusive session where a never-touched-AI student and a power user both leave with something they'll use Monday. The session teaches **judgment over answers** — the skill is deciding what to ask and how to tell good output from bad, not fluency with any one tool. Your job is to keep the arc tight, keep the bar visible, and let the room do the comparing.
+</div>
+
+## Run of show
+
+A tight arc: a fast, inclusive opening, then two challenge matches with built-in buffers so the timing math actually closes. The ethics beat and the advanced-model showcase are folded into existing blocks, so there is no extra time to find. Group formation happens *during* the warm-up so Challenge 1 starts at full speed.
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:10 · Warm-up discussion (10 min)</span><br>
+  "What do you <em>actually</em> use AI for at work?" Round-robin <strong>at tables</strong> (not whole-room). Each table posts 1 use + 1 frustration to a shared slide. This doubles as the silent <strong>group-formation + tool-assignment</strong> step — by minute 10 every table knows its people and its tool.</li>
+
+  <li><span class="t">0:10–0:20 · Tor: ideas &amp; possibilities (10 min)</span><br>
+  The judgment-vs-answers framing. The four prompting moves — <strong>decompose, role, adversarial, ask-it-to-improve-your-prompt</strong>. A 60-second live teaser of an advanced agent (Claude Code) doing something a chat app can't — <em>watch, don't replicate</em>. Close by confirming each table's assigned tool.</li>
+
+  <li><span class="t">0:20–0:55 · Challenge Match 1 (35 min)</span><br>
+  Recommended core pick: <strong>Picture This</strong> (visual, instant payoff, no domain knowledge required). Run it on the canonical per-challenge timeline (below).</li>
+
+  <li><span class="t">0:55–1:30 · Challenge Match 2 (35 min)</span><br>
+  Recommended core pick: <strong>Plain-Language Gauntlet</strong> (no code, universally relevant). Same timeline; the debrief pivots to "which AI handled this best, and why." Spend the last 2 minutes on the <strong>ethics moment</strong> plus one CLI "what's possible next" pointer.</li>
+</ul>
+
+### The per-challenge timeline (use for both matches)
+
+The math here is what makes a two-match format survive contact with reality. Honest arithmetic: 5 + 15 + 10 = 30, not 35. The extra 5 minutes are a **2-min locked prompt-post** (the most valuable artifact of the day) and a **3-min reset buffer** between matches. Buffers are not slack — they are what stop the schedule from collapsing.
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Set the bar (5 min)</span><br>
+  Run the <strong>bad-prompt demo</strong> live. Leave the mediocre output on screen as the baseline. Hand out (or point to) the strategy cards and stimulus materials.</li>
+  <li><span class="t">0:05–0:20 · Build (15 min)</span><br>
+  Groups work on their assigned tool. You circulate: unstick the stuck, nudge power users toward the stretch goal, remind everyone the clock is the enemy, not the AI.</li>
+  <li><span class="t">0:20–0:22 · Lock the prompt (2 min)</span><br>
+  Each group pastes its <strong>single best prompt</strong> into its box on the results slide. Once posted, it's locked — no edits.</li>
+  <li><span class="t">0:22–0:32 · Debrief (10 min)</span><br>
+  Show → Compare → Name the move → Ethics. Structure below.</li>
+  <li><span class="t">0:32–0:35 · Reset buffer (3 min)</span><br>
+  Rotate tool assignments, swap stimulus materials, breathe. Match 2 starts on time.</li>
+</ul>
+
+## The bad-prompt demo
+
+Open **every** challenge with it. Spend ~2 minutes typing a lazy prompt live — "make a graph of this," "explain this paper" — and show the mediocre result. Do **not** fix it. The bad output is the point: it makes the abstract task concrete, sets a visible bar, and lowers intimidation for novices because the starting line is obviously, comfortingly bad. Keep that baseline on screen the whole match.
+
+<div class="box bad"><span class="box-label">The weak prompt (say it out loud, type it live)</span>
+<div class="prompt">make a graph of this data</div>
+...then paste the messy table and let it produce a default, mislabeled, unit-confused chart. Resist the urge to improve it.
+</div>
+
+<div class="box good"><span class="box-label">The challenge to the room (reusable script)</span>
+"Okay — that's what you get for free, and it's not good enough to put in a talk. It guessed the units, it dropped a label, and it has no idea what story we're telling. <strong>Your job for the next 15 minutes is to beat this.</strong> Same data, same tool — make me something you'd actually show your PI. Go."
+</div>
+
+The script works because it gives the room a target they can see, a deadline they can feel, and permission to start from "bad." Use the same three beats every time: **show the lazy result, refuse to fix it, dare them to beat it.**
+
+## The prompt-share ritual
+
+This is the most valuable two minutes of the session. Before any output is shown, each group pastes its **single best prompt** into its box on one shared results slide — one slide, one box per group, **locked once posted.** In the debrief you read the prompts aloud and name the move that made each one work: role? decomposition? an adversarial critique step? an "improve my prompt" pass?
+
+<div class="box tip"><span class="box-label">Why prompt-share beats output-share</span>
+The output is a souvenir; the prompt is the recipe. A great chart teaches the room nothing reproducible — but "we told it to act as a colorblind reviewer and flag anything it couldn't read" is a move every person can steal on Monday. The prompt is the transferable artifact, so make the prompt the headline.
+</div>
+
+A quiet bonus: the locked prompts from both matches become a one-page **shared prompt library** the cohort keeps. Ninety minutes turns into a reusable asset, and the medium reinforces the message — prompts &gt; outputs.
+
+## Running a great debrief
+
+Same structure every time, 10 minutes. Predictability is a feature: groups know what's coming and self-prepare.
+
+<ul class="timeline">
+  <li><span class="t">Step 1 · Show (3–4 min)</span><br>
+  Have 2–3 groups show output. Pick <strong>contrasting tools, not the "best."</strong> The disagreement is the lesson.</li>
+  <li><span class="t">Step 2 · Compare (3–4 min)</span><br>
+  "Which AI handled this best, and why?" Force specifics — refusals, formatting, citation behavior, code quality, how each one handled the deliberate typo or the missing label.</li>
+  <li><span class="t">Step 3 · Name the move (2 min)</span><br>
+  Read the winning prompts aloud and label the strategy each used. This is where the prompt-share pays off.</li>
+  <li><span class="t">Step 4 · Ethics / limits (1 min)</span><br>
+  One honest caution per challenge — hallucinated citations, fabricated stats, IP/consent. Short and real, not a lecture.</li>
+</ul>
+
+## Managing mixed experience levels
+
+A room that runs from "never opened an AI tool" to "ships agents for a living" is a feature, not a problem — if you stage it.
+
+<div class="card-grid">
+  <a class="lafb-card" href="#">
+    <h3>Pair, don't sort</h3>
+    <p>Seed every breakout with at least one confident user as <strong>driver</strong> (types) and route novices to <strong>navigator</strong> roles (decide what to ask, judge the output). Judgment is the real curriculum, and it doesn't require fluency.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>A floor and a ceiling</h3>
+    <p><strong>Strategy cards</strong> give novices a concrete next step. An optional <strong>stretch goal</strong> — get runnable code, add a self-critique pass — keeps power users from coasting.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>An outlet for power users</h3>
+    <p>Point the 1–2 most advanced people at the advanced/CLI track (<strong>reviewer-4</strong>, <strong>who-are-my-friends</strong>, <strong>junkyard-dog</strong>) as optional stretch, so they don't dominate the core debrief.</p>
+  </a>
+</div>
+
+<div class="box tip"><span class="box-label">Tool-assignment / access strategy</span>
+Skip ChatGPT entirely and turn the access constraint into the main event. Assign each breakout a <strong>different free tool</strong> — Claude, Gemini, Copilot, Perplexity, Meta AI (all free, no hard limits). The same task on five engines makes the debrief a genuine comparison — "which AI won and why" — instead of five near-identical outputs. Assign tools <em>during</em> the warm-up so no time is lost, and <strong>rotate assignments between Match 1 and Match 2</strong> so every group sees two tools. Check logins in advance only if an account is needed — otherwise it's all browser-based.
+</div>
+
+## Prep checklist &amp; auxiliary materials
+
+Build these once and the room runs itself. Pre-filling and pre-vetting is what removes the setup friction that eats the first five minutes of every challenge.
+
+<div class="meta-row">
+  <span class="pill cyan">Shared collaborative doc</span>
+  <span class="pill cyan">Results slide template</span>
+  <span class="pill violet">4 strategy cards</span>
+  <span class="pill amber">scoring rubrics</span>
+  <span class="pill rose">sample materials</span>
+  <span class="pill teal">tool cheat-sheet</span>
+  <span class="pill amber">ethics one-pager</span>
+</div>
+
+- **Shared collaborative doc (one per challenge).** A Google Doc/Slides with a pre-built table: `Group | Tool | Best prompt | Key finding | Surprise/limitation`. Pre-filling the rows removes setup friction and makes the prompt-share automatic.
+- **Results slide template.** One slide per challenge with five labeled boxes (one per group/tool) for the locked best prompt plus a thumbnail of the output. This is the backbone of the debrief.
+- **Strategy cards (4, printed handout).** One per principle — **Decompose, Role, Adversarial, Improve-my-prompt** — each with a one-line "try this" stem groups can drop straight into a prompt.
+- **Scoring rubrics (lightweight, 3–4 criteria, 0–2 scale so the room can vote fast).**
+  - *Picture This:* clarity · correct encoding · accessibility (colorblind / labels) · honesty (no invented data).
+  - *Plain-Language Gauntlet:* accuracy · jargon-free · right register for the audience · length discipline.
+- **Sample materials, pre-vetted** (so no group burns time hunting inputs, and so the bad-prompt demo is reproducible):
+  - *Picture This:* one deliberately messy data table (inconsistent units, missing labels, a typo) **plus** a clean version for checking.
+  - *Plain-Language Gauntlet:* one dense pain-neuroimaging methods paragraph.
+  - *Backup (Hypothesis Roulette):* one crisp, surprising null result.
+- **Bad-prompt + good-prompt pair (per challenge).** Scripted so the live demo lands the same way every time.
+- **Tool cheat-sheet / setup links.** Free-tier login notes for Claude, Gemini, Copilot, Perplexity, Meta AI; flag which need an account.
+- **Ethics one-pager.** The grant-review and reviewer-finding cautions: *"improving your own draft = OK; using this to do real peer review = not OK."*
+
+## Suggested improvements &amp; alternatives
+
+Field-tested adjustments if you're tuning the format for your room.
+
+<div class="card-grid">
+  <a class="lafb-card" href="#">
+    <h3>1 · Make the warm-up do double duty</h3>
+    <p>Run "what do you use AI for?" at tables, not whole-room, and use it to (a) surface frustrations you'll address and (b) silently form groups and assign tools. Reclaims the 3–5 min usually lost to logistics at the top of Challenge 1.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>2 · Reconcile the timing honestly</h3>
+    <p>5 + 15 + 10 = 30, not 35. Don't pad a phase — add a <strong>2-min locked prompt-post</strong> and a <strong>3-min reset buffer</strong> between matches. Buffers are what keep a two-match format from collapsing.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>3 · Pair novices with power users</h3>
+    <p>Don't track them apart. A "driver" who types plus "navigators" who decide what to ask keeps never-users engaged on <strong>judgment</strong> — the actual point — and stops power users from monopolizing.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>4 · Build a shared prompt library as you go</h3>
+    <p>The locked best-prompts from both matches become a one-page cohort takeaway. It turns 90 minutes into a reusable asset and reinforces that prompts &gt; outputs.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>5 · Give power users a sanctioned stretch track</h3>
+    <p>Point the 1–2 most advanced people per group at the CLI/agent challenges (reviewer-4, who-are-my-friends, junkyard-dog) as optional, off to the side, with a 60-sec showcase in debrief. Satisfies them without derailing the core room.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>6 · Pick the two lowest-barrier challenges as cores</h3>
+    <p>Lead with <strong>Picture This</strong> (visual, instant payoff) and <strong>Plain-Language Gauntlet</strong> (no code, universal). Hold <strong>Hypothesis Roulette</strong> as backup. Defer rapid-review / flash-debate to an advanced session — 15 min isn't enough to manage their citation-hallucination risk responsibly, and that risk scares off novices.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>7 · Accessibility &amp; inclusion</h3>
+    <p>Bake colorblind-safe palettes and alt-text into the Picture This rubric (good practice <em>and</em> a teaching point). Provide all stimulus materials as plain text (screen-reader friendly), keep slide fonts large, allow voice-to-text, and ensure at least one assigned tool per match works with no account so nobody is blocked at the door.</p>
+  </a>
+  <a class="lafb-card" href="#">
+    <h3>8 · Don't run model-horserace as a standalone</h3>
+    <p>Its value — "which AI won and why" — is strongest layered onto <em>every</em> challenge via tool-assignment. Treat it as the meta-format, not a slot, and you get the comparison in both matches instead of one.</p>
+  </a>
+</div>
+
+## The ethics moment
+
+<div class="box ethics"><span class="box-label">Run this, every time — one honest caution per challenge</span>
+Reserve the last minute of each debrief for a real, specific caution — not a disclaimer you mumble. The line to hold: <strong>"Using AI to improve your own draft is fine; using it to do someone else's peer review or to fabricate a record is not."</strong>
+<br><br>
+Be especially deliberate around the <strong>grant-review</strong> and <strong>reviewer-finding</strong> challenges. Name the live risks out loud: <strong>hallucinated citations and DOIs</strong> (every reference gets verified at the source, full stop), <strong>fabricated statistics</strong> dressed up as plausible numbers, <strong>confidentiality and IP</strong> (don't paste an unpublished manuscript or a grant under embargo into a tool whose data policy you haven't read), and <strong>consent</strong> for any participant or clinical material. The point isn't to scare the room off AI — it's to model the judgment that separates a careful scientist from a fast one. That judgment is the whole curriculum.
+</div>

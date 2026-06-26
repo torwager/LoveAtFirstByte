@@ -1,0 +1,156 @@
+---
+title: "The Challenges"
+subtitle: "Pick your match. Every challenge fits the same 35-minute format."
+description: "A menu of hands-on AI challenges for pain scientists, from rescuing ugly figures to standing up multi-agent grant clinics."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-challenges" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow-challenges" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- synapse lattice behind the arena -->
+  <g stroke="url(#g-challenges)" stroke-width="1" opacity="0.28">
+    <line x1="120" y1="60" x2="260" y2="150"/>
+    <line x1="260" y1="150" x2="400" y2="70"/>
+    <line x1="400" y1="70" x2="540" y2="160"/>
+    <line x1="540" y1="160" x2="680" y2="80"/>
+    <line x1="120" y1="160" x2="260" y2="60"/>
+    <line x1="400" y1="160" x2="540" y2="60"/>
+  </g>
+
+  <!-- arena of glowing challenge tiles -->
+  <g filter="url(#glow-challenges)">
+    <rect x="70"  y="70"  width="90" height="80" rx="14" fill="#0e1530" stroke="#22d3ee" stroke-width="1.5" opacity="0.95"/>
+    <rect x="180" y="95"  width="90" height="80" rx="14" fill="#0e1530" stroke="#36e0d0" stroke-width="1.5" opacity="0.9"/>
+    <rect x="290" y="55"  width="90" height="80" rx="14" fill="#0e1530" stroke="#ff4d8d" stroke-width="1.5" opacity="0.95"/>
+    <rect x="400" y="100" width="90" height="80" rx="14" fill="#0e1530" stroke="#f472b6" stroke-width="1.5" opacity="0.9"/>
+    <rect x="510" y="60"  width="90" height="80" rx="14" fill="#0e1530" stroke="#8b5cf6" stroke-width="1.5" opacity="0.95"/>
+    <rect x="620" y="95"  width="90" height="80" rx="14" fill="#0e1530" stroke="#fbbf24" stroke-width="1.5" opacity="0.9"/>
+  </g>
+
+  <!-- motif glyphs inside the tiles -->
+  <g fill="none" stroke-width="2" opacity="0.95">
+    <polyline points="86,128 102,112 118,122 134,96" stroke="#22d3ee"/>           <!-- figure spark -->
+    <path d="M196 150 q22 -34 44 0" stroke="#36e0d0"/>                            <!-- horserace arc -->
+    <path d="M306 110 l16 -18 16 18 -16 18 z" stroke="#ff4d8d"/>                   <!-- spin/roulette -->
+    <path d="M416 150 q22 -30 44 0 M438 124 v34" stroke="#f472b6"/>               <!-- rebuttal balance -->
+    <circle cx="555" cy="100" r="16" stroke="#8b5cf6"/><circle cx="555" cy="100" r="5" fill="#8b5cf6" stroke="none"/>
+    <path d="M636 150 l14 -16 14 10 14 -22" stroke="#fbbf24"/>                     <!-- review trend -->
+  </g>
+
+  <!-- accent dots -->
+  <g fill="#e6ebff">
+    <circle cx="120" cy="60" r="2.5" opacity="0.9"/>
+    <circle cx="400" cy="70" r="2.5" opacity="0.9"/>
+    <circle cx="680" cy="80" r="2.5" opacity="0.9"/>
+    <circle cx="540" cy="160" r="2.5" opacity="0.7"/>
+  </g>
+</svg>
+
+<div class="meta-row">
+  <span class="pill cyan">14 challenges</span>
+  <span class="pill rose">3 recommended for mixed rooms</span>
+  <span class="pill teal">35 min each</span>
+  <span class="pill violet">advanced agentic track</span>
+</div>
+
+Every challenge runs on the same engine: a short setup, a starter artifact you can paste straight into any chatbot, a few rounds of iteration, and a quick share-out. No two tables in the room will look alike, and that is the point.
+
+**New to AI?** Start anywhere on the first grid — the core challenges assume nothing and reward curiosity. **Already running models in your sleep?** Skip to the advanced track and wire up some agents.
+
+<div class="box goal"><span class="box-label">Recommended for a mixed-background room</span> If your group spans first-timers and power users, run these three. They cover the highest-value academic skills, fail gracefully for beginners, and still give experts room to push: <strong>Picture This</strong> (rescue an ugly data table), <strong>Plain-Language Gauntlet</strong> (one dense paragraph, three audiences), and <strong>Hypothesis Roulette</strong> (five mechanistic hypotheses from a null result) as a lively backup.</div>
+
+## Core & foundational challenges
+
+<div class="card-grid">
+
+  <a class="lafb-card" href="picture-this.qmd">
+    <h3>📊 Picture This <span class="pill rose">Recommended</span></h3>
+    <p>Rescue an ugly data table and turn it into the most informative figure in the room.</p>
+  </a>
+
+  <a class="lafb-card" href="model-horserace.qmd">
+    <h3>🐎 Model Horserace</h3>
+    <p>Same task, five different free AIs. Which one wins, and why?</p>
+  </a>
+
+  <a class="lafb-card" href="plain-language-gauntlet.qmd">
+    <h3>🗣️ Plain-Language Gauntlet <span class="pill rose">Recommended</span></h3>
+    <p>One dense methods paragraph, three very different audiences.</p>
+  </a>
+
+  <a class="lafb-card" href="hypothesis-roulette.qmd">
+    <h3>🎰 Hypothesis Roulette <span class="pill rose">Recommended</span></h3>
+    <p>A surprising null result walks in. Spin up five testable mechanisms.</p>
+  </a>
+
+  <a class="lafb-card" href="the-rebuttal.qmd">
+    <h3>⚖️ The Rebuttal</h3>
+    <p>Reviewer 2 was brutal. Draft the response that wins the day.</p>
+  </a>
+
+  <a class="lafb-card" href="irb-speed-round.qmd">
+    <h3>⏱️ IRB Speed Round</h3>
+    <p>Draft a risks &amp; benefits section fast — and catch the AI when it bluffs.</p>
+  </a>
+
+  <a class="lafb-card" href="experiment-generator.qmd">
+    <h3>🧪 Experiment Generator</h3>
+    <p>From a single finding to six experiments that nail the mechanism.</p>
+  </a>
+
+  <a class="lafb-card" href="rapid-review.qmd">
+    <h3>📚 Rapid Review</h3>
+    <p>A 2-page evidence brief with real references, built in minutes.</p>
+  </a>
+
+  <a class="lafb-card" href="flash-debate.qmd">
+    <h3>🥊 Flash Debate</h3>
+    <p>Build the evidence case for a contested claim — then argue it.</p>
+  </a>
+
+  <a class="lafb-card" href="meet-the-speaker.qmd">
+    <h3>🤝 Meet the Speaker</h3>
+    <p>Walk into a visit knowing exactly who to meet and what to say.</p>
+  </a>
+
+  <a class="lafb-card" href="policy-wonk.qmd">
+    <h3>🏛️ Policy Wonk</h3>
+    <p>Turn a dense federal rule change into an effective public comment.</p>
+  </a>
+
+</div>
+
+## Advanced track — agentic tools (Claude Code / Codex / Gemini CLI)
+
+These three move beyond the chat box. You will drive command-line agents that read files, run code, and coordinate with each other. Come with a tool installed (see the AI Toolkit) and a willingness to watch a machine argue with itself.
+
+<div class="card-grid">
+
+  <a class="lafb-card" href="advanced/reviewer-4.qmd">
+    <h3>🧠 Reviewer 4</h3>
+    <p>Stand up a multi-agent grant clinic that critiques your R01 like a study section.</p>
+  </a>
+
+  <a class="lafb-card" href="advanced/who-are-my-friends.qmd">
+    <h3>🔭 Who Are My Friends?</h3>
+    <p>Design a system that finds the reviewers who will love your paper.</p>
+  </a>
+
+  <a class="lafb-card" href="advanced/junkyard-dog.qmd">
+    <h3>🦴 Junkyard Dog</h3>
+    <p>Sniff out open pain datasets, fetch them, and wire them together with code.</p>
+  </a>
+
+</div>
+
+<div class="box tip"><span class="box-label">Before you dive in</span> Need a model and an account? See the <a href="../intro/tools.qmd">AI Toolkit</a> for setup. Want to know how the 35-minute format works? Read <a href="../intro/overview.qmd">The Workshop</a>.</div>

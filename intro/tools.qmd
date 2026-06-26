@@ -1,0 +1,291 @@
+---
+title: "The AI Toolkit"
+subtitle: "The best FREE AI tools for the workshop — for total beginners and for power users."
+description: "A curated, free-first menu of chat assistants and agentic coding tools, verified June 2026, with honest limits and one-line setup."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#0e1530,#141a30);border:1px solid #273258">
+  <defs>
+    <linearGradient id="g-tools" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ff4d8d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow-tools" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- synapse lines connecting the glyph constellation -->
+  <g stroke="url(#g-tools)" stroke-width="1.5" opacity="0.4" fill="none">
+    <path d="M150,150 L300,70 L470,140 L620,80"/>
+    <path d="M150,150 L320,170 L470,140"/>
+    <path d="M300,70 L470,140 L650,170"/>
+    <path d="M620,80 L650,170 L470,140"/>
+  </g>
+
+  <!-- toolbox body -->
+  <g filter="url(#glow-tools)">
+    <rect x="92" y="120" width="120" height="70" rx="10" fill="none" stroke="url(#g-tools)" stroke-width="2.5" opacity="0.9"/>
+    <rect x="128" y="104" width="48" height="20" rx="6" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.8"/>
+    <line x1="92" y1="146" x2="212" y2="146" stroke="#36e0d0" stroke-width="2" opacity="0.6"/>
+    <circle cx="152" cy="146" r="5" fill="#ff4d8d"/>
+  </g>
+
+  <!-- app glyphs as a constellation -->
+  <!-- chat bubble -->
+  <g filter="url(#glow-tools)">
+    <path d="M270,50 h60 a10,10 0 0 1 10,10 v24 a10,10 0 0 1 -10,10 h-34 l-16,14 v-14 h-10 a10,10 0 0 1 -10,-10 v-24 a10,10 0 0 1 10,-10 z" fill="none" stroke="#22d3ee" stroke-width="2.2" opacity="0.9"/>
+  </g>
+  <!-- terminal/CLI glyph -->
+  <g filter="url(#glow-tools)">
+    <rect x="436" y="112" width="72" height="56" rx="8" fill="none" stroke="#8b5cf6" stroke-width="2.4" opacity="0.9"/>
+    <polyline points="448,128 460,140 448,152" fill="none" stroke="#36e0d0" stroke-width="2.4"/>
+    <line x1="468" y1="154" x2="496" y2="154" stroke="#ff4d8d" stroke-width="2.4"/>
+  </g>
+  <!-- spark / star glyph -->
+  <g filter="url(#glow-tools)">
+    <path d="M620,56 l6,18 18,6 -18,6 -6,18 -6,-18 -18,-6 18,-6 z" fill="url(#g-tools)" opacity="0.85"/>
+  </g>
+  <!-- search/answer-engine glyph -->
+  <g filter="url(#glow-tools)">
+    <circle cx="648" cy="160" r="16" fill="none" stroke="#fbbf24" stroke-width="2.4" opacity="0.9"/>
+    <line x1="660" y1="172" x2="676" y2="188" stroke="#fbbf24" stroke-width="2.6"/>
+  </g>
+
+  <!-- accent dots -->
+  <circle cx="300" cy="70" r="3.5" fill="#22d3ee"/>
+  <circle cx="470" cy="140" r="3.5" fill="#ff4d8d"/>
+  <circle cx="620" cy="80" r="3.5" fill="#f472b6"/>
+  <circle cx="320" cy="170" r="3" fill="#36e0d0"/>
+  <circle cx="650" cy="170" r="3" fill="#8b5cf6"/>
+</svg>
+
+Everything on this page is usable **free, with no subscription** — pick one tool, sign in, and you are ready for the workshop. We note paid upgrades only briefly, so you know what you would unlock if you ever want more headroom.
+
+<div class="meta-row">
+<span class="pill cyan">free-first</span>
+<span class="pill teal">no install needed (chat apps)</span>
+<span class="pill violet">verified June 2026</span>
+<span class="pill amber">bring a charged laptop</span>
+</div>
+
+## Start here: chat apps for everyone (free, no install)
+
+<span class="pill cyan">free</span> Everything below works in a **web browser** — no install, no coding. You open a page, maybe sign in with an email or Google account, and start typing. This guide focuses on what the **free tier** actually gives you as of June 2026, so it is safe to use in a hands-on workshop.
+
+<div class="box tip">
+<span class="box-label">The Tip</span>
+<strong>Workshop reality check:</strong> Free tiers change constantly and limits shift with demand. The model names and message caps below were verified in June 2026, but always treat exact numbers as "roughly." When a room full of people hammer the same tool at once, expect to hit rate limits faster than a solo user would.
+</div>
+
+### ChatGPT (OpenAI)
+
+The original mainstream chatbot — a strong all-rounder for writing, brainstorming, coding help, and image generation.
+
+- **Free model:** GPT-5.3 Instant is the default for free accounts (paid Plus moved up to GPT-5.5). When you run out, free chats fall back to a faster "mini" model.
+- **Pros:** Polished interface, image generation (DALL-E), file/PDF/image uploads, web browsing, voice mode, huge community knowledge if you get stuck.
+- **Cons / limits:** Roughly **10 messages every 5 hours** on the top free model before the mini fallback kicks in; image generation is a soft ~2-3/day. **Account/login required.**
+- **Get started:** [chatgpt.com](https://chatgpt.com)
+- **Paid upgrade:** <span class="pill rose">paid</span> ChatGPT Plus is **$20/mo** — higher limits and access to the newest GPT-5.5 model.
+
+### Claude (Anthropic)
+
+A thoughtful, careful writer and reasoner — often the favorite for long-form writing, document analysis, and clear explanations.
+
+- **Free model:** Claude Sonnet 4.5 is the free default, with the lightweight Haiku 4.5 as a fallback. The top Opus model is paid-only.
+- **Pros:** Excellent natural writing and reasoning, handles long documents well, file uploads (up to 20 files / 500MB per chat), web search, generally cautious and accurate.
+- **Cons / limits:** Approximately **15-40 messages per rolling 5-hour window** (varies with demand and attachment size); limits were tightened in early 2026. No Opus, no extended thinking on free. **Account/login required.**
+- **Get started:** [claude.ai](https://claude.ai)
+- **Paid upgrade:** <span class="pill rose">paid</span> Claude Pro is **$20/mo** — far higher limits plus Opus and extended thinking.
+
+### Google Gemini
+
+Google's assistant, tightly tied to Search, Gmail, Docs, and YouTube — great for research-style questions and Google-ecosystem users.
+
+- **Free model:** Gemini 3 Flash is the default in the free app (Google began rolling out Gemini 3.5 Flash as the new default around I/O 2026). Fast, capable reasoning.
+- **Pros:** Generous everyday limits, very fast, strong image generation, huge context window, deep Google integration, available as a clean web app.
+- **Cons / limits:** Best "Pro/Deep Research" features and highest limits are reserved for paid; free caps tighten under load. **Google account login required.** (Note: the developer *API* free tier is separate and far more restrictive — workshop users want the **app**, not the API.)
+- **Get started:** [gemini.google.com](https://gemini.google.com)
+- **Paid upgrade:** <span class="pill rose">paid</span> Google AI Pro is about **$20/mo** — top models, Deep Research, higher limits, and more cloud storage.
+
+### Microsoft Copilot
+
+Microsoft's consumer assistant, built on OpenAI models and woven into Windows, Edge, and Bing.
+
+- **Free model:** Powered by OpenAI GPT-4o / GPT-5-class technology, with usage throttled during peak hours.
+- **Pros:** Free image generation, web grounding with citations, works right inside the Edge browser and Windows, no separate signup if you have a Microsoft account.
+- **Cons / limits:** Throttled at peak times; image generation may queue. In 2026 the free tier is being **narrowed to a more basic chat** (Office app integration is being removed April 15, 2026). **Microsoft account login recommended** for full features.
+- **Get started:** [copilot.microsoft.com](https://copilot.microsoft.com)
+- **Paid upgrade:** <span class="pill rose">paid</span> Copilot Pro is **$20/mo** — priority access, faster image generation, and Copilot inside Microsoft 365 apps.
+
+### Perplexity
+
+An "answer engine" — it searches the live web and gives a sourced, cited answer rather than just chatting. Best for research and fact-finding.
+
+- **Free model:** Default in-house **Sonar** model (the system auto-picks the model per query). Unlimited basic searches.
+- **Pros:** Real citations and source links, always current, no model-picking needed, works across web/desktop/mobile. Many features browsable without an account.
+- **Cons / limits:** Only **~5 "Pro Search" (deep) queries per 4-hour window** on free; no access to premium frontier models (GPT-5 Thinking, Claude Opus, etc.). **Login required** for sidebar/history and advanced features.
+- **Get started:** [perplexity.ai](https://www.perplexity.ai)
+- **Paid upgrade:** <span class="pill rose">paid</span> Perplexity Pro is **$20/mo** — ~300+ Pro Searches/day and a choice of premium models.
+
+### Meta AI
+
+Meta's free assistant, powered by its open Llama models and embedded in WhatsApp, Instagram, and Messenger, plus a standalone web app.
+
+- **Free model:** Runs on **Llama 4** (Scout / Maverick variants), with text and image input.
+- **Pros:** Completely free, free image generation, no separate product to learn if you already use Meta apps, simple and friendly.
+- **Cons / limits:** Less capable for complex reasoning/coding than the leaders; fewer power-user features; availability varies by region. The standalone web app may ask you to sign in with a Facebook/Instagram account.
+- **Get started:** [meta.ai](https://www.meta.ai)
+- **Paid upgrade:** No mainstream consumer paid tier — it is free; Meta monetizes through its platforms.
+
+#### Also worth a mention
+
+- **DeepSeek** — The web chat at [chat.deepseek.com](https://chat.deepseek.com) is **completely free** (running DeepSeek V4), with no paid consumer tier and a generous ~500 messages/hour cap. Strong at reasoning and coding for $0. Signup needs an email; note it is a China-based service, so mind what data you paste. Good as a "free power tool," less polished for total beginners.
+- **Grok (xAI)** — Free access on [grok.com](https://grok.com) or inside X, defaulting to **Grok 3** with tight caps (~20 messages/day; ~10 prompts/2 hours). Free use on X requires an account 7+ days old with a verified phone number. Witty and current-events-savvy, but the free limits are stingy. Paid SuperGrok / X Premium+ runs ~$22-30/mo.
+
+<div class="box tip">
+<span class="box-label">The Tip</span>
+<strong>Best for the workshop:</strong> For a no-friction first session, <strong>Google Gemini</strong> and <strong>Microsoft Copilot</strong> are the easiest — generous free limits and most attendees already have a Google or Microsoft login. <strong>ChatGPT</strong> is the best "name everyone knows" demo, and <strong>Claude</strong> shines for writing and document tasks (but watch the 5-hour message cap with a full room). For research-with-sources exercises, use <strong>Perplexity</strong>. To avoid <em>any</em> rate-limit surprises mid-demo, <strong>DeepSeek's</strong> free web chat has the most headroom. Tip: have people stagger their accounts/tools so the whole room does not hit one provider's cap simultaneously.
+</div>
+
+#### Comparison at a glance
+
+| Tool | Free model | Best at | Gotcha | Link |
+|---|---|---|---|---|
+| ChatGPT | GPT-5.3 Instant | All-round + images | ~10 msgs/5hr then mini fallback | [chatgpt.com](https://chatgpt.com) |
+| Claude | Sonnet 4.5 | Writing, long documents | ~15-40 msgs/5hr; no Opus on free | [claude.ai](https://claude.ai) |
+| Gemini | Gemini 3 Flash | Research + Google apps | Best features are paid; needs Google login | [gemini.google.com](https://gemini.google.com) |
+| Copilot | GPT-4o/5-class | In-browser (Edge) + free images | Throttled at peak; free tier narrowing in 2026 | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| Perplexity | Sonar | Cited web research | Only ~5 deep "Pro" searches/4hr | [perplexity.ai](https://www.perplexity.ai) |
+| Meta AI | Llama 4 | Casual chat + free images | Weaker on complex/coding tasks | [meta.ai](https://www.meta.ai) |
+| DeepSeek | DeepSeek V4 | Free reasoning/coding, high cap | China-based — mind your data | [chat.deepseek.com](https://chat.deepseek.com) |
+| Grok | Grok 3 | Current events, X integration | Stingy free cap (~20/day); verified phone needed | [grok.com](https://grok.com) |
+
+**Sources:** [OpenAI ChatGPT pricing](https://chatgpt.com/pricing/) · [ChatGPT usage limits 2026](https://ai.zenken.co.jp/en/post/chatgpt-usage/) · [Engadget: Claude free in 2026](https://www.engadget.com/2185772/claude-ai-free-2026-limits-workarounds/) · [Claude pricing](https://claude.com/pricing) · [Google: Gemini 3 Flash default](https://blog.google/products/gemini/gemini-3-flash/) · [TechCrunch: Gemini 3 Flash default](https://techcrunch.com/2025/12/17/google-launches-gemini-3-flash-makes-it-the-default-model-in-the-gemini-app/) · [Microsoft: Copilot free vs 365](https://support.microsoft.com/en-us/microsoft-365-copilot/what-s-the-difference-between-microsoft-copilot-free-and-copilot-in-microsoft-365) · [Perplexity free plan breakdown](https://www.glbgpt.com/hub/is-perplexity-free-full-breakdown-of-the-2025-free-plan/) · [Meta AI](https://www.meta.ai/) · [DeepSeek free tier](https://felloai.com/deepseek-pricing/) · [Grok free tier guide](https://www.datastudios.org/post/grok-ai-free-plans-free-tier-limits-subscription-options-trial-availability-and-feature-access)
+
+## Level up: agentic tools for power users (Claude Code / Codex / Gemini CLI)
+
+*Verified June 2026. Prices in USD; check vendor pages as tiers shift often.*
+
+These tools do not just chat — they *act*: reading, editing, running, and testing code across a whole project on your behalf. They live in your terminal or editor and drive multi-step tasks (refactors, bug hunts, "implement this spec") with real autonomy.
+
+<div class="box goal">
+<span class="box-label">The Goal</span>
+A quick note on the <strong>current Anthropic model family</strong> (verified via Anthropic's model catalog), since several tools below run on it: <strong>Claude Opus 4.8</strong> (<code>claude-opus-4-8</code>, most capable Opus-tier, 1M context), <strong>Claude Sonnet 4.6</strong> (<code>claude-sonnet-4-6</code>, best speed/intelligence balance), and <strong>Claude Haiku 4.5</strong> (<code>claude-haiku-4-5</code>, fastest/cheapest). Above the Opus line sits <strong>Claude Fable 5</strong> (<code>claude-fable-5</code>), Anthropic's most capable widely released model.
+</div>
+
+### The big three (cover in depth)
+
+#### 1. Claude Code (Anthropic)
+
+**What it is / killer use-case.** A terminal-native agentic coding assistant from Anthropic that reads, edits, runs, and tests code across a whole repo, driving multi-step tasks autonomously (refactors, bug hunts, "implement this spec"). Killer use-case: long-horizon, repo-wide agentic coding with strong planning and high autonomy.
+
+**Pros.**
+
+- Best-in-class agentic execution on large, multi-file tasks; strong tool use and self-verification.
+- Runs in the terminal and integrates with IDEs, CI, MCP servers, and hooks.
+- Backed by the current frontier Claude models (Opus 4.8 / Sonnet 4.6).
+
+**Cons.**
+
+- No genuine free tier — requires a paid Claude subscription or pay-as-you-go API credits.
+- Token-metered agentic work can get expensive on big tasks; the most capable models cost more.
+
+**Free in a workshop?** <span class="pill rose">paid</span> Not really free. Needs a **Pro/Max/Team/Enterprise** subscription or an **Anthropic Console (API) account billed per token**. There is no zero-cost path, though API pay-go is cheap per short session (often cents).
+
+**Install / getting started.** Run `npm install -g @anthropic-ai/claude-code` ([npm package](https://www.npmjs.com/package/@anthropic-ai/claude-code) · [docs/setup](https://code.claude.com/docs/en/setup)). A native installer and Homebrew option also exist.
+
+**Paid tier unlocks / price.** Pro ~ **$20/mo** ($17/mo annual); Max **$100/mo** (5x) or **$200/mo** (20x) for far higher usage caps; or API pay-go (Sonnet 4.6 ~ $3/$15 per M tokens in/out). Paid tiers raise rate limits and unlock the bigger models for sustained agentic runs.
+
+**90-min workshop verdict.** ⚠️ **Only if attendees already have a paid plan or an API key.** A fresh attendee cannot use it for free. If you want everyone working, pre-provision API keys with a small credit, or pair it with a free tool below.
+
+#### 2. OpenAI Codex CLI / Codex (OpenAI)
+
+**What it is / killer use-case.** OpenAI's lightweight, open-source coding agent that runs in your terminal (with companion IDE extension and cloud app). Killer use-case: terminal-first agentic coding tied to your ChatGPT account, with a sandboxed local agent loop.
+
+**Pros.**
+
+- Open-source CLI, fast install, signs in with an existing ChatGPT account (no separate API key needed for subscribers).
+- Backed by OpenAI's strongest coding models; good IDE + cloud handoff story.
+- Cross-platform (macOS, Windows, Linux).
+
+**Cons.**
+
+- Access is gated behind a paid ChatGPT plan or API credits — the free ChatGPT tier does not include Codex.
+- Heavy agentic sessions consume plan usage quickly.
+
+**Free in a workshop?** <span class="pill amber">trial credit</span> Mostly **no** for sustained use, but **new OpenAI API accounts get a small free credit grant (~$5)** which can cover a short session via an API key. Otherwise it requires ChatGPT Plus/Pro/Business.
+
+**Install / getting started.** Run `npm install -g @openai/codex` or `curl -fsSL https://chatgpt.com/codex/install.sh | sh` (macOS/Linux), then run `codex` ([CLI docs](https://developers.openai.com/codex/cli) · [quickstart](https://developers.openai.com/codex/quickstart) · [GitHub](https://github.com/openai/codex)).
+
+**Paid tier unlocks / price.** ChatGPT **Plus ~ $20/mo**, **Pro ~ $40/mo**, **Business ~ $60/user/mo**; or API pay-go. Higher tiers raise Codex usage limits and unlock more capable/longer agentic runs.
+
+**90-min workshop verdict.** ⚠️ **Borderline.** Possible for free *only* by burning the one-time API trial credit, which will not stretch across a room. Cleanest if attendees already pay for ChatGPT.
+
+#### 3. Google Gemini CLI (Google)
+
+**What it is / killer use-case.** Google's **open-source** terminal AI agent that brings Gemini directly into your shell for coding, file ops, and web-grounded tasks. Killer use-case: a genuinely free, high-limit agentic CLI for newcomers — log in with a Google account and go.
+
+**Pros.**
+
+- **Real free tier:** sign in with a personal Google account for **60 requests/min and 1,000 requests/day**, with access to current Gemini models and a 1M-token context window.
+- Open-source, npm-installable, MCP-capable.
+- The single easiest "everyone working in 2 minutes, $0" option.
+
+**Cons.**
+
+- Agentic coding quality is generally rated a notch below top Claude/OpenAI agents on the hardest tasks.
+- Free-tier requests may be used to improve products (use a paid key for sensitive/proprietary code).
+
+**Free in a workshop?** <span class="pill cyan">free</span> **Yes — best free option.** A personal Google account unlocks the daily free quota with no card required. (A widely-circulated SEO claim that the free tier "ends June 18, 2026 / moves to an 'Antigravity CLI'" is **not** in Google's official docs or repo — treat it as noise.)
+
+**Install / getting started.** Run `npm install -g @google/gemini-cli`, then run `gemini` and log in ([GitHub](https://github.com/google-gemini/gemini-cli) · [quotas & pricing](https://geminicli.com/docs/resources/quota-and-pricing/) · [announcement](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/)).
+
+**Paid tier unlocks / price.** Use a **Google AI Studio / Vertex AI API key** or a **Gemini Code Assist Standard/Enterprise** plan for higher limits, larger quotas, and data-handling guarantees (roughly **$19+/user/mo** for Code Assist Standard, plus usage-based API pricing).
+
+**90-min workshop verdict.** ✅ **Yes, fully free.** The recommended default to guarantee every attendee is hands-on at $0.
+
+### Also worth knowing (briefly)
+
+#### Cursor
+
+AI-first code editor (VS Code fork) with a strong agent mode ("Composer"/Agent). **Pros:** excellent inline + agentic editing UX, multi-file edits, fast. **Cons:** best features need a subscription; usage-metered agent calls. **Free?** Free **Hobby** tier with limited completions/agent requests — usable for a short demo. **Get it:** download from [cursor.com](https://cursor.com). **Paid:** Pro ~ **$20/mo** (more agent requests, premium models). **Workshop:** ✅ free tier works for a short session.
+
+#### Windsurf (formerly Codeium)
+
+AI editor with the agentic **Cascade** flow. **Pros:** clean agent UX, generous-ish free tier. **Cons:** heavier agentic use needs Pro credits. **Free?** **Yes** — free plan includes Cascade with limited credits. **Get it:** download from [windsurf.com](https://windsurf.com). **Paid:** Pro ~ **$15/mo** (more credits/models). **Workshop:** ✅ free for a session.
+
+#### GitHub Copilot (agent mode)
+
+Copilot now includes an autonomous **agent mode** (GA in 2026) inside VS Code/JetBrains and on github.com. **Pros:** deep GitHub/PR integration, multi-model choice. **Cons:** the 2026 shift to usage-based "AI Credits" drew backlash — agentic sessions can cost 10-50x the old flat rate for power users. **Free?** **Free tier** exists (limited completions + a small monthly agent/credit allotment). **Get it:** [github.com/features/copilot](https://github.com/features/copilot). **Paid:** Pro ~ **$10/mo** (+ metered credits). **Workshop:** ✅ free tier covers light agent use; watch credit burn.
+
+#### Aider
+
+Open-source, terminal-based pair-programming agent; **model-agnostic** (bring your own API key, cloud or local). **Pros:** free software, git-native (auto-commits), works with any model including local. **Cons:** you pay for whatever model API you point it at; CLI-only. **Free?** **The tool is free**; truly $0 only with a free-tier API key (e.g., Gemini) or a local model. **Get it:** `python -m pip install aider-install && aider-install` (or `pip install aider-chat`) — [aider.chat](https://aider.chat). **Paid:** none for the tool; model API costs apply. **Workshop:** ✅ free **if** paired with a Gemini free key or local Ollama model.
+
+#### Cline
+
+Leading **open-source** agentic coding extension for VS Code (plan/act agent, MCP support). **Pros:** free to install, bring-your-own-key (cloud *or* local via Ollama), transparent. **Cons:** you pay for the underlying model API. **Free?** **Extension is free**; $0 only with a free model key or local model. **Get it:** install **Cline** from the VS Code Marketplace — [cline.bot](https://cline.bot). **Paid:** none for the tool; model usage billed by your provider. **Workshop:** ✅ free with a Gemini free key or Ollama.
+
+<div class="box good">
+<span class="box-label">If you only try one</span>
+Start with <strong><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></strong>. It is the only option that is genuinely free with no credit card, installs in one <code>npm</code> command, logs in with a Google account, and still gives you a real agentic loop with a 1M-token context window — so an entire workshop can be hands-on in minutes at $0. If your attendees already pay for Claude or ChatGPT, <strong>Claude Code</strong> is the strongest agent to graduate to for serious repo-wide work.
+</div>
+
+**Free-during-90-minutes scorecard:** Gemini CLI ✅ · Cursor/Windsurf/Copilot ✅ (free tiers) · Aider/Cline ✅ (with a free model key) · Claude Code ⚠️ (needs paid plan/API key) · Codex CLI ⚠️ (trial credit or paid ChatGPT).
+
+**Sources:** [Claude Code npm](https://www.npmjs.com/package/@anthropic-ai/claude-code) · [Claude Code setup docs](https://code.claude.com/docs/en/setup) · [Codex CLI docs](https://developers.openai.com/codex/cli) · [Codex GitHub](https://github.com/openai/codex) · [Gemini CLI GitHub](https://github.com/google-gemini/gemini-cli) · [Gemini CLI quotas/pricing](https://geminicli.com/docs/resources/quota-and-pricing/) · [Cursor](https://cursor.com) · [Windsurf](https://windsurf.com) · [GitHub Copilot](https://github.com/features/copilot) · [Aider](https://aider.chat) · [Cline](https://cline.bot)
+
+<div class="box tip">
+<span class="box-label">Set this up BEFORE the workshop</span>
+A few minutes now saves a scramble later:
+<ul>
+<li>☐ <strong>Make a free account for at least one chat app</strong> — <a href="https://gemini.google.com">Gemini</a> or <a href="https://copilot.microsoft.com">Copilot</a> are the lowest-friction if you already have a Google/Microsoft login; <a href="https://chatgpt.com">ChatGPT</a> and <a href="https://claude.ai">Claude</a> are great too.</li>
+<li>☐ <strong>Confirm you can actually log in</strong> on the laptop you are bringing (not just your phone), and that your campus/hotel Wi-Fi does not block it.</li>
+<li>☐ <strong>Optional — trying agentic tools?</strong> Install one in advance. The free, no-card pick is <a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a>: <code>npm install -g @google/gemini-cli</code>, then run <code>gemini</code> and log in once so the auth flow is done.</li>
+<li>☐ <strong>Stagger your tools</strong> with a neighbor so the whole room does not hit one provider's rate limit at the same moment.</li>
+<li>☐ <strong>Have a backup</strong> — <a href="https://chat.deepseek.com">DeepSeek's</a> free web chat has the most headroom if your first choice rate-limits mid-exercise.</li>
+</ul>
+</div>
