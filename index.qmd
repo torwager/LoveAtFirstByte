@@ -89,7 +89,7 @@ anchor-sections: false
 <div class="stat-strip">
   <div class="stat"><div class="num">90</div><div class="lbl">minutes</div></div>
   <div class="stat"><div class="num">2</div><div class="lbl">collaborative challenges</div></div>
-  <div class="stat"><div class="num">15</div><div class="lbl">challenges to choose from</div></div>
+  <div class="stat"><div class="num">16</div><div class="lbl">challenges to choose from</div></div>
   <div class="stat"><div class="num">$0</div><div class="lbl">free tools, no subscription</div></div>
 </div>
 :::

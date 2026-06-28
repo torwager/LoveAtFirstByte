@@ -73,7 +73,7 @@ The premise of the next 90 minutes is simple: <strong>answers are cheap, judgmen
 |---|---|---|
 | **0:00–0:10** | **Warm-up discussion (10 min)** | "What do you *actually* use AI for at work?" Round-robin at tables (not whole-room), each table posts 1 use + 1 frustration to a shared slide. Doubles as the silent **group-formation + tool-assignment** step. |
 | **0:10–0:20** | **Tor: ideas & possibilities (10 min)** | The judgment-vs-answers framing; the 4 prompting moves (decompose, role, adversarial, ask-it-to-improve-your-prompt); a 60-sec live teaser of an advanced agent (Claude Code) doing something a chat app can't — *watch, don't replicate*. End by assigning each table its tool. |
-| **0:20–0:55** | **Challenge 1 (35 min)** | Set challenge: **[Picture This](../challenges/picture-this.qmd)** — rescue an ugly data table into an informative figure. Run on the per-challenge timeline below. |
+| **0:20–0:55** | **Challenge 1 (35 min)** | Set challenge: **[The next step](../challenges/the-next-step.qmd)** — use AI to understand a complex recent paper, then design the follow-up experiment. Run on the per-challenge timeline below. |
 | **0:55–1:30** | **Challenge 2 (35 min)** | Set challenge: **[This is not a drill](../challenges/this-is-not-a-drill.qmd)** — use AI to understand a live federal rule change and draft a substantive public comment. Same timeline; debrief on what made comments impactful, then close on the **ethics moment** plus one CLI "what's possible next" pointer. |
 
 ## How each challenge works

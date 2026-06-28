@@ -49,7 +49,7 @@ description: "Additional hands-on AI challenges for pain scientists, plus an adv
 </svg>
 
 <div class="meta-row">
-  <span class="pill cyan">13 challenges</span>
+  <span class="pill cyan">14 challenges</span>
   <span class="pill rose">run as alternates</span>
   <span class="pill teal">35 min each</span>
   <span class="pill violet">advanced agentic track</span>
@@ -62,6 +62,11 @@ These are the rest of the menu — beyond the [two set challenges](index.qmd) we
 ## Core & foundational challenges
 
 <div class="card-grid">
+
+<a class="lafb-card" href="picture-this.qmd">
+<h3>📊 Picture This</h3>
+<p>Rescue an ugly data table and turn it into the most informative figure in the room. Beginner-friendly, instant payoff.</p>
+</a>
 
 <a class="lafb-card" href="plain-language-gauntlet.qmd">
 <h3>🗣️ Plain-Language Gauntlet</h3>

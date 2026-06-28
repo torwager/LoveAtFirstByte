@@ -48,11 +48,12 @@ website:
           contents:
             - text: "The Challenges (set challenges)"
               href: challenges/index.qmd
-            - challenges/picture-this.qmd
+            - challenges/the-next-step.qmd
             - challenges/this-is-not-a-drill.qmd
             - section: "Other Challenges"
               href: challenges/other.qmd
               contents:
+                - challenges/picture-this.qmd
                 - challenges/plain-language-gauntlet.qmd
                 - challenges/hypothesis-roulette.qmd
                 - challenges/model-horserace.qmd
