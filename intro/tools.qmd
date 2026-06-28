@@ -12,7 +12,6 @@ description: "A curated, free-first menu of chat assistants and agentic coding t
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- light network connecting the toolkit -->
   <g stroke="#94a3b8" stroke-width="1.4" opacity="0.55" fill="none">
     <path d="M150,110 L290,80 L430,110 L570,80 L650,118"/>
@@ -21,10 +20,8 @@ description: "A curated, free-first menu of chat assistants and agentic coding t
     <path d="M290,80 L290,138"/>
     <path d="M570,80 L570,138"/>
   </g>
-
   <!-- accent network highlight -->
   <path d="M150,110 L290,80 L430,110 L570,80 L650,118" fill="none" stroke="url(#g-tools)" stroke-width="1.6" opacity="0.5"/>
-
   <!-- toolbox / curated tray -->
   <g>
     <rect x="92" y="150" width="120" height="44" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2.2"/>
@@ -32,7 +29,6 @@ description: "A curated, free-first menu of chat assistants and agentic coding t
     <line x1="92" y1="170" x2="212" y2="170" stroke="#94a3b8" stroke-width="1.6"/>
     <circle cx="152" cy="170" r="4.5" fill="#0891b2"/>
   </g>
-
   <!-- abstract app/tool tiles -->
   <!-- chat assistant tile -->
   <g>
@@ -56,14 +52,12 @@ description: "A curated, free-first menu of chat assistants and agentic coding t
     <circle cx="640" cy="146" r="13" fill="none" stroke="#475569" stroke-width="2.3"/>
     <line x1="650" y1="156" x2="664" y2="170" stroke="#e11d6b" stroke-width="2.4"/>
   </g>
-
   <!-- node accents -->
   <circle cx="290" cy="80" r="3.4" fill="#0891b2"/>
   <circle cx="430" cy="110" r="3.4" fill="#7c3aed"/>
   <circle cx="570" cy="80" r="3.4" fill="#e11d6b"/>
   <circle cx="150" cy="110" r="3" fill="#94a3b8"/>
   <circle cx="650" cy="118" r="3" fill="#64748b"/>
-
   <!-- subtle crimson signature dot -->
   <circle cx="690" cy="46" r="4" fill="#b91c1c"/>
 </svg>

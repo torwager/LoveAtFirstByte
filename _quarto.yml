@@ -46,25 +46,28 @@ website:
             - intro/tools.qmd
         - section: "Challenges"
           contents:
-            - challenges/index.qmd
-            - text: "— Core & Foundational —"
+            - text: "The Challenges (set challenges)"
               href: challenges/index.qmd
             - challenges/picture-this.qmd
-            - challenges/model-horserace.qmd
-            - challenges/plain-language-gauntlet.qmd
-            - challenges/hypothesis-roulette.qmd
-            - challenges/the-rebuttal.qmd
-            - challenges/irb-speed-round.qmd
-            - challenges/experiment-generator.qmd
-            - challenges/rapid-review.qmd
-            - challenges/flash-debate.qmd
-            - challenges/meet-the-speaker.qmd
-            - challenges/policy-wonk.qmd
-            - section: "Advanced (Claude Code / Codex / Gemini CLI)"
+            - challenges/this-is-not-a-drill.qmd
+            - section: "Other Challenges"
+              href: challenges/other.qmd
               contents:
-                - challenges/advanced/reviewer-4.qmd
-                - challenges/advanced/who-are-my-friends.qmd
-                - challenges/advanced/junkyard-dog.qmd
+                - challenges/plain-language-gauntlet.qmd
+                - challenges/hypothesis-roulette.qmd
+                - challenges/model-horserace.qmd
+                - challenges/the-rebuttal.qmd
+                - challenges/irb-speed-round.qmd
+                - challenges/experiment-generator.qmd
+                - challenges/rapid-review.qmd
+                - challenges/flash-debate.qmd
+                - challenges/meet-the-speaker.qmd
+                - challenges/policy-wonk.qmd
+                - section: "Advanced (Claude Code / Codex / Gemini CLI)"
+                  contents:
+                    - challenges/advanced/reviewer-4.qmd
+                    - challenges/advanced/who-are-my-friends.qmd
+                    - challenges/advanced/junkyard-dog.qmd
   page-footer:
     border: true
     left: "Love at First Byte · NAPS · AI for Academia 2026"

@@ -12,7 +12,6 @@ description: "A core live challenge: prompt an AI to turn a messy pain-science d
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- left: the cluttered, messy chart -->
   <g transform="translate(54,40)">
     <rect x="0" y="0" width="250" height="150" rx="10" fill="#ffffff" stroke="#e2e8f4"/>
@@ -41,13 +40,11 @@ description: "A core live challenge: prompt an AI to turn a messy pain-science d
     <line x1="120" y1="140" x2="150" y2="140" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
     <line x1="170" y1="140" x2="220" y2="140" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
   </g>
-
   <!-- arrow: messy chart morphs into clean one -->
   <path d="M320 112 C 360 112, 372 112, 400 112" fill="none" stroke="url(#g-picture-this)" stroke-width="3" stroke-linecap="round"/>
   <polygon points="404,112 392,105 392,119" fill="#e11d6b"/>
   <circle cx="346" cy="112" r="3.5" fill="#0891b2"/>
   <circle cx="375" cy="112" r="3" fill="#7c3aed"/>
-
   <!-- right: the clean, well-labeled figure -->
   <g transform="translate(486,40)">
     <rect x="0" y="0" width="270" height="150" rx="10" fill="#ffffff" stroke="#e2e8f4"/>

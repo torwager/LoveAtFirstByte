@@ -12,7 +12,6 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- LEFT: one dense text document = jargon-heavy source -->
   <g>
     <rect x="70" y="40" width="120" height="148" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
@@ -34,7 +33,6 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
     <!-- gradient accent bar = the spark of meaning inside -->
     <rect x="86" y="50" width="60" height="5" rx="2.5" fill="url(#g-plain-language-gauntlet)"/>
   </g>
-
   <!-- connector lines fanning from source to three audiences -->
   <g stroke-width="2" fill="none">
     <path d="M190,90 C300,80 360,55 470,55" stroke="#0891b2"/>
@@ -43,7 +41,6 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
   </g>
   <!-- connector endpoints -->
   <circle cx="190" cy="114" r="4" fill="#64748b"/>
-
   <!-- RIGHT, audience 1: STUDENT (speech bubble + grad cap) -->
   <g>
     <rect x="500" y="30" width="150" height="52" rx="12" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
@@ -58,7 +55,6 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
     <line x1="572" y1="50" x2="636" y2="50" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
     <line x1="572" y1="62" x2="624" y2="62" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
   </g>
-
   <!-- audience 2: PATIENT ADVOCATE (speech bubble + person/heart) -->
   <g>
     <rect x="500" y="98" width="150" height="52" rx="12" fill="#ffffff" stroke="#e11d6b" stroke-width="2"/>
@@ -72,7 +68,6 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
     <line x1="572" y1="118" x2="636" y2="118" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
     <line x1="572" y1="130" x2="620" y2="130" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
   </g>
-
   <!-- audience 3: OFFICIAL (speech bubble + building/columns) -->
   <g>
     <rect x="500" y="166" width="150" height="44" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
@@ -89,12 +84,10 @@ description: "Take a jargon-dense pain-neuroimaging methods paragraph and make a
     <line x1="572" y1="183" x2="636" y2="183" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
     <line x1="572" y1="195" x2="618" y2="195" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
   </g>
-
   <!-- accent dots -->
   <circle cx="460" cy="55" r="3.5" fill="#0891b2"/>
   <circle cx="460" cy="110" r="3.5" fill="#e11d6b"/>
   <circle cx="460" cy="165" r="3.5" fill="#7c3aed"/>
-
   <!-- small crimson signature dot -->
   <circle cx="200" cy="200" r="3" fill="#b91c1c"/>
 </svg>

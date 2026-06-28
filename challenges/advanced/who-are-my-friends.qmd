@@ -12,21 +12,18 @@ description: "An agentic challenge: decompose reviewer discovery into verifiable
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- dim edges to non-matching nodes -->
   <g stroke="#94a3b8" stroke-width="1.5" fill="none" opacity="0.5">
     <path d="M400 110 C 320 150, 250 185, 175 195"/>
     <path d="M400 110 C 480 150, 560 180, 640 190"/>
     <path d="M400 110 C 300 80, 230 130, 130 140"/>
   </g>
-
   <!-- highlighted edges to aligned reviewer nodes -->
   <g stroke="url(#g-who-are-my-friends)" stroke-width="2.5" fill="none" opacity="0.9">
     <path d="M400 110 C 300 60, 220 70, 140 55"/>
     <path d="M400 110 C 500 60, 580 70, 660 55"/>
     <path d="M400 110 C 500 90, 580 120, 670 135"/>
   </g>
-
   <!-- central paper node -->
   <g transform="translate(372,78)">
     <rect x="0" y="0" width="56" height="68" rx="6" fill="#ffffff" stroke="#475569" stroke-width="2"/>
@@ -35,14 +32,12 @@ description: "An agentic challenge: decompose reviewer discovery into verifiable
     <line x1="10" y1="40" x2="38" y2="40" stroke="#94a3b8" stroke-width="2"/>
     <line x1="10" y1="52" x2="42" y2="52" stroke="#94a3b8" stroke-width="2"/>
   </g>
-
   <!-- dim, non-matching reviewer nodes -->
   <g fill="#ffffff" stroke="#94a3b8" stroke-width="2">
     <circle cx="130" cy="140" r="12"/>
     <circle cx="175" cy="195" r="10"/>
     <circle cx="640" cy="190" r="10"/>
   </g>
-
   <!-- aligned reviewer nodes that "light up" in accent colors -->
   <g>
     <circle cx="140" cy="55" r="14" fill="#ffffff" stroke="#0891b2" stroke-width="2.5"/>
@@ -52,7 +47,6 @@ description: "An agentic challenge: decompose reviewer discovery into verifiable
     <circle cx="670" cy="135" r="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
     <circle cx="670" cy="135" r="19" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
   </g>
-
   <!-- sentiment marks on matched nodes -->
   <g font-family="monospace" font-size="15" font-weight="700">
     <text x="118" y="30" fill="#0891b2">+</text>
@@ -60,7 +54,6 @@ description: "An agentic challenge: decompose reviewer discovery into verifiable
     <text x="704" y="120" fill="#7c3aed">~</text>
     <text x="198" y="182" fill="#94a3b8">?</text>
   </g>
-
   <!-- accent dots -->
   <g fill="#64748b">
     <circle cx="250" cy="40" r="2" opacity="0.6"/>
@@ -68,7 +61,6 @@ description: "An agentic challenge: decompose reviewer discovery into verifiable
     <circle cx="330" cy="200" r="2" opacity="0.5"/>
     <circle cx="500" cy="205" r="2" opacity="0.5"/>
   </g>
-
   <!-- crimson signature dot -->
   <circle cx="400" cy="200" r="3" fill="#b91c1c"/>
 </svg>

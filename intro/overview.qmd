@@ -12,15 +12,12 @@ description: "The run of show, the shape of each challenge, and the four prompti
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- section title -->
   <text x="70" y="48" fill="#475569" font-size="15" font-weight="600" font-family="system-ui,sans-serif" letter-spacing="0.04em">90-MINUTE RUN OF SHOW</text>
   <text x="730" y="48" fill="#94a3b8" font-size="13" font-family="system-ui,sans-serif" text-anchor="end">0:00 — 1:30</text>
-
   <!-- timeline ribbon -->
   <line x1="70" y1="115" x2="730" y2="115" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
   <line x1="70" y1="115" x2="730" y2="115" stroke="url(#g-overview)" stroke-width="3" stroke-linecap="round"/>
-
   <!-- minute ticks -->
   <g stroke="#cbd5e1" stroke-width="1.5">
     <line x1="180" y1="108" x2="180" y2="122"/>
@@ -28,7 +25,6 @@ description: "The run of show, the shape of each challenge, and the four prompti
     <line x1="510" y1="108" x2="510" y2="122"/>
     <line x1="620" y1="108" x2="620" y2="122"/>
   </g>
-
   <!-- milestone: Intro -->
   <g>
     <circle cx="70" cy="115" r="9" fill="#ffffff" stroke="#0891b2" stroke-width="3"/>
@@ -36,7 +32,6 @@ description: "The run of show, the shape of each challenge, and the four prompti
     <text x="70" y="152" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Intro</text>
     <text x="70" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:00</text>
   </g>
-
   <!-- milestone: Challenge Match 1 -->
   <g>
     <circle cx="290" cy="115" r="10" fill="#ffffff" stroke="#e11d6b" stroke-width="3"/>
@@ -44,7 +39,6 @@ description: "The run of show, the shape of each challenge, and the four prompti
     <text x="290" y="90" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Challenge 1</text>
     <text x="290" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:20</text>
   </g>
-
   <!-- milestone: Challenge Match 2 -->
   <g>
     <circle cx="620" cy="115" r="10" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
@@ -52,7 +46,6 @@ description: "The run of show, the shape of each challenge, and the four prompti
     <text x="620" y="90" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Challenge 2</text>
     <text x="620" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">0:55</text>
   </g>
-
   <!-- end node -->
   <g>
     <circle cx="730" cy="115" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2.5"/>
@@ -60,7 +53,6 @@ description: "The run of show, the shape of each challenge, and the four prompti
     <text x="730" y="152" fill="#475569" font-size="13" font-weight="600" font-family="system-ui,sans-serif" text-anchor="middle">Wrap</text>
     <text x="730" y="170" fill="#94a3b8" font-size="11" font-family="system-ui,sans-serif" text-anchor="middle">1:30</text>
   </g>
-
   <!-- subtle crimson signature dot -->
   <circle cx="781" cy="34" r="3" fill="#b91c1c"/>
 </svg>
@@ -81,8 +73,8 @@ The premise of the next 90 minutes is simple: <strong>answers are cheap, judgmen
 |---|---|---|
 | **0:00–0:10** | **Warm-up discussion (10 min)** | "What do you *actually* use AI for at work?" Round-robin at tables (not whole-room), each table posts 1 use + 1 frustration to a shared slide. Doubles as the silent **group-formation + tool-assignment** step. |
 | **0:10–0:20** | **Tor: ideas & possibilities (10 min)** | The judgment-vs-answers framing; the 4 prompting moves (decompose, role, adversarial, ask-it-to-improve-your-prompt); a 60-sec live teaser of an advanced agent (Claude Code) doing something a chat app can't — *watch, don't replicate*. End by assigning each table its tool. |
-| **0:20–0:55** | **Challenge 1 (35 min)** | Recommended core pick: **picture-this**. Run on the per-challenge timeline below. |
-| **0:55–1:30** | **Challenge 2 (35 min)** | Recommended core pick: **plain-language-gauntlet**. Same timeline; the debrief turns to what each tool did well and where it struggled. Close the last 2 min on the **ethics moment** plus one CLI "what's possible next" pointer. |
+| **0:20–0:55** | **Challenge 1 (35 min)** | Set challenge: **[Picture This](../challenges/picture-this.qmd)** — rescue an ugly data table into an informative figure. Run on the per-challenge timeline below. |
+| **0:55–1:30** | **Challenge 2 (35 min)** | Set challenge: **[This is not a drill](../challenges/this-is-not-a-drill.qmd)** — use AI to understand a live federal rule change and draft a substantive public comment. Same timeline; debrief on what made comments impactful, then close on the **ethics moment** plus one CLI "what's possible next" pointer. |
 
 ## How each challenge works
 

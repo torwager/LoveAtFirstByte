@@ -1,0 +1,98 @@
+---
+title: "This is not a drill — Hints"
+subtitle: "Background and structure for the OMB grants-rule challenge."
+description: "Optional hints for the 'This is not a drill' challenge: context, the key changes, likely impacts, what makes a comment substantive, and how to submit."
+---
+
+<div class="box tip"><span class="box-label">Read me first</span>
+These are <strong>optional hints</strong> — try the challenge with AI on your own before opening them. They are organized to match the five components on the <a href="this-is-not-a-drill.qmd">challenge page</a>: Context, Content, Impact, Response, and Action plan. Everything here describes what the <em>proposed</em> rule says; nothing here is legal advice, and section numbers and details should be verified against the <a href="https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance">actual rule</a> before you cite them.</div>
+
+## ① Context — why these changes are being proposed {#context}
+
+The rule is **OMB's proposed rewrite of the "Uniform Guidance"** (2 CFR Part 200) — the government-wide regulation that governs grants, cooperative agreements, and other federal financial assistance. It is the largest revision since the Uniform Guidance was first issued in 2013, and because NIH awards run on these rules, it would reach deep into how NIH grants are made and managed.
+
+OMB organizes the proposed revisions around **three stated objectives**:
+
+1. **Improve transparency, accountability, and oversight** of federal funds.
+2. **Clarify that the 2 CFR regulatory text is an OMB regulation** that carries regulatory effect in its own right (re-branding the Uniform Guidance as the "Uniform Grants Regulation").
+3. **Reduce recipient burden.**
+
+**Timeline that matters for the challenge:**
+
+- **Comments due July 13, 2026** (a 45-day comment period from the May 29, 2026 publication).
+- OMB proposes a **final rule effective October 1, 2026**, so it would apply to **FY2027** awards if finalized on that timeline.
+- Federal docket: **OMB-2026-0034** on regulations.gov.
+
+## ② Content — the most important changes {#content}
+
+A high-level map of the proposed changes. (Verify section numbers against the rule before citing.)
+
+- **Uniform Guidance becomes regulation.** Centralizes power in OMB and makes future cross-agency grant-rule changes faster and more uniform; reduces agency-specific procedural delay.
+- **Senior-appointee pre-award review.** Agencies must conduct pre-issuance review by senior appointees for discretionary awards to ensure consistency with law, agency priorities, Presidential priorities, and "national interest." Would make peer-review scores advisory and let senior officials block or redirect awards after scientific review.
+- **Peer review explicitly advisory.** Peer review is advisory in law, but NIH custom gives study sections and councils major practical weight. This could weaken the practical primacy of NIH peer review and increase programmatic/political discretion.
+- **No obligation to fund after a NOFO.** Agencies would not be required to issue awards merely because a funding opportunity was posted, and may repost if proposals are judged low quality or inconsistent with the rule's principles. NIH could cancel or rerun competitions even after applications are reviewed.
+- **Award termination for agency priorities / national interest.** Allows termination if the agency decides it is in the agency's interest — including if the award no longer effectuates program goals, federal agency priorities, or the national interest.
+- **Temporary suspension / stop-work authority.** Could pause ongoing grants without a finding of misconduct while the agency reassesses alignment or risk.
+- **Discretionary termination notice and costs.** Institutions may need to account for unrecoverable commitments: personnel contracts, subawards, leases, and long-term infrastructure.
+- **Fixed-amount awards and subawards eliminated** unless authorized by statute.
+- **Research awards: domestic-first framework.** R&D awards should generally go to U.S.-organized entities; foreign entities only if authorized by statute or justified by a compelling agency/U.S. interest. A new § 200.220 would bar federal funds from supporting collaborations with "covered foreign countries" or "covered foreign entities" unless authorized or approved as not posing a national-security risk and in the U.S. interest.
+- **Risk review expanded.** Could include plagiarism, non-replicable studies, civil-rights/religious-liberty concerns, affiliations with organizations deemed to threaten public safety/national security, and foreign gift/contract reporting — making institutional history, controversies, public allegations, and foreign-reporting compliance part of award decisions.
+- **DEI / DEIA restrictions.** Awards could not fund, promote, encourage, subsidize, or facilitate DEI/DEIA practices that violate federal anti-discrimination law, including racial preferences or intentional proxies for race.
+- **Disparate-impact theory restriction** (see definition below).
+- **Gender-ideology and pediatric-transition restrictions.** Would prohibit awards from funding, promoting, encouraging, subsidizing, or facilitating "gender ideology" as defined by EO 14168, or the transition of a child under 19 from one sex to another.
+- **Faith-based organization protections.** Would bar discrimination against or in favor of applicants based on religious character, affiliation, exercise, or lack thereof; faith-based organizations must be considered on the same basis as other eligible applicants.
+- **Event-services viewpoint neutrality.** Universities receiving federal grants could face grant-compliance consequences for viewpoint-discriminatory facility, security, or event policies.
+- **Mandatory E-Verify for award work.** Recipients/subrecipients would have to use DHS E-Verify for employees and contractors hired in or performing work in the U.S. under a federal award — a significant administrative burden, especially for complex staffing.
+- **Payment justification and Do Not Pay checks.** Agencies must use Treasury "Do Not Pay" before disbursement; payment requests from non-State recipients/subrecipients must include brief written justifications tied to award activities.
+- **Performance reports must confirm subawards were reported to SAM.gov.** Transfers to affiliates/subsidiaries/related entities must be classified as subawards or contracts, not internal transfers.
+- **Publication costs and conference attendance restricted.** Publication costs would be unallowable unless required by statute or approved in advance case-by-case; conference-attendance costs allowable only if expressly approved and included in award terms.
+- **Further limits** on advertising/PR, voter-registration activities, issue advocacy/public messaging unrelated to award objectives, and influencing state executive-branch actions unrelated to the award.
+- **Domestic procurement preference broadened.** Agencies must, where practicable and lawful, maximize use of U.S.-produced goods, products, and materials.
+
+<div class="box goal"><span class="box-label">The NIH-specific cluster to watch</span>
+For NIH, the most consequential cluster is <strong>§ 200.205 + § 200.340 + § 200.300/218/220</strong>: award decisions would become more explicitly subject to senior political review; scientific peer review would be formally subordinated to agency discretion; grants could be terminated or suspended for shifting agency/national-interest reasons; and research, training, institutional policy, international collaboration, publication, and conference costs would face new restrictions.</div>
+
+**The most comment-worthy provisions are likely:** pre-issuance senior-appointee review; peer review as merely advisory; discretionary termination/suspension; publication/APC restrictions; conference restrictions; foreign-collaboration restrictions; E-Verify; DEI/disparate-impact language; and the effect on NIH-funded research involving sex/gender, health disparities, global health, and international cohorts.
+
+<div class="box bad"><span class="box-label">A genuine ambiguity worth raising</span>
+The rule does <strong>not</strong> say who qualifies as a "senior appointee," what appointment type is required, whether the person must be Senate-confirmed, whether NIH Institute/Center leadership qualifies, whether HHS political leadership can substitute for NIH leadership, or what record must document the review. Vagueness like this is itself a strong, substantive comment point.</div>
+
+**Disparate impact (definition).** Disparate impact means a policy can be considered discriminatory because it produces unequal outcomes across protected groups, even if the policy is facially neutral and there is no proven discriminatory intent. The proposed rule is hostile to that theory: in the operative proposed **§ 200.218**, agencies and pass-through entities would have to ensure federal awards are not administered in a way that promotes or supports disparate-impact liability — including support for "disparate-impact studies." This potentially affects equity analytics, demographic-disparity studies tied to federally funded activities, and related compliance frameworks.
+
+## ③ Impact — on science, scientists, and stakeholders {#impact}
+
+A strong comment translates an abstract provision into **concrete, specific effects.** Useful lenses:
+
+- **Study-section functioning & awards.** Senior pre-issuance review + "peer review is advisory" could make funding less predictable and more discretionary after scientific review — what does that do to the incentive to write ambitious, high-risk science?
+- **Trainees & workforce.** Termination/suspension for shifting "agency interest" mid-project threatens graduate-student and postdoc salaries tied to specific awards; caps and reposting add uncertainty to career planning.
+- **Clinical trials & long-term studies.** Stop-work authority and discretionary termination are especially costly for multi-year human-subjects work, cohorts, and trials that cannot simply pause.
+- **Publication compliance.** Restricting publication/APC costs may conflict with public-access requirements (papers must be made publicly available) — a direct, documentable tension.
+- **Collaborations & global health.** Foreign-entity and "covered foreign country/entity" limits affect international cohorts, data-sharing, and global-health research.
+- **Indirect costs & institutional operations.** E-Verify, payment justifications, Do Not Pay checks, and SAM.gov reporting add administrative burden across a large research portfolio.
+- **Whole research areas.** DEI, disparate-impact, and sex/gender provisions could render specific lines of health-disparities and sex/gender research unfundable.
+
+For each, the best comments give a **specific example or estimate** (a real timeline, a cost, a study type, a number of affected trainees) rather than a general worry.
+
+## ④ Response — what OMB must consider, and what makes a comment substantive {#response}
+
+A legally meaningful comment is **not just a vote** for or against. Agencies are required to consider and respond to *significant/substantive* comments; form letters and bare opinions can be grouped and set aside. A substantive comment should:
+
+1. **Identify the docket and section** — e.g., "OMB-2026-0034, proposed § 200.205," "§ 200.340 termination," "§ 200.461 publication costs."
+2. **Explain concrete impact** — how the change affects NIH peer review, study-section functioning, awards, recruitment, trainees, clinical trials, publication compliance, collaborations, indirect-cost administration, or institutional operations.
+3. **Provide evidence** — data, examples from NIH grant administration, peer-review experience, institutional cost estimates, timelines, or published literature.
+4. **Address the agency's stated rationale** — explain why the proposal does or does not improve accountability, oversight, burden reduction, productivity, innovation, rigor, or stewardship.
+5. **Offer a specific alternative** — withdraw, narrow, phase in, define terms, require written reasons, preserve scientific peer-review primacy, exempt NIH peer-reviewed research, allow APCs required by public-access policy, etc.
+6. **Raise legal or procedural issues clearly** — statutory conflicts, arbitrary-and-capricious concerns, vagueness, First Amendment / Spending Clause issues, Paperwork Reduction Act burden, conflicts with NIH public-access requirements, or conflicts with the Public Health Service Act.
+7. **Be timely and non-confidential** — submit by the deadline and avoid confidential, proprietary, or sensitive information unless the docket provides a protected route.
+
+## ⑤ Action plan — how to submit {#action-plan}
+
+- **Where:** submit at **[regulations.gov](https://www.regulations.gov)** under docket **OMB-2026-0034** (you can also reach the comment form from the [Federal Register page](https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance) via "Submit a formal comment").
+- **When:** by **July 13, 2026** (don't wait for the last hour — the portal can be slow near deadlines).
+- **Reference precisely:** name the docket and each specific section number you address, so your points are routed to the right place.
+- **Keep it public-safe:** comments become part of the public record; don't include confidential, proprietary, or personally sensitive information.
+- **Consider two paths:** an individual comment (your own expertise/experience) and/or coordinating with your institution or a society on a longer, evidence-rich comment. Both count; many distinct substantive comments are stronger than identical form letters.
+
+---
+
+<p class="meta-row"><a class="pill cyan" href="this-is-not-a-drill.qmd">← Back to the challenge</a></p>

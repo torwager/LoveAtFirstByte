@@ -12,7 +12,6 @@ description: "Use research-capable AI to decode a funding rule change, find the 
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- official rule / policy document on the left -->
   <g transform="translate(70,40)">
     <rect x="0" y="0" width="150" height="140" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
@@ -31,7 +30,6 @@ description: "Use research-capable AI to decode a funding rule change, find the 
     <circle cx="120" cy="112" r="13" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="2 3"/>
     <path d="M120 105 l2.2 4.6 5.1 0.6 -3.7 3.5 0.9 5 -4.5 -2.4 -4.5 2.4 0.9 -5 -3.7 -3.5 5.1 -0.6 z" fill="#e11d6b"/>
   </g>
-
   <!-- comment speech-bubble being submitted -->
   <g transform="translate(330,56)">
     <path d="M0 16 Q0 0 16 0 L150 0 Q166 0 166 16 L166 70 Q166 86 150 86 L40 86 L20 108 L24 86 L16 86 Q0 86 0 70 Z" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
@@ -41,7 +39,6 @@ description: "Use research-capable AI to decode a funding rule change, find the 
     <!-- submit arrow into a tray/portal -->
     <path d="M118 70 l30 0 m-10 -8 l10 8 -10 8" fill="none" stroke="#e11d6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-
   <!-- deadline clock -->
   <g transform="translate(660,118)">
     <circle cx="0" cy="0" r="40" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
@@ -50,7 +47,6 @@ description: "Use research-capable AI to decode a funding rule change, find the 
     <line x1="0" y1="0" x2="16" y2="8" stroke="#0891b2" stroke-width="3" stroke-linecap="round"/>
     <circle cx="0" cy="0" r="3.5" fill="#475569"/>
   </g>
-
   <!-- crimson signature dot -->
   <circle cx="305" cy="176" r="4" fill="#b91c1c"/>
 </svg>

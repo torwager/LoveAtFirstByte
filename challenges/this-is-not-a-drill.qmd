@@ -1,0 +1,156 @@
+---
+title: "This is not a drill."
+subtitle: "Use AI to understand a live federal rule change — and write a public comment that counts."
+description: "A real, time-sensitive challenge: read the OMB proposed rule rewriting the rules for federal grants, and draft a substantive public comment before the July 13, 2026 deadline."
+---
+
+<svg viewBox="0 0 800 220" width="100%" style="max-height:220px;display:block;margin:0 0 1.2rem;border-radius:16px;background:linear-gradient(135deg,#f6f8fc,#eef3fb);border:1px solid #e2e8f4">
+  <defs>
+    <linearGradient id="g-not-a-drill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="55%" stop-color="#e11d6b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <!-- the 108-page rule (document) -->
+  <g>
+    <rect x="92" y="44" width="118" height="150" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+    <rect x="104" y="36" width="118" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6" opacity="0.6"/>
+    <text x="118" y="70" fill="#0891b2" font-family="Georgia,serif" font-size="22" font-weight="700">§</text>
+    <g stroke="#cbd5e1" stroke-width="3" stroke-linecap="round">
+      <line x1="118" y1="92" x2="196" y2="92"/>
+      <line x1="118" y1="108" x2="196" y2="108"/>
+      <line x1="118" y1="124" x2="178" y2="124"/>
+      <line x1="118" y1="140" x2="196" y2="140"/>
+      <line x1="118" y1="156" x2="172" y2="156"/>
+    </g>
+  </g>
+  <!-- alert: this is not a drill -->
+  <g>
+    <path d="M360 58 L408 142 L312 142 Z" fill="none" stroke="#e11d6b" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="360" y1="88" x2="360" y2="116" stroke="#e11d6b" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="360" cy="128" r="2.6" fill="#e11d6b"/>
+  </g>
+  <!-- flow arrows toward the response -->
+  <g stroke="url(#g-not-a-drill)" stroke-width="2.4" fill="none" opacity="0.85" stroke-linecap="round">
+    <path d="M222 118 C 262 118, 280 118, 304 118"/>
+    <path d="M416 118 C 470 118, 500 118, 540 112"/>
+  </g>
+  <!-- public comment bubble -->
+  <g>
+    <rect x="556" y="62" width="170" height="86" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+    <path d="M596 148 l0 22 l24 -22 z" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+    <g stroke="#94a3b8" stroke-width="3" stroke-linecap="round">
+      <line x1="576" y1="86" x2="706" y2="86"/>
+      <line x1="576" y1="104" x2="706" y2="104"/>
+      <line x1="576" y1="122" x2="668" y2="122"/>
+    </g>
+    <text x="572" y="56" fill="#7c3aed" font-family="system-ui,sans-serif" font-size="11" font-weight="600" letter-spacing="1.5">YOUR COMMENT</text>
+  </g>
+  <!-- deadline clock -->
+  <g>
+    <circle cx="690" cy="178" r="20" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+    <line x1="690" y1="178" x2="690" y2="166" stroke="#e11d6b" stroke-width="2.4" stroke-linecap="round"/>
+    <line x1="690" y1="178" x2="700" y2="184" stroke="#e11d6b" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="664" y="184" fill="#64748b" font-family="system-ui,sans-serif" font-size="11" text-anchor="end" font-weight="600">Jul 13</text>
+  </g>
+  <!-- subtle crimson signature dot -->
+  <circle cx="360" cy="150" r="3" fill="#b91c1c"/>
+</svg>
+
+A real, live federal rule change with a real deadline — your job is to use AI to understand it and write a public comment that an agency would actually have to weigh.
+
+<div class="meta-row">
+  <span class="pill rose">Set challenge · runs live</span>
+  <span class="pill cyan">35 min</span>
+  <span class="pill teal">teams of 3-5</span>
+  <span class="pill amber">Research-capable AI</span>
+</div>
+
+<div class="box goal"><span class="box-label">The Goal</span>
+Produce a <strong>public comment you understand and stand behind</strong> — one that is specific, evidence-based, and built to be treated as a <em>substantive</em> comment rather than a vote. AI does the heavy reading and drafting; you supply the judgment about what matters and what is true.</div>
+
+## Why it matters
+
+This is not a hypothetical. A 108-page proposed rule is open for comment right now, and it would reshape how every federal grant — including every NIH award — is made and managed. Comment periods are one of the few formal, legally weighted channels scientists have to influence policy that governs their own work, and most scientists never use them. Learning to turn a dense rule into a sharp, defensible comment in under an hour is a genuinely useful professional skill — and a clean test of using AI for high-stakes work where being *confidently wrong* has real costs.
+
+## Run of show
+
+<ul class="timeline">
+  <li><span class="t">0:00–0:05 · Challenge introduction (5 min)</span></li>
+  <li><span class="t">0:05–0:20 · Work in your group (15 min)</span></li>
+  <li><span class="t">0:20–0:22 · Post your best prompt (2 min)</span></li>
+  <li><span class="t">0:22–0:32 · Share &amp; debrief (10 min)</span></li>
+  <li><span class="t">0:32–0:35 · Reset (3 min)</span></li>
+</ul>
+
+## The challenge
+
+The U.S. Office of Management and Budget (OMB) has just published a **proposed rule** that would overhaul the government-wide rules for federal grants — the "Uniform Guidance" (2 CFR Part 200) that governs how NIH and every other federal agency makes and manages awards. The proposal runs **108 pages** in the Federal Register (91 Fed. Reg. 32198) and would significantly change the grant-making process both **before and after** an award is made — changes that could have a profound impact on science in the U.S., and in other countries to the degree they depend on NIH funding.
+
+The proposal is **open for public comment until July 13, 2026**, and federal agencies are legally required to consider and respond to substantive comments. Your task is to use AI to help you **understand the proposed changes and craft a response.** Some kinds of comments carry more weight than others. Write a comment that aligns with your values and is built to be impactful — i.e., likely to be treated by OMB as a *substantive* comment. AI can help here, but **you** are the ones who must understand what is at stake and form an opinion.
+
+Read the proposal: **[Regulation for Federal Financial Assistance (91 FR 32198)](https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance)**. Comments are submitted at **[regulations.gov](https://www.regulations.gov), docket OMB-2026-0034**.
+
+Consider breaking the task into components:
+
+- **Context** — Why are these changes being proposed?
+- **Content** — What are the most important changes?
+- **Impact** — What will the impact be on science, scientists, and other stakeholders? (e.g., study-section functioning, awards, recruitment, trainees, clinical trials, publication compliance, collaborations, indirect-cost administration, or institutional operations)
+- **Response** — What kinds of comments is OMB obligated to consider? What will make a comment likely to be treated as a *substantive* comment?
+- **Action plan** — How can you submit your comment?
+
+<div class="box tip"><span class="box-label">Stuck? Optional hints</span>
+Click on these only if you need additional hints/info!
+<br><br>
+<a href="this-is-not-a-drill-hints.qmd#context">① Context hints</a> &nbsp;·&nbsp;
+<a href="this-is-not-a-drill-hints.qmd#content">② Content hints</a> &nbsp;·&nbsp;
+<a href="this-is-not-a-drill-hints.qmd#impact">③ Impact hints</a> &nbsp;·&nbsp;
+<a href="this-is-not-a-drill-hints.qmd#response">④ Response hints</a> &nbsp;·&nbsp;
+<a href="this-is-not-a-drill-hints.qmd#action-plan">⑤ Action-plan hints</a>
+</div>
+
+## Bad prompt to better prompt
+
+<div class="box bad"><span class="box-label">Weak prompt</span>
+<div class="prompt">Summarize this 108-page rule and write me a public comment opposing it.</div>
+Why it disappoints: you get a generic summary that may invent or misnumber sections, and a vague comment with no docket or section citations, no evidence, and no specific alternative. That is exactly the kind of "I'm for/against this" message an agency can group, count, and set aside as non-substantive.
+</div>
+
+<div class="box good"><span class="box-label">Strong prompt</span>
+<div class="prompt">You are a research-grants policy analyst helping a pain scientist write a substantive public comment on OMB's proposed rule "Regulation for Federal Financial Assistance" (docket OMB-2026-0034, 91 FR 32198).
+
+Focus on ONE provision: the senior-appointee pre-issuance review of discretionary awards (proposed § 200.205) and its interaction with peer review being advisory.
+
+Do this in clearly labeled sections:
+1. PLAIN-ENGLISH SUMMARY of what this provision changes, in 3 sentences.
+2. CONCRETE IMPACT on NIH study sections, award timelines, and trainees — be specific.
+3. THE AGENCY'S STATED RATIONALE, and whether the provision actually serves it.
+4. A SPECIFIC ALTERNATIVE OMB could adopt instead (narrow, define, require written reasons, preserve peer-review primacy, etc.).
+5. ANY LEGAL/PROCEDURAL ISSUES (arbitrary-and-capricious, vagueness, statutory conflict).
+
+Then add a section "CHECK ME": list every section number, date, and factual claim you used, rate your confidence each is correct, and flag anything I must verify against the actual rule before I submit.</div>
+A strong comment names the docket and section, shows concrete impact with evidence, engages the agency's rationale, offers a specific alternative, and is verified by a human before it is filed.
+</div>
+
+## Debrief questions
+
+1. Which provision did your team comment on, and could you explain in one sentence *why* it matters — without re-reading the AI's output?
+2. What did the AI get wrong, invent, or overstate about the rule? How did you catch it?
+3. What moved your comment from "a vote" to "substantive"? A section number? Evidence? A concrete alternative?
+4. Where did your judgment override the AI — on emphasis, tone, or what to leave out?
+5. Would you actually submit this? What would you change first?
+
+## Further challenges
+
+The grant-policy landscape is unusually active right now, and several proposals are open for public comment. One worth a look:
+
+<div class="box tip"><span class="box-label">More open comment periods</span>
+NIH is seeking public input through <strong>NOT-OD-26-086</strong>, a Request for Information on a proposal to <strong>cap the number of simultaneous Research Project Grants (RPGs) per principal investigator</strong> (NIH is weighing caps of <strong>2, 3, or 4</strong>). Rather than forcing immediate change, NIH proposes a <strong>phased</strong> approach: investigators above the cap would reduce their lead awards over time via renewals, PI changes, or relinquishment. NIH estimates this could redirect roughly <strong>$1.3–3.5&nbsp;billion</strong> to support <strong>~1,900–5,200 additional investigators</strong>. Comments are due <strong>August 3, 2026</strong>.
+<br><br>
+Read more: <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-086.html">NOT-OD-26-086 (the notice)</a> &nbsp;·&nbsp; <a href="https://grants.nih.gov/news-events/nih-extramural-nexus-news/2026/06/feedback-sought-proposal-to-cap-the-number-of-simultaneous-research-project-grants-per-principal-investigator-to-support-more-researchers-and-maximize-scientific-productivity-and-innovation">NIH Extramural Nexus explainer</a>.
+</div>
+
+---
+
+<p class="meta-row"><a class="pill cyan" href="index.qmd">← Challenges</a> <a class="pill violet" href="../intro/tools.qmd">AI Toolkit →</a></p>

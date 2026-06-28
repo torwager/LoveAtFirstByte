@@ -12,7 +12,6 @@ description: "An agentic challenge: search for open pain-science datasets, inspe
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- scattered, mismatched source dataset chips, askew -->
   <g fill="#ffffff" stroke="#94a3b8" stroke-width="1.4">
     <g transform="rotate(-11 130 70)">
@@ -34,7 +33,6 @@ description: "An agentic challenge: search for open pain-science datasets, inspe
       <line x1="206" y1="120" x2="292" y2="120" stroke="#cbd5e1"/>
     </g>
   </g>
-
   <!-- harmonizing code/brace glyphs in the middle -->
   <g fill="none" stroke="#475569" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
     <path d="M372 84 q -12 0 -12 14 0 12 -12 12 12 0 12 12 0 14 12 14"/>
@@ -45,14 +43,12 @@ description: "An agentic challenge: search for open pain-science datasets, inspe
     <circle cx="412" cy="112" r="2.4"/>
     <circle cx="412" cy="124" r="2.4"/>
   </g>
-
   <!-- flow lines from scattered chips toward the unified table -->
   <g stroke="url(#g-junkyard-dog)" stroke-width="2.2" fill="none" opacity="0.85">
     <path d="M180 90 C 300 72, 330 100, 360 104"/>
     <path d="M210 152 C 320 152, 335 124, 360 118"/>
     <path d="M464 108 C 510 108, 520 112, 540 114"/>
   </g>
-
   <!-- the harmonized, tidy unified output table -->
   <g>
     <rect x="540" y="62" width="156" height="100" rx="10" fill="#ffffff" stroke="#475569" stroke-width="2.2"/>
@@ -63,13 +59,11 @@ description: "An agentic challenge: search for open pain-science datasets, inspe
     <line x1="592" y1="62" x2="592" y2="162" stroke="#cbd5e1" stroke-width="1.2"/>
     <line x1="644" y1="62" x2="644" y2="162" stroke="#cbd5e1" stroke-width="1.2"/>
   </g>
-
   <!-- accent nodes -->
   <circle cx="180" cy="90" r="4" fill="#0891b2"/>
   <circle cx="210" cy="152" r="4" fill="#e11d6b"/>
   <circle cx="280" cy="100" r="4" fill="#7c3aed"/>
   <circle cx="540" cy="114" r="4.5" fill="#0891b2"/>
-
   <!-- subtle crimson signature dot -->
   <circle cx="688" cy="156" r="3" fill="#b91c1c"/>
 </svg>

@@ -15,7 +15,6 @@ description: "Turn a scorched-earth peer review into a calm, surgical, point-by-
       <path d="M0 0 L10 5 L0 10 z" fill="url(#g-the-rebuttal)"/>
     </marker>
   </defs>
-
   <!-- left: the marked-up manuscript with red critique strikes -->
   <g>
     <rect x="58" y="36" width="200" height="148" rx="10" fill="#ffffff" stroke="#94a3b8"/>
@@ -30,10 +29,8 @@ description: "Turn a scorched-earth peer review into a calm, surgical, point-by-
     <path d="M232 96 l16 -8 l-2 9 l8 4 l-18 9 z" fill="none" stroke="#e11d6b" stroke-width="2"/>
     <text x="244" y="62" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#e11d6b">?</text>
   </g>
-
   <!-- center: arrow from critique to response -->
   <line x1="270" y1="110" x2="528" y2="110" stroke="url(#g-the-rebuttal)" stroke-width="4" marker-end="url(#arrow-the-rebuttal)"/>
-
   <!-- right: the calm, structured point-by-point response -->
   <g>
     <rect x="540" y="36" width="202" height="148" rx="10" fill="#ffffff" stroke="#475569"/>
@@ -48,7 +45,6 @@ description: "Turn a scorched-earth peer review into a calm, surgical, point-by-
     <line x1="580" y1="148" x2="708" y2="148" stroke="#94a3b8" stroke-width="2"/>
     <line x1="580" y1="166" x2="688" y2="166" stroke="#94a3b8" stroke-width="2"/>
   </g>
-
   <!-- subtle crimson signature dot -->
   <circle cx="248" cy="46" r="3" fill="#b91c1c"/>
 </svg>

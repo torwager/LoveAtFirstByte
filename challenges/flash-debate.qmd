@@ -12,17 +12,14 @@ description: "Use research-capable AI to assemble the strongest case (and counte
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- caption -->
   <text x="400" y="28" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" fill="#64748b" letter-spacing="2">the balance of evidence</text>
-
   <!-- central balance: fulcrum + beam -->
   <line x1="400" y1="118" x2="400" y2="170" stroke="#475569" stroke-width="3"/>
   <polygon points="400,168 384,196 416,196" fill="#94a3b8"/>
   <line x1="384" y1="196" x2="416" y2="196" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
   <circle cx="400" cy="118" r="6" fill="url(#g-flash-debate)"/>
   <line x1="232" y1="104" x2="568" y2="132" stroke="url(#g-flash-debate)" stroke-width="3" stroke-linecap="round"/>
-
   <!-- PRO podium (left, cyan) -->
   <g>
     <line x1="232" y1="104" x2="232" y2="138" stroke="#94a3b8" stroke-width="1.5"/>
@@ -32,7 +29,6 @@ description: "Use research-capable AI to assemble the strongest case (and counte
     <line x1="198" y1="182" x2="248" y2="182" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
     <text x="232" y="153" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600" fill="#0891b2" letter-spacing="3">PRO</text>
   </g>
-
   <!-- CON podium (right, rose) -->
   <g>
     <line x1="568" y1="132" x2="568" y2="138" stroke="#94a3b8" stroke-width="1.5"/>
@@ -42,7 +38,6 @@ description: "Use research-capable AI to assemble the strongest case (and counte
     <line x1="534" y1="182" x2="584" y2="182" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
     <text x="568" y="153" text-anchor="middle" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600" fill="#e11d6b" letter-spacing="3">CON</text>
   </g>
-
   <!-- evidence nodes feeding each podium -->
   <g stroke="#94a3b8" stroke-width="1.4" fill="none" opacity="0.8">
     <path d="M64,58 C120,72 168,86 200,100"/>
@@ -56,11 +51,9 @@ description: "Use research-capable AI to assemble the strongest case (and counte
   <circle cx="736" cy="120" r="5" fill="none" stroke="#e11d6b" stroke-width="2"/>
   <circle cx="120" cy="72" r="3" fill="#64748b"/>
   <circle cx="680" cy="72" r="3" fill="#64748b"/>
-
   <!-- violet accent: the connecting question -->
   <circle cx="400" cy="62" r="4" fill="#7c3aed"/>
   <line x1="400" y1="66" x2="400" y2="112" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="3 4" opacity="0.7"/>
-
   <!-- crimson signature dot -->
   <circle cx="408" cy="118" r="2" fill="#b91c1c"/>
 </svg>

@@ -12,12 +12,10 @@ description: "Turn one phenomenon into three basic-science and three clinical ex
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- the single "finding" node -->
   <circle cx="130" cy="110" r="30" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
   <circle cx="130" cy="110" r="20" fill="url(#g-experiment-generator)"/>
   <text x="130" y="166" text-anchor="middle" fill="#475569" font-size="12" font-family="system-ui,sans-serif" font-weight="600">finding</text>
-
   <!-- connector lines branching to six experiment nodes -->
   <g stroke="#94a3b8" stroke-width="1.6" fill="none">
     <path d="M158 98  C 300 48, 430 48, 552 58"/>
@@ -27,11 +25,9 @@ description: "Turn one phenomenon into three basic-science and three clinical ex
     <path d="M157 94  C 320 36, 500 30, 660 46"/>
     <path d="M157 126 C 320 184, 500 190, 660 174"/>
   </g>
-
   <!-- tier labels -->
   <text x="556" y="34" fill="#0891b2" font-size="11" font-family="system-ui,sans-serif" font-weight="600">basic science</text>
   <text x="556" y="200" fill="#e11d6b" font-size="11" font-family="system-ui,sans-serif" font-weight="600">clinical</text>
-
   <!-- six experiment nodes: cyan trio = basic-science, rose trio = clinical -->
   <g font-family="system-ui,sans-serif">
     <!-- basic-science tier (cyan tint) -->
@@ -43,7 +39,6 @@ description: "Turn one phenomenon into three basic-science and three clinical ex
     <circle cx="560" cy="162" r="13" fill="#fce4ee" stroke="#e11d6b" stroke-width="1.6"/>
     <circle cx="660" cy="174" r="13" fill="#fce4ee" stroke="#e11d6b" stroke-width="1.6"/>
   </g>
-
   <!-- subtle violet accent + crimson signature dot -->
   <circle cx="350" cy="62" r="2.5" fill="#7c3aed"/>
   <circle cx="300" cy="150" r="2.5" fill="#7c3aed"/>

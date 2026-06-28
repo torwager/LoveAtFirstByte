@@ -12,12 +12,10 @@ description: "A core live challenge: hand the AI a baffling pain-science null re
       <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-
   <!-- flat "null" baseline -->
   <line x1="40" y1="110" x2="760" y2="110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 8"/>
   <text x="628" y="100" fill="#64748b" font-family="ui-sans-serif,system-ui" font-size="13">expected effect</text>
   <text x="646" y="150" fill="#0891b2" font-family="ui-sans-serif,system-ui" font-size="13">observed: ~0</text>
-
   <!-- roulette wheel rim and tick marks -->
   <circle cx="250" cy="110" r="92" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
   <g stroke="#94a3b8" stroke-width="1.5">
@@ -30,7 +28,6 @@ description: "A core live challenge: hand the AI a baffling pain-science null re
     <line x1="185" y1="175" x2="193" y2="167"/>
     <line x1="185" y1="45" x2="193" y2="53"/>
   </g>
-
   <!-- five branching hypothesis paths radiating from the hub -->
   <g stroke="url(#g-hypothesis-roulette)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M250 110 L250 36 M250 60 L228 44 M250 60 L272 44"/>
@@ -39,7 +36,6 @@ description: "A core live challenge: hand the AI a baffling pain-science null re
     <path d="M250 110 L182 174 M204 152 L178 152 M204 152 L196 176"/>
     <path d="M250 110 L168 66 M194 80 L188 54 M194 80 L168 88"/>
   </g>
-
   <!-- hypothesis nodes at the branch ends -->
   <g font-family="ui-sans-serif,system-ui" font-size="14" font-weight="700" fill="#ffffff">
     <circle cx="250" cy="36" r="14" fill="#0891b2"/><text x="250" y="41" text-anchor="middle">1</text>
@@ -48,21 +44,17 @@ description: "A core live challenge: hand the AI a baffling pain-science null re
     <circle cx="182" cy="174" r="14" fill="#64748b"/><text x="182" y="179" text-anchor="middle">4</text>
     <circle cx="168" cy="66" r="14" fill="#7c3aed"/><text x="168" y="71" text-anchor="middle">5</text>
   </g>
-
   <!-- central hub: the null sits here -->
   <circle cx="250" cy="110" r="22" fill="#ffffff" stroke="url(#g-hypothesis-roulette)" stroke-width="3"/>
   <text x="250" y="115" text-anchor="middle" fill="#475569" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="700">H0?</text>
-
   <!-- pointer / spinner indicating the central point -->
   <polygon points="250,72 244,88 256,88" fill="#475569"/>
-
   <!-- discriminating-experiment arrow -->
   <g>
     <line x1="430" y1="110" x2="560" y2="110" stroke="#7c3aed" stroke-width="2.5"/>
     <polygon points="560,110 548,103 548,117" fill="#7c3aed"/>
     <text x="430" y="94" fill="#7c3aed" font-family="ui-sans-serif,system-ui" font-size="13" font-weight="600">discriminating test</text>
   </g>
-
   <!-- accent dots -->
   <circle cx="700" cy="55" r="3" fill="#0891b2"/>
   <circle cx="730" cy="180" r="3" fill="#e11d6b"/>
