@@ -124,6 +124,9 @@ Then add "CHECK ME": flag anything you are unsure you read correctly, and any cl
 Follow up with: "Propose two follow-up experiments that each test one of the assumptions in section 3. For each: hypothesis, design, predicted result, the main confound, and how I'd check whether something like it has already been published." Then verify any cited prior work yourself before trusting it.
 </div>
 
+<div class="box tip"><span class="box-label">Share your work</span>
+Post a brief note about your experiment and your prompt <a href="https://docs.google.com/document/d/1d_It4o8vG-eRXbT19hpr9zT_kXqd8iWJFf3EA0FhRxU/edit?usp=sharing">here</a>.</div>
+
 ## Debrief questions
 
 1. What summary format did your team build — and could you now explain the paper's key experiment *without* re-reading the AI's output?

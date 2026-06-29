@@ -133,6 +133,9 @@ Then add a section "CHECK ME": list every section number, date, and factual clai
 A strong comment names the docket and section, shows concrete impact with evidence, engages the agency's rationale, offers a specific alternative, and is verified by a human before it is filed.
 </div>
 
+<div class="box tip"><span class="box-label">Share your work</span>
+Post your comment <a href="https://docs.google.com/document/d/1vhb03u3fRav2wpDOOEsuxdgYcmx1rAOfVeDSgB5N_6Y/edit?usp=sharing">here</a>.</div>
+
 ## Debrief questions
 
 1. Which provision did your team comment on, and could you explain in one sentence *why* it matters — without re-reading the AI's output?
