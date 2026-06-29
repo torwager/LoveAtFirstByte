@@ -25,3 +25,7 @@ Gemfile.lock
 .DS_Store
 
 **/*.quarto_ipynb
+
+# Duplicate downloads accidentally dropped in the tree
+*(1).html
+*(2).html
